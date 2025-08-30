@@ -1,0 +1,130 @@
+.hero{
+    margin-bottom: 100px;
+}
+
+.swiper {
+    min-height: 250px;
+    height: 800px;
+}
+
+.swiper-slide{
+    width: 100%;
+    position: relative;
+}
+
+.swiper-slide img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero__content{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--new-bg-color);
+    font-size: 64px;
+    line-height: 90%;
+    max-width: 496px;
+    font-weight: bold;
+    bottom: 89px;
+    right: 22%;
+    display: inline-block;
+}
+
+@media (max-width: 1440px) {
+    .hero__content{
+        right: 12%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .swiper {
+        min-height: 250px;
+        height: 600px;
+    }
+    .hero__content{
+        right: 0%;
+        bottom: 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .swiper {
+        min-height: 250px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 850px) {
+    .swiper {
+        min-height: 250px;
+        height: 425px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .swiper {
+        min-height: 250px;
+        height: 350px;
+    }
+    .hero__content{
+        font-size: 38px;
+        bottom: 15%;
+        max-width: 250px;
+        right: 15%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .hero{
+        margin-bottom: 40px;
+    }
+    .swiper {
+        min-height: 250px;
+        height: 300px;
+    }
+    .hero__content{
+        font-size: 32px;
+        bottom: 15%;
+        max-width: 250px;
+        right: 6%;
+    }
+}
+
+@media (max-width: 500px) {
+    .swiper {
+        min-height: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    .swiper{
+        min-height: auto;
+        height: 500px;
+    }
+    .swiper-slide{
+        display: flex;
+        flex-direction: column;
+    }
+    .swiper-slide img {
+        position: static;
+        max-height: 250px;
+    }
+    .hero__content{
+        position: static;
+        padding: 20px 60px 45px 20px;
+        width: 100%;
+        max-width: 100%;
+        min-height: 250px;
+        background-color: #680AFF;
+        font-style: 36px;
+    }
+    
+}

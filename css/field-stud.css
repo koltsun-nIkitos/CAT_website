@@ -1,0 +1,300 @@
+.field-stud{
+    margin-bottom: 200px;
+}
+
+.fiel-stud-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    min-height: 150px;
+    margin-bottom: 80px;
+    gap: 10px;
+}
+
+.promo-title{
+    font-weight: 500;
+    font-size: 50px;
+    grid-column: span 8;
+    line-height: 1;
+    max-width: 1015px;
+}
+
+.field-stud .section-title{
+    position: relative;
+    margin-top: 30px;
+}
+
+.field-stud .section-title::before{
+    content: '';
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 0.5px;
+    background-color: #9E9E9E;
+}
+
+.field-stud .section-title .section-title--mobile{
+    display: none;
+}
+
+
+/* СЕТКА */
+/* Главная сетка */
+
+.field-stud-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px; 
+}
+
+
+.field-stud-row {
+    display: grid;
+    grid-template-columns: subgrid; 
+    grid-column: span 8; 
+}
+
+/* Строка прижата к правому краю */
+.field-stud-row--right {
+    grid-column-start: 5; 
+    grid-column-end: span 8; 
+}
+
+/* Строка прижата к левому краю */
+.field-stud-row--left {
+    grid-column: span 8; 
+}
+
+/* Карточки занимают 4 колонки */
+.field-stud-card {
+    grid-column: span 4; 
+}
+
+/* Обычные стили */
+.field-stud-card{
+    min-height: 446px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.field-stud-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s;
+}
+
+.field-stud-card__header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.field-stud-card__title{
+    line-height: var(--lineright-110);
+    font-size: var(--big-card-size);
+    max-width: 331px;
+}
+
+.field-stud-card__subtitle{
+    font-size: 32px;
+    line-height: var(--lineright-110);
+    margin-bottom: 20px;
+}
+
+.field-stud-card__subtitle--none{
+    display: none;
+}
+
+.field-stud-tags{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-bottom: 109px;
+}
+
+.field-stud-tag{
+    background: #e7e7ec;
+    padding: 2.5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: var(--dark-color);
+}
+
+.field-stud-text{
+    line-height: 1.4;
+    max-width: 385px;
+}
+
+.field-stud-card--all{
+    background: #e7e6ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: var(--lineright-110);
+    font-weight: 500;
+}
+
+@media (max-width: 1205px) {
+    .field-stud-grid {
+        grid-template-columns: repeat(9, 1fr);
+        gap: 10px;
+    }
+    .field-stud-row{
+        display: grid;
+        grid-template-columns: subgrid; 
+        grid-column: span 9; 
+    }
+    
+    /* Первый ряд - одна карточка на 6 колонок справа */
+    .field-stud-row--right:first-child .field-stud-card {
+        grid-column: 4 / span 3;
+    }
+    
+    /* Второй ряд - две карточки по 4 колонки */
+    .field-stud-row--left .field-stud-card:first-child {
+        grid-column: 1 / span 3;
+    }
+    
+    .field-stud-row--left .field-stud-card:nth-child(2) {
+        grid-column: 4 / span 3;
+    }
+    
+    /* Третий ряд - карточка на 5 колонок и кнопка на 3 колонки */
+    .field-stud-row--right:nth-child(3) .field-stud-card:first-child {
+        grid-column: 4 / span 3;
+    }
+    
+    .field-stud-row--right:nth-child(3) .field-stud-card--all {
+        grid-column: 7 / span 3;
+    }
+    
+    /* Адаптация контента для планшетов */
+    .field-stud-card {
+        padding: 22px;
+    }
+    .field-stud-tags {
+        margin-bottom: 60px;
+    }
+    
+    .field-stud-card__title {
+        font-size: 1.3rem;
+    }
+    .field-stud-card__subtitle {
+        font-size: 23px;
+    }
+    
+    .field-stud-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 930px) {
+    .field-stud{
+        margin-bottom: 79px;
+    }
+    .field-stud-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .field-stud-row {
+        grid-template-columns: subgrid;
+    }
+    
+    .field-stud-row--right,
+    .field-stud-row--left {
+        grid-column: span 4; /* На мобильных все строки занимают всю ширину */
+    }
+    
+    
+    .field-stud-card,
+    .field-stud-card--all {
+        grid-column: span 2 !important; /* карточка  всю ширину */
+    }
+
+    .field-stud-row--right:first-child .field-stud-card{
+        grid-column: 3 / span 2 !important;
+    }
+}
+
+@media (max-width: 630px) {
+    .field-stud .promo-title{
+        font-size: 28px;
+    }
+
+    .field-stud .section-title{
+        margin-bottom: 20px;
+    }
+    .field-stud .section-title .section-title--mobile{
+        display: block;
+        font-size: 20px
+    }
+    .field-stud .section-title .section-title--desctop{
+        display: none;
+    }
+
+    .field-stud-card,
+    .field-stud-card--all {
+        min-height: 343px;
+        grid-column: span 4 !important; /* карточка  всю ширину */
+    }
+    .field-stud-row--right:first-child .field-stud-card{
+        grid-column:  span 4 !important;
+    }
+
+    .field-stud-card{
+        margin-bottom: 10px;
+    }
+    .field-stud-card--all{
+        min-height: 0;
+        background: var(--violet-color);
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 110%;
+        text-transform: uppercase;
+    }
+
+    
+}
+
+@media (max-width: 460px) {
+    .field-stud .fiel-stud-grid{
+        display: none;
+    }
+    .field-stud-card{
+        padding: 20px;
+    }
+    .field-stud-card__header{
+        margin-bottom: 20px;
+    }
+    .field-stud-card__title{
+        line-height: 100%;
+        font-size: var(--title-2-mob-size);
+    }
+    .field-stud-card__arrow{
+        display: none;
+    }
+    .field-stud-tags{
+        gap: 5px;
+        margin-bottom: 73px;
+    }
+    .field-stud-tag{
+        font-size: 10px;
+    }
+    .field-stud-text{
+        font-size: var(--body-mob-size);
+    }
+    .field-stud-card--all .field-stud-card__title{
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .field-stud-card--all .field-stud-card__title::after{
+        content: ">";
+        display: block;
+    }
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="./index.html" class="header__logo">
+                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+            </a>
+
+            <nav class="header__menu" id="main-menu" aria-label="Главное меню">
+                <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">События</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">Абитуриенту</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">Студенту</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">Наша&nbsp;кафедра</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Герой-блок -->
+    <section class="hero">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 1">
+
+                    <p class="hero__content">
+                        Тут скоро будет текст
+                    </p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 2">
+
+
+                    <p class="hero__content">
+                        Тут скоро будет текст
+                    </p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 3">
+
+                    <p class="hero__content">
+                        Тут скоро будет текст
+                    </p>
+                </div>
+            </div>
+            
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Новости -->
+    <section class="news">
+        <div class="container">
+            <h2 class="section-title">
+                Новости
+            </h2>
+
+            <div class="news-grid">
+
+                <!-- Первая строка: одна большая карточка на 6 колонок, выровненная справа -->
+                <div class="news-grid__first-row">
+                    <a href="#" class="news-card large-card">
+                        <img src="./img/news/new1.png" alt="карточка новости" class="news-card__img">
+                        
+                        <div class="news-card__content">
+                            <div class="news-card__header">
+                                <p class="news-card__date">день месяц год</p>
+                                <div class="news-card__tags">
+                                    <p href="#" class="news-card__tag tag-navy">
+                                        хакатон
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h3 class="news-card__title">
+                                Название новости 
+                                из&nbsp;двух строк
+                            </h3>
+
+                            <p class="news-card__text">
+                                Praesent dignissim mauris metus, nec 
+                                elementum felis dapibus quis. Phasellus eu 
+                                nisi orci. Nullam suscipit a elit ut congue. 
+                                Proin a ipsum vel risus posuere imperdiet eu 
+                                ac nisl.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                
+
+                <a href="#" class="news-card event">
+                    <div class="news-card__content">
+                        <div class="news-card__header">
+                            <p class="news-card__date">1 июня 2025</p>
+                            <div class="news-card__tags">
+                                <!-- Пусто -->
+                            </div>
+                        </div>
+
+                        <h3 class="news-card__title">
+                            Расписание прохождения 
+                            нормоконтроля
+                        </h3>
+
+                        <p class="news-card__text">
+                            Praesent dignissim mauris metus, nec 
+                            elementum felis dapibus quis. Phasellus eu 
+                            nisi orci. Nullam suscipit a elit ut congue. 
+                            Proin a ipsum vel risus posuere imperdiet eu 
+                            ac nisl.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" class="news-card">
+                    <img src="./img/news/new1.png" alt="карточка новости" class="news-card__img non-preview">
+
+
+                    <div class="news-card__content">
+                        <div class="news-card__header">
+                            <p class="news-card__date">день месяц год</p>
+                            <div class="news-card__tags">
+                                <p href="#" class="news-card__tag tag-navy">
+                                    хакатон
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="news-card__title">
+                            Название новости 
+                            из двух строк
+                        </h3>
+
+                        <p class="news-card__text">
+                            Praesent dignissim mauris metus, nec 
+                            elementum felis dapibus quis. Phasellus eu 
+                            nisi orci. Nullam suscipit a elit ut congue. 
+                            Proin a ipsum vel risus posuere imperdiet eu 
+                            ac nisl.
+                        </p>
+                    </div>
+                </a>
+
+
+                <a href="#" class="news-card">
+                    <img src="./img/news/new1.png" alt="карточка новости" class="news-card__img non-preview">
+
+                    <div class="news-card__content">
+                        <div class="news-card__header">
+                            <p class="news-card__date">день месяц год</p>
+                            <div class="news-card__tags">
+                                <p href="#" class="news-card__tag tag-vieolet">
+                                    хакатон
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="news-card__title">
+                            Название новости 
+                            из двух строк
+                        </h3>
+
+                        <p class="news-card__text">
+                            Praesent dignissim mauris metus, nec 
+                            elementum felis dapibus quis. Phasellus eu 
+                            nisi orci. Nullam suscipit a elit ut congue. 
+                            Proin a ipsum vel risus posuere imperdiet eu 
+                            ac nisl.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" class="news-card large-card">
+                    <img src="./img/news/new1.png" alt="карточка новости" class="news-card__img">
+                    
+                    <div class="news-card__content">
+                        <div class="news-card__header">
+                            <p class="news-card__date">день месяц год</p>
+                            <div class="news-card__tags">
+                                <p href="#" class="news-card__tag tag-navy">
+                                    тег
+                                </p>
+                                <p href="#" class="news-card__tag tag-red">
+                                    тег
+                                </p>
+                            </div>
+                        </div>
+
+                        <h3 class="news-card__title">
+                            Название новости 
+                            из двух строк
+                        </h3>
+
+                        <p class="news-card__text">
+                            Praesent dignissim mauris metus, nec 
+                            elementum felis dapibus quis. Phasellus eu 
+                            nisi orci. Nullam suscipit a elit ut congue. 
+                            Proin a ipsum vel risus posuere imperdiet eu 
+                            ac nisl.
+                        </p>
+                    </div>
+                </a>
+
+                <a href="#" class="news-card all-events-card">
+                    <h3 class="news-card__title">ВСЕ СОБЫТИЯ</h3>
+                </a>
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- События -->
+    <section class="field-stud">
+        <div class="container">
+            <div class="fiel-stud-grid">
+                <h2 class="promo-title">
+                    Написать короткий текст про то, что наши направления классные и востребованные
+                </h2>
+            </div>
+            
+
+            <h2 class="section-title">
+                <span class="section-title--desctop">Популярные направления</span>
+                <span class="section-title--mobile">Мы учим</span>
+            </h2>
+
+
+            <div class="field-stud-grid">
+                <div class="field-stud-row field-stud-row--right">
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Прикладная информатика в&nbsp;дизайне
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                            <li class="field-stud-tag">очно-заочное</li>
+                            <li class="field-stud-tag">заочное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Научитесь создавать удобные и стильные 
+                            интерфейсы для сайтов и мобильных приложений, 
+                            работать с CRM-системами и веб-аналитикой для 
+                            успешного старта карьеры в сфере цифрового дизайна 
+                            и управления интернет-проектами.
+                        </p>
+                    </a>
+                </div>
+                
+                <div class="field-stud-row field-stud-row--left">
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Прикладной искусственный интеллект
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Самая актуальная и необходимая специальность 
+                            будущего. Научим как использовать искусственный 
+                            интеллект в самых разных областях, 
+                            так и создавать свой.
+                        </p>
+                    </a>
+
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                ИТ-технологии создания цифрового контента
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Получите одну из самых востребованных современных 
+                            профессий, освоив навыки создания и продвижения 
+                            цифрового контента, управления интернет и 
+                            медиапроектами.
+                        </p>
+                    </a>
+                </div>
+
+                <div class="field-stud-row field-stud-row--right">
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Fashion Tech
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Научитесь создавать удобные и стильные 
+                            интерфейсы для сайтов и мобильных приложений, 
+                            работать с CRM-системами и веб-аналитикой для 
+                            успешного старта карьеры в сфере цифрового дизайна 
+                            и управления интернет-проектами.
+                        </p>
+                    </a>
+
+                    <a href="#" class="field-stud-card field-stud-card--all">
+                        <h3 class="field-stud-card__title">
+                            Абитуриенту
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Партнеры -->
+    <section class="partners">
+        <div class="container grid">
+            <img src="img/partner1.png" alt="Partner 1">
+            <img src="img/partner2.png" alt="Partner 2">
+            <img src="img/partner3.png" alt="Partner 3">
+            <img src="img/partner4.png" alt="Partner 4">
+            <img src="img/partner5.png" alt="Partner 5">
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./swiper.min.js"></script>
+<script defer src="./main.js"></script>
+
+</html>
