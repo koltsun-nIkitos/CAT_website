@@ -1,0 +1,158 @@
+.footer{
+    padding-bottom: 37px;
+    padding-top: 60px;
+}
+
+.footer__wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.footer__menu{
+    display: flex;
+}
+
+.footer__nav{
+    margin-right: 104px;
+}
+
+.footer__nav-links{
+    list-style: none;
+}
+
+.footer__nav-links li{
+    margin-bottom: 16px;
+}
+
+.footer__nav-links li:last-child{
+    margin-bottom: 0px;
+}
+
+.footer__nav-link{
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.footer__nav-link:hover {
+    color: var(--label-color); 
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.footer__info-group{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer__social {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer__social:hover {
+    transform: scale(1.05);
+}
+
+.footer__info-mail, .footer__info-adress{
+    font-size: 16px;
+    color: var(--dark-color);
+}
+
+.footer__info-mail:hover {
+    color: var(--label-color);
+}
+
+.footer__info-mail {
+    transition: color 0.3s ease;
+}
+
+.footer__copyright{
+    font-size: 16px;
+    color: rgba(32, 21, 65, 0.46);
+}   
+
+@media (max-width: 1050px) {
+    .footer {
+        padding: 40px 0;
+    }
+    
+    .footer__wrapper {
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 80px
+    }
+
+    .footer-logo {
+        align-self: center;
+    }
+    
+    .footer__menu {
+        width: 100%;
+        gap: 120px;
+        justify-content: center;
+    }
+    
+    .footer__nav {
+        margin-right: 0;
+    }
+    
+    .footer__nav-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .footer__info {
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: min-content;
+    }
+
+    .footer__socials{
+        justify-self: start;
+        display: flex;
+        width: 100%;
+    }
+    
+    .footer__info-group {
+        gap: 20px;
+    }
+    
+    .footer__socials {
+        margin-bottom: 0;
+        align-self: center;
+    }
+}
+
+@media (max-width: 550px) {
+    .footer__wrapper{
+        gap: 50px;
+    }
+    .footer__menu{
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 50px;
+    }
+    .footer__nav{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__info{
+        gap: 25px;
+        align-items: center;
+    }
+    .footer__socials{
+        justify-content: center;
+        gap: 25px;
+    }
+}

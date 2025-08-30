@@ -1,3 +1,4 @@
+// МОБИЛЬНОЕ МЕНБ
 const menu = document.querySelector('.nav-menu');
 const menuButton = document.querySelector('.header__burger');
 
@@ -8,6 +9,7 @@ menuButton.addEventListener("click", () =>{
 
 
 
+// СЛАЙДЕР
 const swiper = new Swiper('.swiper', {
   // Optional parameters
     direction: 'horizontal',
@@ -23,3 +25,10 @@ const swiper = new Swiper('.swiper', {
     },
 
 });
+
+// copyright
+let date = new Date();  
+let res = date.getFullYear();  
+const yearElement = document.querySelector('.copyright__year');
+yearElement.innerHTML = res;
+
