@@ -7,6 +7,7 @@
 @import url('./field-stud.css');
 @import url('./partners.css');
 @import url('./footer.css');
+@import url('./events.css');
 
 * {
     margin: 0;
@@ -19,7 +20,7 @@
     /* ЦВЕТА */
     --dark-color: #201541;
     --violet-color: #680AFF;
-    --important-color: #A08EF7;
+    --important-color: rgba(160, 142, 247, 0.22);
     --gray-light-color: #F0EEF2;
     --red-color: #FF332A;
     --violet-light-color: #C6AEFF;
@@ -64,7 +65,6 @@ body {
     background-color: var(--new-bg-color);
     line-height: 140%;
     overflow-x: hidden;
-
 }
 
 a {
@@ -91,6 +91,10 @@ img {
     font-weight: 500;
 }
 
+.page-title{
+    font-size: var(--title-1-size);
+    margin-bottom: 60px;
+}
 
 @media (max-width: 940px) {
     .container {

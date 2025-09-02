@@ -26,6 +26,19 @@ const swiper = new Swiper('.swiper', {
 
 });
 
+const swiperEventsMobile = new Swiper('.swiper-events', {
+    direction: 'horizontal',
+    speed: 2000,
+    autoplay: true,
+    spaceBetween: 10,
+    
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
+    
+});
+
 // copyright
 let date = new Date();  
 let res = date.getFullYear();  
