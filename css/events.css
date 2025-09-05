@@ -1,3 +1,5 @@
+/* ВАЖНОЕ */
+
 .events-page-title{
     margin-top: 130px;
     margin-bottom: 73px !important;
@@ -58,9 +60,10 @@
     color: #fff;
     max-width: 322px;
 }
+/* ./ВАЖНОЕ */
 
 
-/* только мобильные */
+/* только мобильные (слайдер) */
 
 .section-subtitle{
     font-weight: 600;
@@ -144,6 +147,8 @@
 } 
 /* только мобильные */
 
+
+/* EVENTS ALL */
 .events__all{
     margin-bottom: 90px;
 }
@@ -276,7 +281,11 @@
     line-height: var(--lineright-110);
     color: var(--dark-color);
     margin-bottom: 76px;
-    max-width: 330px;
+    max-width: 330px; 
+}
+
+.events__all-title span{
+    color: blue;
 }
 
 .events__all-date{
@@ -310,6 +319,15 @@
     top: auto;
 }
 
+/* ./EVENTS ALL */
+
+/* EVENTS LAST */
+.events__last .section-subtitle{
+    display: block;
+    font-size: var(--title-2-size);
+}
+
+/* ./EVENTS LAST */
 @media(max-width: 1230px){
     .events__all-cards{
         display: grid;

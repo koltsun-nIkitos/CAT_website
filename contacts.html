@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="./index.html" class="header__logo">
+                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+            </a>
+
+            <nav class="header__menu" id="main-menu" aria-label="Главное меню">
+                <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">Абитуриенту</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">Студенту</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">Наша&nbsp;кафедра</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- ./header -->
+
+    <section class="contacts">
+        <div class="container">
+            <h1 class="page-title contacts__page-title">
+                Контакты
+            </h1>
+
+            <div class="contacts__info">
+                <p class="contacts__info-adress">
+                    Вознесенский пр., д. 46, каб. 452-463
+                </p>
+
+                <div class="contacts__info-tel">
+                    <p>
+                        Тел.: 
+                        <a href="tel:8(812)570-40-64" class="contacts__info-link">
+                            (812) 570-40-64
+                        </a>
+                        ,
+                        <a href="tel:8(812)945-14-72" class="contacts__info-link">
+                            (812) 945-14-72
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contacts__info-email">
+                    <p>
+                        E-mail:
+                        <a href="mailTo:iskd@sutd.ru" class="contacts__info-link">
+                            iskd@sutd.ru
+                        </a>
+                        <a href="mailTo:soshnikov@prouniver.ru" class="contacts__info-link">
+                            soshnikov@prouniver.ru
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="./index.html" class="footer-logo">
+                    <img class="footer-log" src="./img/logo-footer.svg" alt="logo digital additive technologies">
+                </a>
+
+                <div class="footer__menu">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-links">
+                            <li>
+                                <a href="#" class="footer__nav-link">
+                                    События
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__nav-link">
+                                    Абитуриенту
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__nav-link">
+                                    Студенту
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__nav-link">
+                                    Полезное
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__nav-link">
+                                    Наша Кафедра
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__nav-link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__info">
+                        <nav class="footer__socials">
+                            <a href="#" class="footer__social">
+                                <img src="./img/social/tg.png" alt="social telegram" class="footer__social-img">
+                            </a>
+                        </nav>
+
+                        <div class="footer__info-group">
+                            <a href="mailTo:soshnikovanton@yandex.ru" class="footer__info-mail">
+                                soshnikovanton@yandex.ru
+                            </a>
+                            <p class="footer__info-adress">
+                                190068, Санкт-Петербург, Вознесенский пр., д. 46, 4 этаж
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copyright">© 2015-<span class="copyright__year"></span>. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./swiper.min.js"></script>
+<script defer src="./main.js"></script>
+
+</html>

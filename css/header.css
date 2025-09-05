@@ -63,6 +63,10 @@
     opacity: 1;
 }
 
+.nav-menu__item span{
+    color: blue;
+}
+
 @media (max-width: 940px) {
 
     .nav-menu{

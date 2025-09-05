@@ -1,0 +1,18 @@
+.contacts__page-title{
+    margin-top: 130px;
+    line-height: 0.9;
+    margin-bottom: 130px;
+}
+
+.contacts__info{
+    padding-bottom: 300px;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000;
+    line-height: 1.4;
+}
+
+.contacts__info-email .contacts__info-link{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
