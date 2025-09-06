@@ -11,6 +11,7 @@
 @import url('./event.css');
 @import url('./new.css');
 @import url('./contacts.css');
+@import url('./applicant.css');
 
 * {
     margin: 0;

@@ -64,7 +64,7 @@
 }
 
 .nav-menu__item span{
-    color: blue;
+    color: green;
 }
 
 @media (max-width: 940px) {

@@ -130,7 +130,7 @@
 }
 
 .news-card__text span{
-    color: blue;
+    color: green;
 }
 
 .news-card.event{
@@ -157,7 +157,7 @@
 }
 
 .news-card.all-events-card span{
-    color: blue;
+    color: green;
 }
 
 .news-card.all-events-card:hover {

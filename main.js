@@ -39,6 +39,85 @@ const swiperEventsMobile = new Swiper('.swiper-events', {
     
 });
 
+
+// слайдер в абитуриенту
+document.addEventListener('DOMContentLoaded', function() {
+    const sliderElement = document.getElementById('applicantSlider');
+    
+    const swiperApplicant = new Swiper('.swiper-applicant', {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        direction: 'horizontal',
+        speed: 1000,
+        autoplay: false,
+        spaceBetween: 20,
+        
+        on: {
+            init: function() {
+                // После инициализации принудительно устанавливаем позицию
+                this.wrapperEl.style.transform = 'translate3d(0px, 0px, 0px)';
+            },
+            
+            touchStart: function() {
+                // При начале взаимодействия разрешаем transform
+                sliderElement.classList.add('swiper-interacting');
+            },
+            
+            touchEnd: function() {
+                // После завершения взаимодействия фиксируем позицию
+                setTimeout(() => {
+                    if (this.activeIndex === 0) {
+                        this.wrapperEl.style.transform = 'translate3d(0px, 0px, 0px)';
+                    }
+                    sliderElement.classList.remove('swiper-interacting');
+                }, this.params.speed + 50);
+            },
+            
+            slideChange: function() {
+                // После смены слайда, если это первый слайд - фиксируем позицию
+                if (this.activeIndex === 0) {
+                    setTimeout(() => {
+                        this.wrapperEl.style.transform = 'translate3d(0px, 0px, 0px)';
+                    }, this.params.speed + 50);
+                }
+            }
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+    });
+});
+
+// const swiperApplicant = new Swiper('.swiper-applicant', {
+//   // Optional parameters
+//     slidesPerView: 'auto',
+//     centeredSlides: true,
+//     initialSlide: 0,
+//     direction: 'horizontal',
+//     speed: 1000,
+//     autoplay: false, // автопроигрывание
+//     spaceBetween: 10,
+
+//     on: {
+//         init: function() {
+//             setTimeout(() => {
+//                 this.update();
+//             }, 100);
+//         }
+//     },
+
+//     // If we need pagination
+//     pagination: {
+//         el: '.swiper-pagination',
+//         type: 'bullets',
+//         clickable: true
+//     },
+
+// });
+
 // copyright
 let date = new Date();  
 let res = date.getFullYear();  

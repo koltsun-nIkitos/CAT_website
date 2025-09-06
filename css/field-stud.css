@@ -137,6 +137,10 @@
     font-weight: 500;
 }
 
+.field-stud-card--all span{
+    color: green;
+}
+
 @media (max-width: 1205px) {
     .field-stud-grid {
         grid-template-columns: repeat(9, 1fr);

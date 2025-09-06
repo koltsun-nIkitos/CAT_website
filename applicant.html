@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абитуриенту</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="./index.html" class="header__logo">
+                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+            </a>
+
+            <nav class="header__menu" id="main-menu" aria-label="Главное меню">
+                <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-menu">
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu">
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">Студенту</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="#">Наша&nbsp;кафедра</a>
+                    </li>
+                    <li class="nav-menu__item">
+                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- /.header -->
+
+    <section class="applicant-promo">
+        <div class="container">
+            <h1 class="page-title applicant__page-title">
+                Абитуриенту
+            </h1>
+
+            <div class="applicant-promo__group">
+                <a href="#" class="applicant__main-link">
+                    <p class="applicant__main-link-text">
+                        Сайт приемной 
+                        комиссии
+                    </p>
+                    <img src="./img/icons/arrow-top-right-light.svg" alt="arrow right top icon" class="applicant__main-link__img">
+                </a>
+                
+                <div class="applicant__links">
+                    <a href="#" class="applicantn__link">
+                        <img src="./img/icons/applicant-icon.svg" alt="applicant__link-img">
+                        <p class="applicant__link-text">
+                            Бакалавриат
+                        </p>
+                    </a>
+                    
+                    <a href="#" class="applicantn__link">
+                        <img src="./img/icons/applicant-icon.svg" alt="applicant__link-img">
+                        <p class="applicant__link-text">
+                            Магистратура
+                        </p>
+                    </a>
+
+                    <a href="#" class="applicantn__link">
+                        <img src="./img/icons/applicant-icon.svg" alt="applicant__link-img">
+                        <p class="applicant__link-text">
+                            Колледж
+                        </p>
+                    </a>
+
+                    <a href="#" class="applicantn__link">
+                        <img src="./img/icons/applicant-icon.svg" alt="applicant__link-img">
+                        <p class="applicant__link-text">
+                            Часто задаваемые вопросы
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aplicant-slider">
+        <div class="container">
+            <div class="swiper-applicant" id="applicantSlider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 1">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 2">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 3">
+                    </div>
+                </div>
+                
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="applicant-info">
+        <div class="container">
+            <div class="divide">
+                <h2 class="section-title">
+                    <span class="section-title--desctop">Бакалавриат <br>09.03.03</span>
+                    <span class="section-title--mobile"></span>
+                </h2>
+
+                <div class="aplicant-grid">
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Прикладная информатика в&nbsp;дизайне
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                            <li class="field-stud-tag">очно-заочное</li>
+                            <li class="field-stud-tag">заочное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Научитесь создавать удобные и стильные 
+                            интерфейсы для сайтов и мобильных приложений, 
+                            работать с CRM-системами и веб-аналитикой для 
+                            успешного старта карьеры в сфере цифрового дизайна 
+                            и управления интернет-проектами.
+                        </p>
+                    </a>
+
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Прикладной искусственный интеллект
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Самая актуальная и необходимая специальность 
+                            будущего. Научим как использовать искусственный 
+                            интеллект в самых разных областях, 
+                            так и создавать свой.
+                        </p>
+                    </a>
+
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                ИТ-технологии создания цифрового контента
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Получите одну из самых востребованных современных 
+                            профессий, освоив навыки создания и продвижения 
+                            цифрового контента, управления интернет и 
+                            медиапроектами.
+                        </p>
+                    </a>
+
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Цифровые технологии в финансах
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Научитесь использовать информационные системы и технологии 
+                            в бизнесе и станьте ключевым игроком в процессах оптимизации 
+                            работы крупной и быстроразвивающейся компании.
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+            
+
+            <div class="divide">
+                <h2 class="section-title">
+                    <span class="section-title--desctop">Магистратура <br>09.04.03</span>
+                    <span class="section-title--mobile"></span>
+                </h2>
+
+                <div class="aplicant-grid">
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Прикладная информатика в&nbsp;дизайне
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                            <li class="field-stud-tag">очно-заочное</li>
+                            <li class="field-stud-tag">заочное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Научитесь создавать удобные и стильные 
+                            интерфейсы для сайтов и мобильных приложений, 
+                            работать с CRM-системами и веб-аналитикой для 
+                            успешного старта карьеры в сфере цифрового дизайна 
+                            и управления интернет-проектами.
+                        </p>
+                    </a>
+
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Fashion Tech
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Научитесь создавать удобные и стильные 
+                            интерфейсы для сайтов и мобильных приложений, 
+                            работать с CRM-системами и веб-аналитикой для 
+                            успешного старта карьеры в сфере цифрового дизайна 
+                            и управления интернет-проектами.
+                        </p>
+                    </a>
+
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Цифровой дизайн промышленных объектов
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Получите одну из самых востребованных современных 
+                            профессий, освоив навыки создания и продвижения 
+                            цифрового контента, управления интернет и 
+                            медиапроектами.
+                        </p>
+                    </a>
+
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Цифровые технологии в финансах
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Научитесь создавать цифровые двойники, 
+                            программировать промышленных и 
+                            коллаборативных роботов, применять цифровой захват движения для 
+                            создаваемого проекта, проектировать и оптимизировать технологический 
+                            процесс выбранного направления с применением виртуальной реальности и 
+                            многому другому.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="divide">
+                <h2 class="section-title">
+                    <span class="section-title--desctop">Колледж</span>
+                    <span class="section-title--mobile">Колледж</span>
+                </h2>
+
+                <div class="aplicant-grid">
+                    <a href="#" class="field-stud-card">
+                        <div class="field-stud-card__header">
+                            <h3 class="field-stud-card__title">
+                                Название программы
+                            </h3>
+                            <div class="field-stud-card__arrow">
+                                <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                            </div>
+                        </div>
+
+                        <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            Цифровые технологии 
+                            в высокотехнологичной индустрии моды
+                        </p>
+
+                        <ul class="field-stud-tags">
+                            <li class="field-stud-tag">очное</li>
+                        </ul>
+
+                        <p class="field-stud-text">
+                            Краткое описание специальности Praesent dignissim mauris metus, nec elementum felis dapibus quis. Phasellus eu nisi orci. Nullam suscipit a elit ut congue. Proin a ipsum vel risus posuere imperdiet eu ac nisl.
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="devide">
+                <h2 class="section-title">
+                    <span class="section-title--desctop">Часто задаваемые вопросы</span>
+                    <span class="section-title--mobile">Часто задаваемые вопросы</span>
+                </h2>
+
+                <div class="accordion">
+                    
+                </div>
+            </div>
+
+
+
+
+            
+
+        </div>
+    </section>
+            
+        
+
+
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="./index.html" class="footer-logo">
+                    <img class="footer-log" src="./img/logo-footer.svg" alt="logo digital additive technologies">
+                </a>
+
+                <div class="footer__menu">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-links">
+                            <li>
+                                <a href="./events.html" class="footer__nav-link">
+                                    <span>События</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./applicant.html" class="footer__nav-link">
+                                    <span>Абитуриенту</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__nav-link">
+                                    Студенту
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__nav-link">
+                                    Полезное
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__nav-link">
+                                    Наша Кафедра
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contacts.html" class="footer__nav-link">
+                                    <span>Контакты</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="footer__info">
+                        <nav class="footer__socials">
+                            <a href="#" class="footer__social">
+                                <img src="./img/social/tg.png" alt="social telegram" class="footer__social-img">
+                            </a>
+                        </nav>
+
+                        <div class="footer__info-group">
+                            <a href="mailTo:soshnikovanton@yandex.ru" class="footer__info-mail">
+                                soshnikovanton@yandex.ru
+                            </a>
+                            <p class="footer__info-adress">
+                                190068, Санкт-Петербург, Вознесенский пр., д. 46, 4 этаж
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copyright">© 2015-<span class="copyright__year"></span>. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="./swiper.min.js"></script>
+<script defer src="./main.js"></script>
+
+</html>
