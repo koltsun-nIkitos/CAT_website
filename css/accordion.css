@@ -1,0 +1,25 @@
+.accordionjs {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordionjs .acc_section {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.accordionjs .acc_section .acc_head {
+  position: relative;
+  cursor: pointer;
+}
+
+.accordionjs .acc_section .acc_head h3 {
+  line-height: 1;
+}
+
+.accordionjs .acc_section.acc_active > .acc_content {
+  display: block;
+}

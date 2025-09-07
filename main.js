@@ -91,32 +91,45 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// const swiperApplicant = new Swiper('.swiper-applicant', {
-//   // Optional parameters
-//     slidesPerView: 'auto',
-//     centeredSlides: true,
-//     initialSlide: 0,
-//     direction: 'horizontal',
-//     speed: 1000,
-//     autoplay: false, // автопроигрывание
-//     spaceBetween: 10,
+// accordion
+jQuery(document).ready(function($){
+    $("#accordion").accordionjs();
+});
 
-//     on: {
-//         init: function() {
-//             setTimeout(() => {
-//                 this.update();
-//             }, 100);
-//         }
-//     },
 
-//     // If we need pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//         type: 'bullets',
-//         clickable: true
-//     },
+// Smooth scroll
+function smoothScrollTo(targetElement) {
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset;
+    const headerHeight = document.querySelector('header').offsetHeight;
+    
+    window.scrollTo({
+        top: offsetPosition - headerHeight - 20, // Учитываем высоту шапки
+        behavior: 'smooth'
+    });
+    
+    // Обновляем URL без перезагрузки страницы
+    history.pushState(null, null, `#${targetElement.id}`);
+}
 
-// });
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Обработка кликов по навигационным ссылкам
+    const navLinks = document.querySelectorAll('.applicant__link');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                smoothScrollTo(targetElement);
+            }
+        });
+    });
+});
+
 
 // copyright
 let date = new Date();  

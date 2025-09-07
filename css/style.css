@@ -12,6 +12,7 @@
 @import url('./new.css');
 @import url('./contacts.css');
 @import url('./applicant.css');
+@import url('./accordion.css');
 
 * {
     margin: 0;
