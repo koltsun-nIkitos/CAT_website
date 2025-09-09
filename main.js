@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // accordion
 jQuery(document).ready(function($){
     $("#accordion").accordionjs();
+    $('.templates-inner-accordion').accordionjs();
 });
 
 
@@ -114,7 +115,7 @@ function smoothScrollTo(targetElement) {
 
 document.addEventListener('DOMContentLoaded', function() {
     // 1. Обработка кликов по навигационным ссылкам
-    const navLinks = document.querySelectorAll('.applicant__link');
+    const navLinks = document.querySelectorAll('.navigation__link');
 
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {

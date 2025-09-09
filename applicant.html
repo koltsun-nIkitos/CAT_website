@@ -10,7 +10,7 @@
 
 <body>
 
-    <!-- Шапка -->
+    <!-- header -->
     <header class="header">
         <div class="container header__inner">
             <a href="./index.html" class="header__logo">
@@ -31,7 +31,7 @@
                         <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="#">Студенту</a>
+                        <a class="nav-menu__item" href="./student.html"><span>Студенту</span></a>
                     </li>
                     <li class="nav-menu__item">
                         <a class="nav-menu__item" href="#">Наша&nbsp;кафедра</a>
@@ -51,40 +51,42 @@
                 Абитуриенту
             </h1>
 
-            <div class="applicant-promo__group">
-                <a href="#" class="applicant__main-link">
-                    <p class="applicant__main-link-text">
-                        Сайт приемной 
-                        комиссии
-                    </p>
-                    <img src="./img/icons/arrow-top-right-light.svg" alt="arrow right top icon" class="applicant__main-link-img">
-                </a>
+            <div class="navigation-promo__group">
+                <div class="navigation__big-links">
+                    <a href="#" class="navigation__main-link">
+                        <p class="navigation__main-link-text">
+                            Сайт приемной 
+                            комиссии
+                        </p>
+                        <img src="./img/icons/arrow-top-right-light.svg" alt="arrow right top icon" class="navigation__main-link-img">
+                    </a>
+                </div>
                 
-                <div class="applicant__links">
-                    <a href="#bachelor" class="applicant__link">
-                        <img src="./img/icons/applicant-icon.svg" alt="applicant__link-img">
-                        <p class="applicant__link-text">
+                <div class="navigation__links">
+                    <a href="#bachelor" class="navigation__link">
+                        <img src="./img/icons/applicant-icon.svg" alt="navigationt__link-img">
+                        <p class="navigation__link-text">
                             Бакалавриат
                         </p>
                     </a>
                     
-                    <a href="#master" class="applicant__link">
-                        <img src="./img/icons/applicant-icon.svg" alt="applicant__link-img">
-                        <p class="applicant__link-text">
+                    <a href="#master" class="navigation__link">
+                        <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                        <p class="navigation__link-text">
                             Магистратура
                         </p>
                     </a>
 
-                    <a href="#college" class="applicant__link">
-                        <img src="./img/icons/applicant-icon.svg" alt="applicant__link-img">
-                        <p class="applicant__link-text">
+                    <a href="#college" class="navigation__link">
+                        <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                        <p class="navigation__link-text">
                             Колледж
                         </p>
                     </a>
 
-                    <a href="#FAQ" class="applicant__link">
-                        <img src="./img/icons/applicant-icon.svg" alt="applicant__link-img">
-                        <p class="applicant__link-text">
+                    <a href="#FAQ" class="navigation__link">
+                        <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                        <p class="navigation__link-text">
                             Часто задаваемые вопросы
                         </p>
                     </a>
@@ -119,14 +121,14 @@
     </section>
 
     <section class="applicant-info">
-        <div class="container">
+        <div class="container"> 
             <div class="divide" id="bachelor">
                 <h2 class="section-title">
                     <span class="section-title--desctop">Бакалавриат <br>09.03.03</span>
                     <span class="section-title--mobile"></span>
                 </h2>
 
-                <div class="aplicant-grid">
+                <div class="divide_grid">
                     <a href="#" class="field-stud-card">
                         <div class="field-stud-card__header">
                             <h3 class="field-stud-card__title">
@@ -246,7 +248,7 @@
                     <span class="section-title--mobile"></span>
                 </h2>
 
-                <div class="aplicant-grid">
+                <div class="divide_grid">
                     <a href="#" class="field-stud-card">
                         <div class="field-stud-card__header">
                             <h3 class="field-stud-card__title">
@@ -369,7 +371,7 @@
                     <span class="section-title--mobile"></span>
                 </h2>
 
-                <div class="aplicant-grid">
+                <div class="divide_grid">
                     <a href="#" class="field-stud-card">
                         <div class="field-stud-card__header">
                             <h3 class="field-stud-card__title">
@@ -404,121 +406,115 @@
                 </h2>
 
                 <ul id="accordion" class="applicant-accordion">
-                        <li class="accordion__item">
-                            <div class="accordion__header accordion__header accordion__header--no-padding">
-                                <h3>Связи с работодателями. Трудоустройство</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                    <li class="accordion__item">
+                        <div class="accordion__header accordion__header accordion__header--no-padding">
+                            <h3>Связи с работодателями. Трудоустройство</h3>
+                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                        </div>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                            </p>
+                        </div>
+                    </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Варианты оплаты, Возможности скидок </h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                    <li class="accordion__item">
+                        <div class="accordion__header">
+                            <h3>Варианты оплаты, Возможности скидок </h3>
+                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                        </div>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                            </p>
+                        </div>
+                    </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Льготы при поступлении</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                    <li class="accordion__item">
+                        <div class="accordion__header">
+                            <h3>Льготы при поступлении</h3>
+                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                        </div>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                            </p>
+                        </div>
+                    </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Условия перевода</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                    <li class="accordion__item">
+                        <div class="accordion__header">
+                            <h3>Условия перевода</h3>
+                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                        </div>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                            </p>
+                        </div>
+                    </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Расположение учебного корпуса</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                    <li class="accordion__item">
+                        <div class="accordion__header">
+                            <h3>Расположение учебного корпуса</h3>
+                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                        </div>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                            </p>
+                        </div>
+                    </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Техническое оснащение</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                    <li class="accordion__item">
+                        <div class="accordion__header">
+                            <h3>Техническое оснащение</h3>
+                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                        </div>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                            </p>
+                        </div>
+                    </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Практики, Стажировки </h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                    <li class="accordion__item">
+                        <div class="accordion__header">
+                            <h3>Практики, Стажировки </h3>
+                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                        </div>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                            </p>
+                        </div>
+                    </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Наличие общежития и условия</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                    <li class="accordion__item">
+                        <div class="accordion__header">
+                            <h3>Наличие общежития и условия</h3>
+                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                        </div>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                            </p>
+                        </div>
+                    </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Вступительные испытания</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
+                    <li class="accordion__item">
+                        <div class="accordion__header">
+                            <h3>Вступительные испытания</h3>
+                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                        </div>
+                        <div class="accordion__body">
+                            <p class="accordion__text">
+                                Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-
-
-
-
-            
-
         </div>
     </section>
             
@@ -548,8 +544,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer__nav-link">
-                                    Студенту
+                                <a href="./student.html" class="footer__nav-link">
+                                    <span>Студенту</span>
                                 </a>
                             </li>
                             <li>
@@ -592,6 +588,7 @@
             <p class="footer__copyright">© 2015-<span class="copyright__year"></span>. Все права защищены.</p>
         </div>
     </footer>
+    <!-- ./footer -->
 
 </body>
 

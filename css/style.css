@@ -1,4 +1,5 @@
 /* HEADER */
+/* index */
 @import url('./header.css');
 @import url('./fonts.css');
 @import url('./swiper.min.css');
@@ -7,12 +8,19 @@
 @import url('./field-stud.css');
 @import url('./partners.css');
 @import url('./footer.css');
+/* ./index */
+
+/* evets */
 @import url('./events.css');
 @import url('./event.css');
+/* ./evets */
+
 @import url('./new.css');
 @import url('./contacts.css');
 @import url('./applicant.css');
 @import url('./accordion.css');
+@import url('./stuff.css');
+@import url('./student.css');
 
 * {
     margin: 0;
@@ -100,6 +108,8 @@ img {
 .page-title{
     font-size: var(--title-1-size);
     margin-bottom: 60px;
+    line-height: 1;
+    margin-top: 130px;
 }
 
 /* События и новости */
@@ -158,6 +168,87 @@ img {
     font-size: 14px;
     color: var(--new-bg-color);
 }
+
+
+/* Абитуриенту и студенту (общее) */
+.navigation-promo__group{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    gap: 10px;
+    margin-bottom: 150px;
+}
+
+.navigation__big-links{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation__main-link{
+    font-size: var(--medium-card-size);
+    color: var(--new-bg-color);
+    background-color: var(--dark-color);
+    line-height: 1;
+    padding: 63px 88px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 50%;
+    width: 100%;
+}
+
+.navigation__main-link-img{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.navigation__links{
+    grid-column: span 8;
+}
+
+.navigation__link{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    border-bottom: 0.5px solid #9e9e9e;
+    padding-left: 47px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: var(--lineright-110);
+    color: #000;
+}
+
+.navigation__link:first-child{
+    border-top: 0.5px solid #9e9e9e;
+}
+
+
+.divide_grid{
+    grid-column: span 8;
+    grid-template-columns: repeat(8, 1fr);
+    display: grid;
+    gap: 10px;
+}
+
+.divide_grid .field-stud-card{
+    grid-column: span 4;
+    transition: all 0.6s;
+}
+
+
+.divide_grid .field-stud-card:hover{
+    color: #fff;
+    background-color: var(--violet-color);
+}
+
+/* ./Абитуриенту и студенту (общее) */
+
 /* События и новости */
 
 @media (max-width: 940px) {
