@@ -111,7 +111,7 @@
     transition: transform 0.4s ease;
 }
 
-.acc_active .accordion__header--img{
+.acc_active .accordion__header--img:first-child{
     transform: rotate(180deg);
 }
 

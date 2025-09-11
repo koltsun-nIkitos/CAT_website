@@ -98,6 +98,8 @@ jQuery(document).ready(function($){
 });
 
 
+
+
 // Smooth scroll
 function smoothScrollTo(targetElement) {
     const elementPosition = targetElement.getBoundingClientRect().top;
