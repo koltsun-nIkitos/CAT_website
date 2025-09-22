@@ -1,0 +1,124 @@
+.department_promo__group{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 100px;
+    gap: 10px;
+}
+
+.department_promo_img{
+    grid-column: span 8;
+}
+
+.department_promo_img img{
+    width: 100%;
+}
+
+.department_promo__navigation-promo__group{
+    grid-column: span 4;
+}
+
+.department_promo__navigation-promo__group .navigation__links{
+    grid-column: span 12;
+}
+
+.deparment_text_group{
+    grid-column: span 8;
+}
+
+.department_text{
+    max-width: 561px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+}
+
+.department_subtitle{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1;
+    color: var(--dark-color);
+    max-width: 903px;
+    margin-bottom: 143px;
+}
+
+.infographics{
+    margin-bottom: 104px;
+}
+
+.infographics__cards{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.infographics__card{
+    grid-column: span 4;
+    background-color: #fff;
+    padding: 30px; 
+}
+
+.infographics__card-title{
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 11px;
+}
+
+
+
+.infographics__card-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.infographics__card-group-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.infographics__card-subtitle{
+    font-weight: 500;
+    font-size: var(--medium-card-size);
+    line-height: 1;
+    color: #000;
+    max-width: 202px;
+}
+
+.infographics__card-group-header--notext .infographics__card-subtitle{
+    margin-bottom: 0;
+}
+
+.infographics__card-icon{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.infographics__card-text{
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000;
+    max-width: 256px;
+}
+
+.department_info__banner{
+    margin-bottom: 100px;
+}
+
+.department_info__banner img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 786px;
+}
+
+.department_text--important{
+    font-size: 30px;
+    line-height: var(--lineright-110);
+    color: var(--violet-color);
+    max-width: 672px;
+}

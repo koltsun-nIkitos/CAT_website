@@ -1,0 +1,182 @@
+.divide__group{
+    grid-column: span 8;
+}
+
+.devide__group__text{
+    grid-column: span 6;
+    max-width: 675px;
+}
+
+.devide__group__text .devide__group-p{
+    margin-bottom: 30px;
+}
+
+.full__screen-cards{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+    gap: 10px;
+}
+
+.full__screen__card{
+    grid-column: span 4;
+    background-color: #fff;
+    padding: 30px 17px 30px 30px;
+}
+
+.full__screen__card-title{
+    font-weight: 500;
+    font-size: var(--big-card-size);
+    line-height: var(--lineright-110);
+    margin-bottom: 35px;
+}
+
+.full__screen__card-subtitle{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    max-width: 294px;
+    margin-bottom: 9px;
+}
+
+.full__screen__card-caption{
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--violet-color);
+    margin-bottom: 93px;
+}
+
+.full__screen__card-info{
+    max-width: 440px;
+    font-size: 16px;
+}
+
+.full__screen__card-group{
+    margin-bottom: 30px;
+}
+
+/* Военкомат */
+
+.devide__group__big-card{
+    background-color: #fff;
+    padding: 49px 56px 74px 30px;
+    margin-bottom: 69px;
+}
+
+.big-card__title{
+    font-size: var(--big-card-size);
+    line-height: var(--lineright-110);
+    margin-bottom: 5px;
+}
+
+.big-card__caption{
+    font-size: 11px;
+    line-height: 1.4;
+    max-width: 640px;
+    margin-bottom: 83px;
+}
+
+.big-card__work-hours{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--dark-color);
+    line-height: var(--lineright-110);
+    margin-bottom: 53px;
+}
+
+.big-card__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-card__info-text:first-child{
+    font-size: 20px;
+    color: var(--dark-color);
+    max-width: 410px;
+}
+
+.big-card__info-text:last-child{
+    max-width: 360px;
+}
+
+.big-card__info-text .important{
+    color: var(--violet-color)
+}
+
+.devide__group-title{
+    font-size: 30px;
+    line-height: 130%;
+    font-weight: 400;
+    margin-bottom: 53px;
+    max-width: 840px;
+}
+
+/* иностранные студенты */
+
+.middle-card{
+    padding: 30px;
+    background-color: #fff;
+    max-width: 445px;
+    margin-bottom: 60px;
+}
+
+.middle-card__title{
+    font-weight: 500;
+    font-size: var(--big-card-size);
+    line-height: var(--lineright-110);
+    margin-bottom: 104px;
+}
+
+.middle-card-subtitle{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 28px;
+}
+
+.devide__group__big-card--second-template .big-card__title{
+    max-width: 830px;
+    margin-bottom: 60px;
+}
+
+.devide__group__big-card--second-template .big-card__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.devide__group__big-card--second-template .big-card__work-hours{
+    max-width: 405px;
+}
+
+.devide__group__big-card--second-template .big-card-info-name{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    color: #000;
+    max-width: 302px;
+}
+
+.devide__group__big-card--second-template .big-card-support{
+    color: var(--dark-color)
+}
+
+.devide__group__big-card--second-template .big-card__info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.devide__group__big-card--second-template .big-card__work-hours{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.devide__group__big-card--second-template .big-card__work-hours-adress{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--temnyy);
+}

@@ -1,6 +1,10 @@
 
 .header{
     position: relative;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
 }
 
 .header__inner {

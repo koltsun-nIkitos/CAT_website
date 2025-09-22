@@ -26,6 +26,10 @@
     justify-content: space-between;
 }
 
+.student-info .field-stud-card span{
+    color: green;
+}
+
 .curator__card{
     grid-column: span 4;
     display: flex;

@@ -140,3 +140,59 @@ let res = date.getFullYear();
 const yearElement = document.querySelector('.copyright__year');
 yearElement.innerHTML = res;
 
+// hyper smooth scroll
+// hyper smooth scroll с умным смещением
+const hyperLinks = document.querySelectorAll('.navigation__link--hyper');
+const OFFSET = -120; // Настройте нужное смещение
+
+hyperLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        
+        if (href && href.includes('#')) {
+            const [page, anchor] = href.split('#');
+            const isExternalPage = page && page !== window.location.pathname;
+            
+            if (isExternalPage) {
+                e.preventDefault();
+                
+                // Сохраняем данные для прокрутки
+                sessionStorage.setItem('scrollData', JSON.stringify({
+                    anchor: anchor,
+                    offset: OFFSET,
+                    timestamp: Date.now()
+                }));
+                
+                window.location.href = page;
+            }
+        }
+    });
+});
+
+// Обработка на целевой странице
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollData = sessionStorage.getItem('scrollData');
+    
+    if (scrollData) {
+        const { anchor, offset, timestamp } = JSON.parse(scrollData);
+        
+        // Проверяем что данные не старше 5 секунд
+        if (Date.now() - timestamp < 5000) {
+            setTimeout(() => {
+                const element = document.getElementById(anchor);
+                if (element) {
+                    const targetY = element.getBoundingClientRect().top + 
+                                  window.pageYOffset + 
+                                  (offset || 0);
+                    
+                    window.scrollTo({
+                        top: targetY,
+                        behavior: 'smooth'
+                    });
+                }
+                
+                sessionStorage.removeItem('scrollData');
+            }, 300);
+        }
+    }
+});
