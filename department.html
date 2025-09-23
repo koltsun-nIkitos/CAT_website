@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Полезное</title>
+    <title>Наша кафедра</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -282,7 +282,9 @@
                         
                         <div class="headDepartment__textGroup">
                             <h3 class="headDepartment-title">
-                                Антон Владимирович Сошников
+                                <p>Антон</p> 
+                                <p>Владимирович</p> 
+                                <p>Сошников</p>
                             </h3>
 
                             <p class="headDepartment-text">
@@ -300,20 +302,25 @@
                         </h2>
 
                         <form action="" class="employess_form">
-                            <input type="search" name="employess" id="employessSearch">
+                            <input type="search" 
+                                name="employess" 
+                                id="employessSearch" 
+                                class="employess_form-search"
+                                placeholder="поиск"
+                            >
 
                             <div class="employess_form-params">
                                 <nav class="employess_form-categories">
                                     <a href="#all" class="employess_form-category">Все</a>
 
-                                    <a href="#professor" class="employess_form-category">Преподаватели</a>
+                                    <a href="#professor" class="employess_form-category employess_form-category--active">Преподаватели</a>
 
                                     <a href="#administration" class="employess_form-category">Администрация</a>
                                 </nav>
 
                                 <div class="employess_form-tags">
                                     <a href="#programming" class="employess_form-tag">программирование</a>
-                                    <a href="#design" class="employess_form-tag">дизайн</a>
+                                    <a href="#design" class="employess_form-tag employess_form-tag--active">дизайн</a>
                                     <a href="#ai" class="employess_form-tag">искусственный интеллект</a>
                                     <a href="#gameDev" class="employess_form-tag">геймдев</a>
                                     <a href="#3DModeling" class="employess_form-tag">трехмерное моделирование</a>
@@ -323,7 +330,7 @@
                                     <a href="#ARVR" class="employess_form-tag">AR/VR</a>
                                 </div>
 
-                                <button type="submit">.</button>
+                                <button class="employess_form__params-button" type="submit">.</button>
                             </div>
                         </form>
                     </div>
@@ -490,7 +497,7 @@
                         </h3>
 
                         <div class="areaCards">
-                            <a href="./staff.html" class="areaCard">
+                            <a href="./staff.html" class="areaCard areaCard--first">
                                 <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
                                 <div class="areaCard__group">
                                     <p class="areaCard__title">
