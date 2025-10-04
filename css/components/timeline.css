@@ -1,0 +1,39 @@
+
+.timeline{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.timeline__item{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+}
+
+.timeline__year{
+    font-size: var(--body-size);
+    line-height: 1.4;
+    grid-column: span 1;
+}
+
+.timeline__text{
+    max-width: 564px;
+    grid-column: span 6;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.staff__info .devide_summary{
+    grid-column: 7 / span 6;
+    margin-top: 60px;
+    font-size: 24px;
+    line-height: 1.1%;
+    color: var(--violet-color);
+}
+
+.staff__info .divide__group__subjects{
+    grid-column: 7 / span 6;
+}

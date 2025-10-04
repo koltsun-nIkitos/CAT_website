@@ -1,0 +1,66 @@
+
+.divide-areasStudy{
+    display: block ;
+}
+
+.divide-areasStudy .section-title{
+    margin-bottom: 8px;
+}
+
+.area-study{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    row-gap: 48px;
+    margin-bottom: 150px;
+}
+
+.area-study__title{
+    grid-column: 5 / span 8;
+    max-width: 583px;
+    font-size: 40px;
+    line-height: var(--lineright-110);
+    text-transform: uppercase;
+    color: #000;
+}
+
+.area-cards{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    row-gap: 40px;
+    width: 100%;
+}
+
+.area-card{
+    grid-column: span 4;
+    width: 100%;
+}
+
+.area-card--first{
+    grid-column: 5 / span 4;
+}
+
+.area-card__img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.area-card__group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.area-card__title{
+    font-weight: 500;
+    font-size: var(--fio-staff-size);
+    line-height: var(--lineright-110);
+}
+
+.area-card__date{
+    font-size: 16px;
+    line-height: var(--lineright-110);
+    color: #9e9e9e;
+}

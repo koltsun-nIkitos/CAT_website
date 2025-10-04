@@ -1,0 +1,79 @@
+
+.events-all__filters{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.events-all__filter{
+    background-color: rgba(32, 21, 65, 0.14);
+    border: none;
+    padding: 6px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--dark-color)
+}
+
+.events-all__filter--active{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+
+.events-all__filter:hover{
+    background-color: var(--dark-color);
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.events-all__pagination{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.events-all__years{
+    display: flex;
+    gap: 23px;
+}
+
+.events-all__year{
+    font-size: 16px;
+    line-height: var(--lineright-110);
+    color: #adadad;
+}
+
+.events-all__year--active{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--dark-color);
+}
+
+.events-all__month{
+    display: flex;
+    align-items: center;   
+    gap: 15px; 
+}
+
+.events-all__button{
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.events-all__month{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: var(--lineright-110);
+    color: #000;
+}
+
+.events-all__button--next{
+    background: var(--violet-color);
+}
+

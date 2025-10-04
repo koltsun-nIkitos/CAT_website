@@ -1,19 +1,4 @@
-.partners{
-    margin-bottom: 200px;
-    background-color: #fff;
-    padding-bottom: 37px;
-    padding-top: 66px;
-}
 
-.partners__title{
-    margin-left: 66px;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: var(--lineright-110);
-    text-transform: uppercase;
-    color: #000;
-    margin-bottom: 67px;
-}
 
 .partners__cards{
     display: flex;
@@ -22,7 +7,7 @@
     align-items: center;
 }
 
-.partner__card{
+.partners__card{
     flex-basis: 25%;
     display: flex;
     justify-content: center;
@@ -39,7 +24,7 @@
     .partners__cards{
         justify-content: center;
     }
-    .partner__card{
+    .partners__card{
         flex-basis: 30%;
     }
 }
@@ -51,7 +36,7 @@
 }
 
 @media (max-width: 930px) {
-    .partner__card{
+    .partners__card{
         flex-basis: 45%;
     }
 }
@@ -70,7 +55,7 @@
         justify-content: center;
         gap: 20px;
     }
-    .partner__card{
+    .partners__card{
         flex-basis: 40%;
         margin-bottom: 0px;
         min-height: 166px;
@@ -83,7 +68,7 @@
         justify-content: center;
         gap: 30px;
     }
-    .partner__card{
+    .partners__card{
         flex-basis: 90%;
         margin-bottom: 0px;
         min-height: 100px;

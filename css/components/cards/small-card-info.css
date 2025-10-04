@@ -1,0 +1,20 @@
+.middle-card{
+    padding: 30px;
+    background-color: #fff;
+    max-width: 445px;
+    margin-bottom: 60px;
+}
+
+.middle-card__title{
+    font-weight: 500;
+    font-size: var(--big-card-size);
+    line-height: var(--lineright-110);
+    margin-bottom: 104px;
+}
+
+.middle-card-subtitle{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 28px;
+}

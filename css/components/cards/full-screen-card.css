@@ -1,0 +1,43 @@
+.full-screen-cards{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: span 12;
+    gap: 10px;
+}
+
+.full-screen__card{
+    grid-column: span 4;
+    background-color: #fff;
+    padding: 30px 17px 30px 30px;
+}
+
+.full-screen__card-title{
+    font-weight: 500;
+    font-size: var(--big-card-size);
+    line-height: var(--lineright-110);
+    margin-bottom: 35px;
+}
+
+.full-screen__card-subtitle{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    max-width: 294px;
+    margin-bottom: 9px;
+}
+
+.full-screen__card-caption{
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--violet-color);
+    margin-bottom: 93px;
+}
+
+.full-screen__card-info{
+    max-width: 440px;
+    font-size: 16px;
+}
+
+.full-screen__card-group{
+    margin-bottom: 30px;
+}

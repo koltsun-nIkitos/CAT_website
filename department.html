@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Кафедра цифровых и аддитивных технологий СПбГУПТД. История кафедры, сотрудники, направления обучения, научная деятельность. Заведующий - Сошников Антон Владимирович.">
+    <meta name="keywords" content="кафедра цифровых технологий, аддитивные технологии, СПбГУПТД, преподаватели, направления обучения, цифровая кафедра, высшее образование">
     <title>Наша кафедра</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -13,7 +15,7 @@
     <header class="header">
         <div class="container header__inner">
             <a href="./index.html" class="header__logo">
-                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+                <img src="./img/logo.svg" alt="Логотип кафедры цифровых технологий" class="header__logo-img">
             </a>
 
             <nav class="header__menu" id="main-menu" aria-label="Главное меню">
@@ -24,19 +26,19 @@
 
                 <ul class="nav-menu">
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                        <a class="nav-menu__link" href="./events.html"><span>События</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
+                        <a class="nav-menu__link" href="./applicant.html"><span>Абитуриенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./student.html"><span>Студенту</span></a>
+                        <a class="nav-menu__link" href="./student.html"><span>Студенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
+                        <a class="nav-menu__link" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                        <a class="nav-menu__link" href="./contacts.html"><span>Контакты</span></a>
                     </li>
                 </ul>
             </nav>
@@ -45,11 +47,16 @@
     <!-- /.header -->
 
     <main class="main-content">
-        <section class="department_promo">
+        <section class="page-header">
             <div class="container">
                 <h1 class="page-title">
                     Наша кафедра
                 </h1>
+            </div>
+        </section>
+
+        <section class="department_promo">
+            <div class="container">
 
                 <div class="department_promo__group">
                     <div class="department_promo_img">
@@ -59,35 +66,35 @@
                     <div class="navigation-promo__group department_promo__navigation-promo__group">
                         <div class="navigation__links">
                             <a href="#aboutDepartment" class="navigation__link">
-                                <img src="./img/icons/applicant-icon.svg" alt="navigationt__link-img">
+                                <img src="./img/icons/applicant-icon.svg" alt="О кафедре">
                                 <p class="navigation__link-text">
                                     О кафедре
                                 </p>
                             </a>
 
                             <a href="#historyDepartment" class="navigation__link">
-                                <img src="./img/icons/applicant-icon.svg" alt="navigationt__link-img">
+                                <img src="./img/icons/applicant-icon.svg" alt="История">
                                 <p class="navigation__link-text">
                                     История
                                 </p>
                             </a>
                             
                             <a href="#headDepartment" class="navigation__link">
-                                <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                                <img src="./img/icons/applicant-icon.svg" alt="Обращение заведующего">
                                 <p class="navigation__link-text">
                                     Обращение заведующего
                                 </p>
                             </a>
 
                             <a href="#Employees" class="navigation__link">
-                                <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                                <img src="./img/icons/applicant-icon.svg" alt="Сотрудники">
                                 <p class="navigation__link-text">
                                     Сотрудники
                                 </p>
                             </a>
 
                             <a href="#areasStudy" class="navigation__link">
-                                <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                                <img src="./img/icons/applicant-icon.svg" alt="Направления">
                                 <p class="navigation__link-text">
                                     Направления
                                 </p>
@@ -98,31 +105,34 @@
             </div>
         </section>
 
-        <section class="department_info">
+        <div class="department_info">
             <div class="container">
-                <div class="divide" id="aboutDepartment">
+                <section class="divide" id="aboutDepartment">
                     <h2 class="section-title">
                         <span class="section-title--desctop">О кафедре</span>
                         <span class="section-title--mobile"></span>
                     </h2>
 
-                    <div class="deparment_text_group">
-                        <p class="department_text">
+                    <div class="department-text-group">
+                        <p class="department-text">
                             Кафедра цифровых и аддитивных технологий <br>
                             Института информационных технологий и автоматизации <br>
                             Санкт-петербургского университета промышленный технологий и дизайна. Nullam ultricies, nibh eu fringilla dapibus, mauris ipsum accumsan velit, non faucibus eros erat eu purus. Maecenas eget nibh a metus commodo laoreet vel in metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit ligula nec posuere facilisis. Phasellus vel mollis nisl. Nullam non odio quis massa lobortis pellentesque eu a turpis. Donec vel consequat erat, eu faucibus magna. Sed pulvinar pharetra ligula. Praesent molestie lacus a lorem auctor egestas.
                         </p>
                     </div>
+                </section>
+
+
+                <div class="promo-wrapper">
+                    <h2 class="promo-wrapper__title">
+                        Ключевая фраза — мы супер!
+                        в несколько строк можно
+                    </h2>
                 </div>
 
-                <h2 class="department_subtitle">
-                    <p>Ключевая фраза — мы супер!</p>
-                    <p>в несколько строк можно</p>
-                </h2>
-
-                <div class="infographics">
+                <section class="infographics">
                     <div class="infographics__cards">
-                        <div class="infographics__card">
+                        <article class="infographics__card">
                             <h3 class="infographics__card-title">
                                 1133
                             </h3>
@@ -137,11 +147,10 @@
                                         
                                     </p>
                                 </div>
-                                
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="infographics__card">
+                        <article class="infographics__card">
                             <h3 class="infographics__card-title">
                                 >10
                             </h3>
@@ -157,9 +166,9 @@
                                 </div>
                                 
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="infographics__card">
+                        <article class="infographics__card">
                             <h3 class="infographics__card-title">
                                 6
                             </h3>
@@ -177,9 +186,9 @@
                                 
                                 <img src="./img/icons/infographic_icon1.png" alt="infographics icon" class="infographics__card-icon">
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="infographics__card">
+                        <article class="infographics__card">
                             <h3 class="infographics__card-title">
                                 
                             </h3>
@@ -197,9 +206,9 @@
                                 
                                 <img src="./img/icons/infographic_icon1.png" alt="infographics icon" class="infographics__card-icon">
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="infographics__card">
+                        <article class="infographics__card">
                             <h3 class="infographics__card-title">
                                 
                             </h3>
@@ -217,9 +226,9 @@
                                 
                                 <img src="./img/icons/infographic_icon1.png" alt="infographics icon" class="infographics__card-icon">
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="infographics__card">
+                        <article class="infographics__card">
                             <h3 class="infographics__card-title">
                                 
                             </h3>
@@ -237,48 +246,48 @@
                                 
                                 <img src="./img/icons/infographic_icon1.png" alt="infographics icon" class="infographics__card-icon">
                             </div>
-                        </div>
+                        </article>
                     </div>
-                </div>
+                </section>
             </div>
 
-            <div class="department_info__banner">
-                <img src="./img/department/banner1.png" alt="banner department img" class="depatmnt_info__banner-img">
-            </div>
+            <section class="info__banner">
+                <img src="./img/department/banner1.png" alt="banner department img" class="info__banner-img">
+            </section>
 
             <div class="container">
-                <div class="divide" id="historyDepartment">
+                <section class="divide" id="historyDepartment">
                     <h2 class="section-title">
                         <span class="section-title--desctop">История</span>
                         <span class="section-title--mobile"></span>
                     </h2>
 
-                    <div class="deparment_text_group">
-                        <p class="department_text">
+                    <div class="department-text-group">
+                        <p class="department-text">
                             Текст о истории Nullam ultricies, nibh eu fringilla dapibus, mauris ipsum accumsan velit, non faucibus eros erat eu purus. Maecenas eget nibh a metus commodo laoreet vel in metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit ligula nec posuere facilisis. Phasellus vel mollis nisl. Nullam non odio quis massa lobortis pellentesque eu a turpis. Donec vel consequat erat, eu faucibus magna. Sed pulvinar pharetra ligula. Praesent molestie lacus a lorem auctor egestas.
                         </p>
 
-                        <p class="department_text">
+                        <p class="department-text">
                             Morbi pulvinar imperdiet lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed scelerisque condimentum arcu ut cursus. Praesent dignissim mauris metus, nec elementum felis dapibus quis. Phasellus eu nisi orci. Aenean euismod felis nibh, nec mattis lacus mollis ac. Nulla facilisi. Nullam suscipit a elit ut congue. Proin a ipsum vel risus posuere imperdiet eu ac nisl
                         </p>
 
-                        <p class="department_text">
+                        <p class="department-text">
                             Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. Nam condimentum fringilla sem in aliquet. Donec ipsum nisl, condimentum et ex nec, feugiat aliquam nibh. Duis mi ipsum, finibus eu vestibulum eu, dapibus eu dolor. Proin et maximus nibh. Donec viverra scelerisque tellus, a molestie quam lacinia id. Fusce at nisl eros. Suspendisse tincidunt porta vestibulum. Morbi scelerisque tellus feugiat lacus rhoncus, in dictum turpis placerat.
                         </p>
 
-                        <p class="department_text department_text--important">
+                        <p class="department-text info__title--important">
                             Proin et maximus nibh. Donec viverra scelerisque tellus, a molestie quam lacinia id. Fusce at nisl eros. Suspendisse tincidunt porta vestibulum. Morbi scelerisque tellus feugiat lacus rhoncus, in dictum turpis placerat.
                         </p>
                     </div>
-                </div>
+                </section>
 
-                <div class="divide column-divide" id="headDepartment">
-                    <p class="quote">
+                <section class="divide column-divide" id="headDepartment">
+                    <blockquote  class="quote">
                         «Обращение заведующего Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. Nam condimentum fringilla sem in aliquet» 
-                    </p>
+                    </blockquote>
 
                     <div class="headDepartment-group">
-                        <img src="./img/department/headDepartment.png" alt="image of head department" class="headDepartment_img">
+                        <img src="./img/department/headDepartment.png" alt="Антон Владимирович Сошников - заведующий кафедрой" class="headDepartment_img">
                         
                         <div class="headDepartment__textGroup">
                             <h3 class="headDepartment-title">
@@ -292,25 +301,26 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="divide" id="Employees">
+                <section class="divide" id="Employees">
                     <div class="employess-header">
                         <h2 class="section-title">
                             <span class="section-title--desctop">Сотрудники</span>
                             <span class="section-title--mobile"></span>
                         </h2>
 
-                        <form action="" class="employess_form">
+                        <form action="" class="employess_form" aria-label="Поиск сотрудников">
                             <input type="search" 
                                 name="employess" 
                                 id="employessSearch" 
                                 class="employess_form-search"
                                 placeholder="поиск"
+                                aria-label="Поиск сотрудников"
                             >
 
                             <div class="employess_form-params">
-                                <nav class="employess_form-categories">
+                                <nav class="employess_form-categories" aria-label="Категории сотрудников">
                                     <a href="#all" class="employess_form-category">Все</a>
 
                                     <a href="#professor" class="employess_form-category employess_form-category--active">Преподаватели</a>
@@ -318,7 +328,7 @@
                                     <a href="#administration" class="employess_form-category">Администрация</a>
                                 </nav>
 
-                                <div class="employess_form-tags">
+                                <nav class="employess_form-tags" aria-label="Теги направлений">
                                     <a href="#programming" class="employess_form-tag">программирование</a>
                                     <a href="#design" class="employess_form-tag employess_form-tag--active">дизайн</a>
                                     <a href="#ai" class="employess_form-tag">искусственный интеллект</a>
@@ -328,17 +338,17 @@
                                     <a href="#photoAndVideo" class="employess_form-tag">фото и видео</a>
                                     <a href="#fashion" class="employess_form-tag">мода</a>
                                     <a href="#ARVR" class="employess_form-tag">AR/VR</a>
-                                </div>
+                                </nav>
 
-                                <button class="employess_form__params-button" type="submit">.</button>
+                                <button class="employess_form__params-button" type="submit" aria-label="Применить фильтры">.</button>
                             </div>
                         </form>
                     </div>
                     
 
-                    <div class="employess-cards">
-                        <a href="./staff.html" class="employess_card">
-                            <img src="./img/department/employess/employee1.png" alt="employee photo" class="employess_card-img">
+                    <div class="employess-cards" role="list" aria-label="Список сотрудников кафедры">
+                        <a href="./staff.html" class="employess_card" role="listitem">
+                            <img src="./img/department/employess/employee1.png" alt="Фотография Колцун Никиты Валерьевича - ассистента цифровой кафедры " class="employess_card-img">
                             
                             <div class="employess_card-title">
                                 Фамилия Имя 
@@ -481,77 +491,76 @@
                             </p>
                         </a>
                     </div>
-                </div>
+                </section>
 
-
-                <div class="divide divide-areasStudy" id="areasStudy">
+                <section class="divide divide-areasStudy" id="areasStudy">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Направления</span>
                         <span class="section-title--mobile"></span>
                     </h2>
 
-                    <div class="areaStudy">
+                    <div class="area-study">
                         <h3 class="area-study__title">
                             СФЕРА ПРОЕКТНОЙ РАБОТЫ 
                             можно в две строчки
                         </h3>
 
-                        <div class="areaCards">
-                            <a href="./staff.html" class="areaCard areaCard--first">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                        <div class="area-cards">
+                            <a href="./staff.html" class="area-card area-card--first">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
@@ -559,68 +568,68 @@
                         </div>
                     </div>
 
-                    <div class="areaStudy">
+                    <div class="area-study">
                         <h3 class="area-study__title">
                             СФЕРА ПРОЕКТНОЙ РАБОТЫ 
                             можно в две строчки
                         </h3>
 
-                        <div class="areaCards">
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                        <div class="area-cards">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
@@ -629,54 +638,54 @@
                     </div>
 
 
-                    <div class="areaStudy">
+                    <div class="area-study">
                         <h3 class="area-study__title">
                             СФЕРА ПРОЕКТНОЙ РАБОТЫ 
                             можно в две строчки
                         </h3>
 
-                        <div class="areaCards">
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                        <div class="area-cards">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
 
-                            <a href="./staff.html" class="areaCard">
-                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="areaCard__img">
-                                <div class="areaCard__group">
-                                    <p class="areaCard__title">
+                            <a href="./staff.html" class="area-card">
+                                <img src="./img/department/areasCards/staff1.png" alt="staff who's teaching it" class="area-card__img">
+                                <div class="area-card__group">
+                                    <p class="area-card__title">
                                         Фамилия Имя
                                     </p>
-                                    <p class="areaCard__date">
+                                    <p class="area-card__date">
                                         2024
                                     </p>
                                 </div>
                             </a>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
             
-        </section>
+        </div>
     </main>
     
     <!-- footer -->

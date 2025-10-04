@@ -1,0 +1,78 @@
+
+.employess-header{
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.employess_form{
+    display: flex;
+    justify-content: space-between;
+    gap: 124px;
+}
+
+.employess_form-search{
+    width: 331px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: var(--lineright-110);
+    color: var(--dark-color);
+    height: 34px;
+    padding-bottom: 8px;
+    outline: none;
+}
+
+.employess_form-params{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    max-width: 426px;
+}
+
+.employess_form-categories{
+    display: flex;
+    gap: 8px;
+}
+
+.employess_form-category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.50px solid rgba(32, 21, 65, 0.35);
+    border-radius: 15px;
+    padding: 15px 20px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    color: var(--dark-color);
+}
+
+.employess_form-category--active{
+    background: #fff;
+}
+
+.employess_form-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.employess_form-tag{
+    font-size: 16px;
+    line-height: var(--lineright-110);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--dark-color);
+}
+
+.employess_form-tag--active{
+    color: var(--red-color);
+}
+
+.employess_form__params-button{
+    visibility: hidden;
+}

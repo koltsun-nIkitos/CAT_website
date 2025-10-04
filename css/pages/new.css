@@ -1,0 +1,22 @@
+
+.new__intro{
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+    max-width: 562px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.new__content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.new__text{
+    font-size: 15px;
+    max-width: 562px;
+}
+
+

@@ -1,0 +1,35 @@
+
+.employess-cards{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    row-gap: 50px;
+    margin-bottom: 205px;
+}
+
+.employess_card{
+    grid-column: span 2;
+    width: 100%;
+}
+
+.employess_card-img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.employess_card-title{
+    font-size: var(--fio-staff-size);
+    line-height: var(--lineright-110);
+    color: #000;
+    font-weight: 500;
+    max-width: 206px;
+    margin-bottom: 5px;
+}
+
+.employess_card-text{
+    font-size: 10px;
+    line-height: var(--lineright-110);
+    color: #000;
+}

@@ -1,6 +1,3 @@
-.event{
-    padding-bottom: 200px;
-}
 
 .event__table{
     margin-bottom: 80px;
@@ -51,34 +48,4 @@
     font-size: var(--body-size);
     line-height: 1.4;
     color: #000;
-}
-
-.event__description{
-    padding-top: 95px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.event__description{
-    font-size: 20px;
-    line-height: 1.4;
-    color: #000;
-    max-width: 562px;
-}
-
-
-
-.event__description-list li{
-    margin-left: 30px;
-}
-
-.event__description-link{
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-}
-
-
-@media (max-width: 1246px) {
-    
 }

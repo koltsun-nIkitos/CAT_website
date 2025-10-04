@@ -1,0 +1,113 @@
+/* Абитуриенту и студенту (общее) */
+.navigation-promo__group{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    gap: 10px;
+    margin-bottom: 150px;
+}
+
+.navigation__big-links{
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation__main-link{
+    font-size: var(--medium-card-size);
+    color: var(--new-bg-color);
+    background-color: var(--dark-color);
+    line-height: 1;
+    padding: 63px 88px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 50%;
+    width: 100%;
+}
+
+.navigation__main-link-img{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.navigation__links{
+    grid-column: span 8;
+}
+
+.navigation__link{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    border-bottom: 0.5px solid #9e9e9e;
+    padding-left: 47px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: var(--lineright-110);
+    color: #000;
+}
+
+.navigation__link:first-child{
+    border-top: 0.5px solid #9e9e9e;
+}
+
+/* student */
+.student-promo .navigation__big-links{
+    display: grid;
+    max-height: 350px;
+    grid-template-rows: 2fr 1fr;
+    gap: 10px;
+}
+
+.student-promo .navigation__main-link:first-child{
+    background-color: var(--violet-color);
+    height: 100%;
+    font-weight: 500;
+}
+
+.student-promo .navigation__main-link:last-child{
+    background-color: var(--violet-light-color);
+    color: var(--dark-color);
+    font-weight: 500;
+    height: 100%;
+}
+
+.student-info .field-stud-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* department */
+.department_promo__group{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 100px;
+    gap: 10px;
+}
+
+.department_promo_img{
+    grid-column: span 8;
+}
+
+.department_promo_img img{
+    width: 100%;
+}
+
+.department_promo__navigation-promo__group{
+    grid-column: span 4;
+}
+
+.department_promo__navigation-promo__group .navigation__links{
+    grid-column: span 12;
+}
+
+.department-text-group{
+    grid-column: span 8;
+}
+

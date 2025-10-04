@@ -1,0 +1,16 @@
+.new__gallery{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    padding-top: 137px;
+    justify-items: center
+}
+
+.gallery-img{
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: span 3;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 72px;
+}

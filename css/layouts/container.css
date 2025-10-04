@@ -1,0 +1,26 @@
+
+.main-content{
+    padding-top: 120px;
+}
+
+.container {
+    width: 100%;
+    max-width: calc(100% - 80px); /* 40px margin с каждой стороны */
+    margin: 0 auto;
+}
+
+.useful-promo, .new, .event{
+    padding-top: 90px;
+}
+
+.field-stud{
+    margin-bottom: 200px;
+}
+
+
+@media (max-width: 940px) {
+    .container {
+        width: 100%;
+        max-width: calc(100% - 40px); 
+    }
+}

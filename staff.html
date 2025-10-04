@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сотрудник ФИО СОТРУДНИКА</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Волков Андрей Игоревич - Старший преподаватель кафедры цифровых технологий</title>
+    <meta name="description" content="Профиль сотрудника кафедры цифровых и аддитивных технологий СПбГУПТД. Информация о преподавателе, научная деятельность, публикации, контакты.">
+    <meta name="keywords" content="сотрудник кафедры, преподаватель СПбГУПТД, научный сотрудник, профессор, доцент, образование, наука">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -14,7 +16,7 @@
     <header class="header">
         <div class="container header__inner">
             <a href="./index.html" class="header__logo">
-                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+                <img src="./img/logo.svg" alt="Логотип кафедры цифровых технологий" class="header__logo-img">
             </a>
 
             <nav class="header__menu" id="main-menu" aria-label="Главное меню">
@@ -25,19 +27,19 @@
 
                 <ul class="nav-menu">
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                        <a class="nav-menu__link" href="./events.html"><span>События</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
+                        <a class="nav-menu__link" href="./applicant.html"><span>Абитуриенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./student.html"><span>Студенту</span></a>
+                        <a class="nav-menu__link" href="./student.html"><span>Студенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
+                        <a class="nav-menu__link" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                        <a class="nav-menu__link" href="./contacts.html"><span>Контакты</span></a>
                     </li>
                 </ul>
             </nav>
@@ -49,185 +51,187 @@
         <section class="staff__hero">
             <div class="container">
                 <div class="staff__hero-group">
-                    <a href="#" class="section__back-link">
-                        <span>Сотрудники</span>
-                    </a>
+                    <nav aria-label="Хлебные крошки">
+                        <a href="./student.html" class="section__back-link">
+                            <span>Сотрудники</span>
+                        </a>
+                    </nav>
 
                     <h1 class="section-title--big">
                         Волков Андрей Игоревич
                     </h1>
 
-                    <h2 class="staff-position">
+                    <p class="staff-position">
                         Старший преподаватель
-                    </h2>
+                    </p>
 
                     <div class="staff__hero__contacts">
-                        <h3 class="staff__hero__contacts-title">
+                        <h2 class="staff__hero__contacts-title">
                             Контакты
-                        </h3>
+                        </h2>
 
                         <div class="staff__hero__contacts-email">
-                            <p>E-mail:</p>
-                            <a href="mailTo: volkov@stud.ru">volkov@stud.ru</a>
+                            <p class="staff__contacts-label">E-mail:</p>
+                            <a href="mailTo: volkov@stud.ru" class="staff__contacts-link">volkov@stud.ru</a>
                         </div>
 
-                        <div class="staff__hero__contacts-adress">
-                            <p>
+                        <div class="staff__hero__contacts-address">
+                            <address>
                                 Адрес: 190068, Санкт-Петербург, Вознесенский пр., д. 46
-                            </p>
+                            </address>
                         </div>
                     </div>
                 </div>
                 
                 <div class="staff__hero-picture">
-                    <img src="./img/staff/volkovAI.png" alt="image of staff" class="staff__hero-img">
+                    <img src="./img/staff/volkovAI.png" alt="Волков Андрей Игоревич - старший преподаватель кафедры цифровых технологий" class="staff__hero-img">
                 </div>
             </div>
         </section>
 
-        <section class="staff__info">
+        <div class="staff__info">
             <div class="container">
-                <div class="divide">
+                <section class="divide">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Образование</span>
                         <span class="section-title--mobile"></span>
                     </h2>
 
-                    <div class="divide__group">
-                        <ul class="divide__group__list">
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                    <div class="staff-section__group">
+                        <ul class="timeline">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2009
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Дальневосточный государственный технический университет, специальность «Биотехнические и медицинские аппараты и системы», квалификация инженер.
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2011
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Дальневосточный федеральный университет, специальность «Антикризисное управление», квалификация экономист-менеджер.
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2023
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Повышение квалификации «Разработка заявки на грантовый конкурс: принципы, структура, методика», 72 ч., ФГБОУ ВО СПбГУПТД.
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2023
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Повышение квалификации «Технологии управления конфликтами в образовательной организации», 32 ч., ФГБОУ ВО СПбГУПТД.
                                 </p>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </section>
 
-                <div class="divide">
+                <section class="divide">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Профессиональный опыт</span>
                         <span class="section-title--mobile"></span>
                     </h2>
 
-                    <div class="divide__group">
-                        <ul class="divide__group__list">
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                    <div class="staff-section__group">
+                        <ul class="timeline">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2024 — нв
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Старший преподаватель кафедры цифровых и аддитивных технологий СПбГУПТД
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2021–2024
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Ассистент кафедры цифровых и аддитивных технологий СПбГУПТД
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2021–2022
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Руководитель отдела разработки ПО TAS Credit
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2019–2021
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Руководитель отдела разработки ПО FORZA, AsiaLog
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2019–2021
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Ведущий разработчик TAS Credit
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2018–2019
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Руководитель отдела разработки ПОIT-Wizards
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2017–2018
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Ведущий программист Дальневосточный федеральный университет
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2013–2016
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Служба в вооруженных силах Российской Федерации
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2010–2010
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Младший научный сотрудник Научно-исследовательский центр «Арктика» ДВО РАН
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-title">
+                            <li class="timeline__item">
+                                <p class="timeline__year">
                                     2010–2013
                                 </p>
-                                <p class="divide__group__item-text">
+                                <p class="timeline__text">
                                     Ассистент Дальневосточный федеральный университет
                                 </p>
                             </li>
@@ -237,44 +241,44 @@
                     <div class="devide_summary">
                         Общий стаж работы — 8 лет 11 месяцев
                     </div>
-                </div>
+                </section>
 
-                <div class="divide">
+                <section class="divide">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Преподаваемые дисциплины</span>
                         <span class="section-title--mobile"></span>
                     </h2>
 
-                    <div class="divide__group divide__group__subjects">
-                        <ul class="divide__group__list">
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-text">
+                    <div class="staff-section__group divide__group__subjects">
+                        <ul class="timeline">
+                            <li class="timeline__item">
+                                <p class="timeline__text">
                                     Системы искусственного интеллекта
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-text">
+                            <li class="timeline__item">
+                                <p class="timeline__text">
                                     Современные технологии разработки программного обспечения
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-text">
+                            <li class="timeline__item">
+                                <p class="timeline__text">
                                     Технологии создания интернет-приложений
                                 </p>
                             </li>
 
-                            <li class="divide__group__item">
-                                <p class="divide__group__item-text">
+                            <li class="timeline__item">
+                                <p class="timeline__text">
                                     Алгоритмизация и программирования на языке Python
                                 </p>
                             </li>
                         </ul>
                     </div>
-                </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
     
 
@@ -284,38 +288,38 @@
         <div class="container">
             <div class="footer__wrapper">
                 <a href="./index.html" class="footer-logo">
-                    <img class="footer-log" src="./img/logo-footer.svg" alt="logo digital additive technologies">
+                    <img class="footer-logo__img" src="./img/logo-footer.svg" alt="logo digital additive technologies">
                 </a>
 
                 <div class="footer__menu">
                     <nav class="footer__nav">
                         <ul class="footer__nav-links">
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./events.html" class="footer__nav-link">
                                     <span>События</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./applicant.html" class="footer__nav-link">
                                     <span>Абитуриенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./student.html" class="footer__nav-link">
                                     <span>Студенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./useful.html" class="footer__nav-link">
                                     <span>Полезное</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./department.html" class="footer__nav-link">
                                     <span>Наша Кафедра</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./contacts.html" class="footer__nav-link">
                                     <span>Контакты</span>
                                 </a>
@@ -331,12 +335,12 @@
                         </nav>
 
                         <div class="footer__info-group">
-                            <a href="mailTo:soshnikovanton@yandex.ru" class="footer__info-mail">
+                            <a href="mailto:soshnikovanton@yandex.ru" class="footer__info-mail">
                                 soshnikovanton@yandex.ru
                             </a>
-                            <p class="footer__info-adress">
+                            <adress class="footer__info-adress">
                                 190068, Санкт-Петербург, Вознесенский пр., д. 46, 4 этаж
-                            </p>
+                            </adress>
                         </div>
                     </div>
                 </div>

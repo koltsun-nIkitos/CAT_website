@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студенту</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Студенту - Кафедра цифровых технологий</title>
+    <meta name="description" content="Информация для студентов: расписание, полезные материалы, кураторы групп, шаблоны документов для учебной работы.">
+    <meta name="keywords" content="студентам СПбГУПТД, расписание, учебные материалы, практика, дипломные работы, сессия">
+    <link rel="stylesheet" href="./css/main.css">
+
 </head>
 
 <body>
-
     <!-- header -->
     <header class="header">
         <div class="container header__inner">
             <a href="./index.html" class="header__logo">
-                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+                <img src="./img/logo.svg" alt="Логотип кафедры цифровых технологий" class="header__logo-img">
             </a>
 
             <nav class="header__menu" id="main-menu" aria-label="Главное меню">
@@ -25,19 +27,19 @@
 
                 <ul class="nav-menu">
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                        <a class="nav-menu__link" href="./events.html"><span>События</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
+                        <a class="nav-menu__link" href="./applicant.html"><span>Абитуриенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./student.html"><span>Студенту</span></a>
+                        <a class="nav-menu__link" href="./student.html"><span>Студенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
+                        <a class="nav-menu__link" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                        <a class="nav-menu__link" href="./contacts.html"><span>Контакты</span></a>
                     </li>
                 </ul>
             </nav>
@@ -46,45 +48,49 @@
     <!-- /.header -->
     
     <main class="main-content">
-        <section class="student-promo">
+        <section class="page-header">
             <div class="container">
-                <h1 class="page-title applicant__page-title">
+                <h1 class="page-title events-page-title">
                     Студенту
                 </h1>
+            </div>
+        </section>
 
+        <section class="student-promo" aria-labelledby="student-navigation">
+            <div class="container">
                 <div class="navigation-promo__group">
                     <div class="navigation__big-links">
                         <a href="#" class="navigation__main-link">
                             <p class="navigation__main-link-text">
                                 Расписание
                             </p>
-                            <img src="./img/icons/arrow-top-right-light.svg" alt="arrow right top icon" class="navigation__main-link-img">
+                            <img src="./img/icons/arrow-top-right-light.svg" alt="Перейти к расписанию занятий" class="navigation__main-link-img">
                         </a>
                         <a href="#" class="navigation__main-link">
                             <p class="navigation__main-link-text">
                                 Счет недель
                             </p>
-                            <img src="./img/icons/arrow-down.svg" alt="arrow down icon" class="navigation__main-link-img">
+                            <img src="./img/icons/arrow-down.svg" alt="Открыть счет недель" class="navigation__main-link-img">
                         </a>
                     </div>
                     
                     <div class="navigation__links">
-                        <a href="#usefull" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigationt__link-img">
+                        <a href="#useful" class="navigation__link">
+                            <img src="./img/icons/applicant-icon.svg" alt="Полезные материалы для студентов">
                             <p class="navigation__link-text">
                                 Полезное
                             </p>
                         </a>
                         
                         <a href="#curator" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Кураторы студенческих групп">
                             <p class="navigation__link-text">
                                 Кураторы
                             </p>
                         </a>
 
                         <a href="#templates" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Шаблоны документов для учебной работы">
                             <p class="navigation__link-text">
                                 Шаблоны документов
                             </p>
@@ -96,7 +102,7 @@
 
         <div class="student-info">
             <div class="container"> 
-                <div class="divide" id="usefull">
+                <section class="divide" id="useful">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Полезное</span>
                         <span class="section-title--mobile"></span>
@@ -107,7 +113,6 @@
                             <div class="field-stud-card__header">
                                 <h3 class="field-stud-card__title">
                                     Общежитие
-                                    <span>Нажать для перехода</span>
                                 </h3>
                             </div>
 
@@ -143,7 +148,7 @@
                             </p>
                         </a>
 
-                        <a href="./useful.html#militaryRegistratin" class="field-stud-card navigation__link--hyper">
+                        <a href="./useful.html#militaryRegistration" class="field-stud-card navigation__link--hyper">
                             <div class="field-stud-card__header">
                                 <h3 class="field-stud-card__title">
                                     Военкомат
@@ -180,701 +185,704 @@
                         </a>
 
                     </div>
-                </div>
+                </section>
                 
-                <div class="divide" id="curator">
+                <section class="divide" id="curator">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Кураторы</span>
                         <span class="section-title--mobile"></span>
                     </h2>
 
                     <div class="divide_grid">
-                        <a href="#" class="curator__card">
-                            <div class="curator-picture">
-                                <img src="./img/curators/curator1.png" alt="image of curator" class="curator-img">
+                        <a href="#" class="curator-card">
+                            <div class="curator-card__picture">
+                                <img src="./img/curators/curator1.png" alt="Косарева Анастасия Николаевна - куратор" class="curator-img">
                             </div>
 
-                            <div class="curator-info">
-                                <div class="curator__card__header">
-                                    <h3 class="curator__card__title">
+                            <div class="curator-card__info">
+                                <div class="curator-card__header">
+                                    <h3 class="curator-card__title">
                                         <p>Косарева</p> 
                                         <p>Анастасия</p> 
                                         <p>Николаевна</p>
                                     </h3>
-                                    <div class="curator__card__arrow">
+                                    <div class="curator-card__arrow">
                                         <img src="./img/icons/arrow-top-right-light.svg" alt="card arrow top to right icon">
                                     </div>
                                 </div>
 
-                                <ul class="curator__card-tags">
-                                    <div class="curator__card__tags__row">
-                                        <li class="curator__card-tag">1-МД-15</li>
+                                <ul class="curator-card__tags">
+                                    <div class="curator-card__tags__row">
+                                        <li class="curator-card__tag">1-МД-15</li>
                                     </div>
-                                    <li class="curator__card-tag">2-МД-8</li>
-                                    <li class="curator__card-tag">2-МД-21</li>
+                                    <li class="curator-card__tag">2-МД-8</li>
+                                    <li class="curator-card__tag">2-МД-21</li>
                                 </ul>
                             </div>
                         </a>
 
-                        <a href="#" class="curator__card">
-                            <div class="curator-picture">
+                        <a href="#" class="curator-card">
+                            <div class="curator-card__picture">
                                 <img src="./img/curators/curator2.png" alt="image of curator" class="curator-img">
                             </div>
 
-                            <div class="curator-info">
-                                <div class="curator__card__header">
-                                    <h3 class="curator__card__title">
+                            <div class="curator-card__info">
+                                <div class="curator-card__header">
+                                    <h3 class="curator-card__title">
                                         <p>Князева</p> 
                                         <p>Ирина</p> 
                                         <p>Константиновна</p>
                                     </h3>
-                                    <div class="curator__card__arrow">
-                                        <img src="./img/icons/arrow-top-right-light.svg" alt="card arrow top to right icon">
+                                    <div class="curator-card__arrow">
+                                        <img src="./img/icons/arrow-top-right-light.svg" alt="Подробнее о кураторе">
                                     </div>
                                 </div>
 
-                                <ul class="curator__card-tags">
-                                    <div class="curator__card__tags__row">
-                                        <li class="curator__card-tag">1-МД-15</li>
+                                <ul class="curator-card__tags">
+                                    <div class="curator-card__tags__row">
+                                        <li class="curator-card__tag">1-МД-15</li>
                                     </div>
-                                    <li class="curator__card-tag">2-МД-8</li>
-                                    <li class="curator__card-tag">2-МД-21</li>
+                                    <li class="curator-card__tag">2-МД-8</li>
+                                    <li class="curator-card__tag">2-МД-21</li>
                                 </ul>
                             </div>
                         </a>
 
-                        <a href="#" class="curator__card">
-                            <div class="curator-picture">
+                        <a href="#" class="curator-card">
+                            <div class="curator-card__picture">
                                 <img src="./img/curators/curator2.png" alt="image of curator" class="curator-img">
                             </div>
 
-                            <div class="curator-info">
-                                <div class="curator__card__header">
-                                    <h3 class="curator__card__title">
+                            <div class="curator-card__info">
+                                <div class="curator-card__header">
+                                    <h3 class="curator-card__title">
                                         Колмыкова 
                                         Маргарита 
                                         Михайловна
                                     </h3>
-                                    <div class="curator__card__arrow">
+                                    <div class="curator-card__arrow">
                                         <img src="./img/icons/arrow-top-right-light.svg" alt="card arrow top to right icon">
                                     </div>
                                 </div>
 
-                                <ul class="curator__card-tags">
-                                    <div class="curator__card__tags__row">
-                                        <li class="curator__card-tag">1-МД-15</li>
+                                <ul class="curator-card__tags">
+                                    <div class="curator-card__tags__row">
+                                        <li class="curator-card__tag">1-МД-15</li>
                                     </div>
-                                    <li class="curator__card-tag">2-МД-8</li>
-                                    <li class="curator__card-tag">2-МД-21</li>
+                                    <li class="curator-card__tag">2-МД-8</li>
+                                    <li class="curator-card__tag">2-МД-21</li>
                                 </ul>
                             </div>
                         </a>
 
-                        <a href="#" class="curator__card">
-                            <div class="curator-picture">
+                        <a href="#" class="curator-card">
+                            <div class="curator-card__picture">
                                 <img src="./img/curators/curator2.png" alt="image of curator" class="curator-img">
                             </div>
 
-                            <div class="curator-info">
-                                <div class="curator__card__header">
-                                    <h3 class="curator__card__title">
+                            <div class="curator-card__info">
+                                <div class="curator-card__header">
+                                    <h3 class="curator-card__title">
                                         Славникова 
                                         Мария
                                         Александровна
                                     </h3>
-                                    <div class="curator__card__arrow">
+                                    <div class="curator-card__arrow">
                                         <img src="./img/icons/arrow-top-right-light.svg" alt="card arrow top to right icon">
                                     </div>
                                 </div>
 
-                                <ul class="curator__card-tags">
-                                    <div class="curator__card__tags__row">
-                                        <li class="curator__card-tag">1-МД-15</li>
+                                <ul class="curator-card__tags">
+                                    <div class="curator-card__tags__row">
+                                        <li class="curator-card__tag">1-МД-15</li>
                                     </div>
-                                    <li class="curator__card-tag">2-МД-8</li>
-                                    <li class="curator__card-tag">2-МД-21</li>
+                                    <li class="curator-card__tag">2-МД-8</li>
+                                    <li class="curator-card__tag">2-МД-21</li>
                                 </ul>
                             </div>
                         </a>
 
-                        <a href="#" class="curator__card">
-                            <div class="curator-picture">
+                        <a href="#" class="curator-card">
+                            <div class="curator-card__picture">
                                 <img src="./img/curators/curator2.png" alt="image of curator" class="curator-img">
                             </div>
 
-                            <div class="curator-info">
-                                <div class="curator__card__header">
-                                    <h3 class="curator__card__title">
+                            <div class="curator-card__info">
+                                <div class="curator-card__header">
+                                    <h3 class="curator-card__title">
                                         Талант 
                                         Валентина 
                                         Вадимовна
                                     </h3>
-                                    <div class="curator__card__arrow">
+                                    <div class="curator-card__arrow">
                                         <img src="./img/icons/arrow-top-right-light.svg" alt="card arrow top to right icon">
                                     </div>
                                 </div>
 
-                                <ul class="curator__card-tags">
-                                    <div class="curator__card__tags__row">
-                                        <li class="curator__card-tag">1-МД-15</li>
+                                <ul class="curator-card__tags">
+                                    <div class="curator-card__tags__row">
+                                        <li class="curator-card__tag">1-МД-15</li>
                                     </div>
-                                    <li class="curator__card-tag">2-МД-8</li>
-                                    <li class="curator__card-tag">2-МД-21</li>
+                                    <li class="curator-card__tag">2-МД-8</li>
+                                    <li class="curator-card__tag">2-МД-21</li>
                                 </ul>
                             </div>
                         </a>
 
-                        <a href="#" class="curator__card">
-                            <div class="curator-picture">
+                        <a href="#" class="curator-card">
+                            <div class="curator-card__picture">
                                 <img src="./img/curators/curator2.png" alt="image of curator" class="curator-img">
                             </div>
 
-                            <div class="curator-info">
-                                <div class="curator__card__header">
-                                    <h3 class="curator__card__title">
+                            <div class="curator-card__info">
+                                <div class="curator-card__header">
+                                    <h3 class="curator-card__title">
                                         Калугина 
                                         Наталия 
                                         Ильинична
                                     </h3>
-                                    <div class="curator__card__arrow">
+                                    <div class="curator-card__arrow">
                                         <img src="./img/icons/arrow-top-right-light.svg" alt="card arrow top to right icon">
                                     </div>
                                 </div>
 
-                                <ul class="curator__card-tags">
-                                    <div class="curator__card__tags__row">
-                                        <li class="curator__card-tag">1-МД-15</li>
+                                <ul class="curator-card__tags">
+                                    <div class="curator-card__tags__row">
+                                        <li class="curator-card__tag">1-МД-15</li>
                                     </div>
-                                    <li class="curator__card-tag">2-МД-8</li>
-                                    <li class="curator__card-tag">2-МД-21</li>
+                                    <li class="curator-card__tag">2-МД-8</li>
+                                    <li class="curator-card__tag">2-МД-21</li>
                                 </ul>
                             </div>
                         </a>
 
-                        <a href="#" class="curator__card">
-                            <div class="curator-picture">
+                        <a href="#" class="curator-card">
+                            <div class="curator-card__picture">
                                 <img src="./img/curators/curator2.png" alt="image of curator" class="curator-img">
                             </div>
 
-                            <div class="curator-info">
-                                <div class="curator__card__header">
-                                    <h3 class="curator__card__title">
+                            <div class="curator-card__info">
+                                <div class="curator-card__header">
+                                    <h3 class="curator-card__title">
                                         Волкова 
                                         Галина 
                                         Константиновна
                                     </h3>
-                                    <div class="curator__card__arrow">
+                                    <div class="curator-card__arrow">
                                         <img src="./img/icons/arrow-top-right-light.svg" alt="card arrow top to right icon">
                                     </div>
                                 </div>
 
-                                <ul class="curator__card-tags">
-                                    <div class="curator__card__tags__row">
-                                        <li class="curator__card-tag">1-МД-15</li>
+                                <ul class="curator-card__tags">
+                                    <div class="curator-card__tags__row">
+                                        <li class="curator-card__tag">1-МД-15</li>
                                     </div>
-                                    <li class="curator__card-tag">2-МД-8</li>
-                                    <li class="curator__card-tag">2-МД-21</li>
+                                    <li class="curator-card__tag">2-МД-8</li>
+                                    <li class="curator-card__tag">2-МД-21</li>
                                 </ul>
                             </div>
                         </a>
 
-                        <a href="#" class="curator__card">
-                            <div class="curator-picture">
+                        <a href="#" class="curator-card">
+                            <div class="curator-card__picture">
                                 <img src="./img/curators/curator2.png" alt="image of curator" class="curator-img">
                             </div>
 
-                            <div class="curator-info">
-                                <div class="curator__card__header">
-                                    <h3 class="curator__card__title">
+                            <div class="curator-card__info">
+                                <div class="curator-card__header">
+                                    <h3 class="curator-card__title">
                                         Шевякова
                                         Анастасия 
                                         Рустамовна
                                     </h3>
-                                    <div class="curator__card__arrow">
+                                    <div class="curator-card__arrow">
                                         <img src="./img/icons/arrow-top-right-light.svg" alt="card arrow top to right icon">
                                     </div>
                                 </div>
 
-                                <ul class="curator__card-tags">
-                                    <div class="curator__card__tags__row">
-                                        <li class="curator__card-tag">1-МД-15</li>
+                                <ul class="curator-card__tags">
+                                    <div class="curator-card__tags__row">
+                                        <li class="curator-card__tag">1-МД-15</li>
                                     </div>
-                                    <li class="curator__card-tag">2-МД-8</li>
-                                    <li class="curator__card-tag">2-МД-21</li>
+                                    <li class="curator-card__tag">2-МД-8</li>
+                                    <li class="curator-card__tag">2-МД-21</li>
                                 </ul>
                             </div>
                         </a>
                     </div>
-                </div>
+                </section>
 
-                <div class="divide" id="templates">
+                <section class="divide" id="templates">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Шаблоны документов</span>
                         <span class="section-title--mobile"></span>
                     </h2>
 
-                    <ul id="accordion" class="applicant-accordion templates-accordion">
-                        <li class="accordion__item">
-                            <div class="accordion__header accordion__header accordion__header--no-padding">
-                                <h3>Инструкции по оформлению документов</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
+                    <div class="templates-accordion-wrapper">
+                        <ul id="accordion" class="applicant-accordion templates-accordion">
+                            <li class="accordion__item">
+                                <div class="accordion__header accordion__header accordion__header--no-padding">
+                                    <h3 class="accordion__title">Инструкции по оформлению документов</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="Открыть раздел" class="accordion__header--img">
+                                </div>
 
-                            <div class="accordion__body accordion__body--inner">
+                                <div class="accordion__body accordion__body--inner">
 
-                                <ul class="applicant-accordion templates-inner-accordion">
-                                    <li class="accordion__item">
-                                        <div class="accordion__header accordion__header accordion__header--no-padding">
-                                            <h3>Инструкция №1</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" download="NII_OKR_2025.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" download="NII_OKR_2025(2).pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                    <ul class="applicant-accordion templates-inner-accordion">
+                                        <li class="accordion__item">
+                                            <div class="accordion__header accordion__header accordion__header--no-padding">
+                                                <h3>Инструкция №1</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
                                             </div>
-                                        </div>
-                                    </li>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" download="NII_OKR_2025.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" download="NII_OKR_2025(2).pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
 
-                                    <li class="accordion__item">
-                                        <div class="accordion__header">
-                                            <h3>Инструкция №2</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
+                                        </li>
 
-                                    
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Отчеты по практике </h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body accordion__body--inner">
-                                <ul class="applicant-accordion templates-inner-accordion">
-                                    <li class="accordion__item">
-                                        <div class="accordion__header accordion__header accordion__header--no-padding">
-                                            <h3>Учебная практика (ознакомительная практика)</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                        <li class="accordion__item">
+                                            <div class="accordion__header">
+                                                <h3>Инструкция №2</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
                                             </div>
-                                        </div>
-                                    </li>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
 
-                                    <li class="accordion__item">
-                                        <div class="accordion__header">
-                                            <h3>Учебная практика (научно-исследовательская работа (получение первичных навыков научно-исследовательской работы)) </h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
+                                        </li>
 
-                                    <li class="accordion__item">
-                                        <div class="accordion__header">
-                                            <h3>Учебная практика (технологическая (проектно-технологическая практика))</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
 
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                            <li class="accordion__item">
+                                <div class="accordion__header">
+                                    <h3>Отчеты по практике </h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div class="accordion__body accordion__body--inner">
+                                    <ul class="applicant-accordion templates-inner-accordion">
+                                        <li class="accordion__item">
+                                            <div class="accordion__header accordion__header accordion__header--no-padding">
+                                                <h3>Учебная практика (ознакомительная практика)</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
                                             </div>
-                                        </div>
-                                    </li>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
 
-                                    <li class="accordion__item">
-                                        <div class="accordion__header accordion__header accordion__header--no-padding">
-                                            <h3>Производственная практика (научно-исследовательская работа)</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
+                                        </li>
 
-                                    <li class="accordion__item">
-                                        <div class="accordion__header">
-                                            <h3>Производственная практика (технологическая (проектно-технологическая) практика)</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                        <li class="accordion__item">
+                                            <div class="accordion__header">
+                                                <h3>Учебная практика (научно-исследовательская работа (получение первичных навыков научно-исследовательской работы)) </h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
                                             </div>
-                                        </div>
-                                    </li>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
 
-                                    <li class="accordion__item">
-                                        <div class="accordion__header">
-                                            <h3>Производственная практика (преддипломная практика)</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                                        </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Курсовые работы</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body accordion__body--inner">
-                                <ul class="applicant-accordion templates-inner-accordion">
-                                    <li class="accordion__item">
-                                        <div class="accordion__header accordion__header accordion__header--no-padding">
-                                            <h3>Инструкция №1</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                        <li class="accordion__item">
+                                            <div class="accordion__header">
+                                                <h3>Учебная практика (технологическая (проектно-технологическая практика))</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
                                             </div>
-                                        </div>
-                                    </li>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
 
-                                    <li class="accordion__item">
-                                        <div class="accordion__header">
-                                            <h3>Инструкция №2</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                                        </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Выпускные Квалификационые работы</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body accordion__body--inner">
-                                <ul class="applicant-accordion templates-inner-accordion">
-                                    <li class="accordion__item">
-                                        <div class="accordion__header accordion__header accordion__header--no-padding">
-                                            <h3>Инструкция №1</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                        <li class="accordion__item">
+                                            <div class="accordion__header accordion__header accordion__header--no-padding">
+                                                <h3>Производственная практика (научно-исследовательская работа)</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
                                             </div>
-                                        </div>
-                                    </li>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
 
-                                    <li class="accordion__item">
-                                        <div class="accordion__header">
-                                            <h3>Инструкция №2</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                                        </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Документы для оформления практики на территории предприятия</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body accordion__body--inner">
-                                <ul class="applicant-accordion templates-inner-accordion">
-                                    <li class="accordion__item">
-                                        <div class="accordion__header accordion__header accordion__header--no-padding">
-                                            <h3>Инструкция №1</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                        <li class="accordion__item">
+                                            <div class="accordion__header">
+                                                <h3>Производственная практика (технологическая (проектно-технологическая) практика)</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
                                             </div>
-                                        </div>
-                                    </li>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
 
-                                    <li class="accordion__item">
-                                        <div class="accordion__header">
-                                            <h3>Инструкция №2</h3>
-                                            <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                                        </div>
-                                        <div class="accordion__body">
-                                            <div class="templates__download">
-                                                <ul class="templates__download-group">
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Титульный_лист_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="templates__download-item">
-                                                        <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
-                                                            <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
-                                                            <span>Задание_ПП_НИР_2025</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
-                                                    Скачать архивом
-                                                </a>
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                                        </li>
+
+                                        <li class="accordion__item">
+                                            <div class="accordion__header">
+                                                <h3>Производственная практика (преддипломная практика)</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                            </div>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="accordion__item">
+                                <div class="accordion__header">
+                                    <h3>Курсовые работы</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div class="accordion__body accordion__body--inner">
+                                    <ul class="applicant-accordion templates-inner-accordion">
+                                        <li class="accordion__item">
+                                            <div class="accordion__header accordion__header accordion__header--no-padding">
+                                                <h3>Инструкция №1</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                            </div>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="accordion__item">
+                                            <div class="accordion__header">
+                                                <h3>Инструкция №2</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                            </div>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="accordion__item">
+                                <div class="accordion__header">
+                                    <h3>Выпускные Квалификационые работы</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div class="accordion__body accordion__body--inner">
+                                    <ul class="applicant-accordion templates-inner-accordion">
+                                        <li class="accordion__item">
+                                            <div class="accordion__header accordion__header accordion__header--no-padding">
+                                                <h3>Инструкция №1</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                            </div>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="accordion__item">
+                                            <div class="accordion__header">
+                                                <h3>Инструкция №2</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                            </div>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="accordion__item">
+                                <div class="accordion__header">
+                                    <h3>Документы для оформления практики на территории предприятия</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div class="accordion__body accordion__body--inner">
+                                    <ul class="applicant-accordion templates-inner-accordion">
+                                        <li class="accordion__item">
+                                            <div class="accordion__header accordion__header accordion__header--no-padding">
+                                                <h3>Инструкция №1</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                            </div>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="accordion__item">
+                                            <div class="accordion__header">
+                                                <h3>Инструкция №2</h3>
+                                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                            </div>
+                                            <div class="accordion__body">
+                                                <div class="templates__download">
+                                                    <ul class="templates__download-group">
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Титульный_лист_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="templates__download-item">
+                                                            <a href="./documents/templates/templates_NII_OKR.pdf" class="templates__download-link">
+                                                                <img src="./img/icons/arrow-down.svg" alt="download arrow-icon">
+                                                                <span>Задание_ПП_НИР_2025</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href="./documents/templates/templates_NII_OKR.rar" download="NII_OKR_2025.rar" class="templates__download__all">
+                                                        Скачать архивом
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </section>
             </div>
         </div>
     </main>
@@ -886,38 +894,38 @@
         <div class="container">
             <div class="footer__wrapper">
                 <a href="./index.html" class="footer-logo">
-                    <img class="footer-log" src="./img/logo-footer.svg" alt="logo digital additive technologies">
+                    <img class="footer-logo__img" src="./img/logo-footer.svg" alt="logo digital additive technologies">
                 </a>
 
                 <div class="footer__menu">
                     <nav class="footer__nav">
                         <ul class="footer__nav-links">
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./events.html" class="footer__nav-link">
                                     <span>События</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./applicant.html" class="footer__nav-link">
                                     <span>Абитуриенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./student.html" class="footer__nav-link">
                                     <span>Студенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./useful.html" class="footer__nav-link">
                                     <span>Полезное</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./department.html" class="footer__nav-link">
                                     <span>Наша Кафедра</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./contacts.html" class="footer__nav-link">
                                     <span>Контакты</span>
                                 </a>
@@ -933,12 +941,12 @@
                         </nav>
 
                         <div class="footer__info-group">
-                            <a href="mailTo:soshnikovanton@yandex.ru" class="footer__info-mail">
+                            <a href="mailto:soshnikovanton@yandex.ru" class="footer__info-mail">
                                 soshnikovanton@yandex.ru
                             </a>
-                            <p class="footer__info-adress">
+                            <adress class="footer__info-adress">
                                 190068, Санкт-Петербург, Вознесенский пр., д. 46, 4 этаж
-                            </p>
+                            </adress>
                         </div>
                     </div>
                 </div>

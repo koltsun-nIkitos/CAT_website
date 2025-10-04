@@ -1,0 +1,44 @@
+
+.devide__group__big-card--second-template .big-card__title{
+    max-width: 830px;
+    margin-bottom: 60px;
+}
+
+.devide__group__big-card--second-template .big-card__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.devide__group__big-card--second-template .big-card__work-hours{
+    max-width: 405px;
+}
+
+.devide__group__big-card--second-template .big-card-info-name{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    color: #000;
+    max-width: 302px;
+}
+
+.devide__group__big-card--second-template .big-card-support{
+    color: var(--dark-color)
+}
+
+.devide__group__big-card--second-template .big-card__info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.devide__group__big-card--second-template .big-card__work-hours{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.devide__group__big-card--second-template .big-card__work-hours-adress{
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--temnyy);
+}

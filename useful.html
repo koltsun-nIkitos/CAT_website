@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Полезное</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="Полезная информация для студентов: общежития, стипендии, военкомат, поддержка иностранных студентов и доступная среда. Контакты и подробные сведения о студенческой жизни.">
+    <meta name="keywords" content="общежития СПбГУПТД, стипендии, военкомат, иностранные студенты, доступная среда, социальная поддержка">
+    <link rel="stylesheet" href="./css//main.css">
 </head>
 
 <body>
@@ -13,7 +15,7 @@
     <header class="header">
         <div class="container header__inner">
             <a href="./index.html" class="header__logo">
-                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+                <img src="./img/logo.svg" alt="Логотип кафедры цифровых технологий" class="header__logo-img">
             </a>
 
             <nav class="header__menu" id="main-menu" aria-label="Главное меню">
@@ -24,19 +26,19 @@
 
                 <ul class="nav-menu">
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                        <a class="nav-menu__link" href="./events.html"><span>События</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
+                        <a class="nav-menu__link" href="./applicant.html"><span>Абитуриенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./student.html"><span>Студенту</span></a>
+                        <a class="nav-menu__link" href="./student.html"><span>Студенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
+                        <a class="nav-menu__link" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                        <a class="nav-menu__link" href="./contacts.html"><span>Контакты</span></a>
                     </li>
                 </ul>
             </nav>
@@ -44,12 +46,16 @@
     </header>
     <!-- /.header -->
 
-    <main class="main-content">
+    <main class="main-content">            
+
         <section class="useful-promo">
             <div class="container">
-                <a href="./student.html" class="section__back-link">
-                    <span>Студенту</span>
-                </a>
+                <nav aria-label="Хлебные крошки">
+                    <a href="./student.html" class="section__back-link">
+                        <span>Студенту</span>
+                    </a>
+                </nav>
+                
 
                 <div class="navigation-promo__group">
                     <div class="navigation__big-links">
@@ -60,42 +66,42 @@
                     
                     <div class="navigation__links">
                         <a href="#dormitory" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigationt__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Общежития">
                             <p class="navigation__link-text">
                                 Общежития
                             </p>
                         </a>
                         
                         <a href="#grants" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Стипендия и соц поддержка">
                             <p class="navigation__link-text">
                                 Стипендия и соц поддержка
                             </p>
                         </a>
 
                         <a href="#rectorate" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Директорат ИИТА">
                             <p class="navigation__link-text">
                                 Директорат ИИТА
                             </p>
                         </a>
 
                         <a href="#militaryRegistratin" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Военкомат">
                             <p class="navigation__link-text">
                                 Военкомат
                             </p>
                         </a>
 
                         <a href="#foreignStudents" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Иностранные студенты">
                             <p class="navigation__link-text">
                                 Иностранные студенты
                             </p>
                         </a>
 
                         <a href="#accessibleEnvironment" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Доступная среда">
                             <p class="navigation__link-text">
                                 Доступная среда
                             </p>
@@ -107,7 +113,7 @@
 
         <div class="useful-info">
             <div class="container"> 
-                <div class="divide" id="dormitory">
+                <section class="divide" id="dormitory">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Общежитие</span>
                         <span class="section-title--mobile"></span>
@@ -130,172 +136,172 @@
                         </div>
                     </div>
 
-                    <div class="full__screen-cards">
-                        <div class="full__screen__card">
-                            <h3 class="full__screen__card-title">
+                    <div class="full-screen-cards">
+                        <article class="full-screen__card">
+                            <h3 class="full-screen__card-title">
                                 Общежитие № 1
                             </h3>
 
-                            <p class="full__screen__card-subtitle">
+                            <address class="full-screen__card-subtitle">
                                 ул. Руднева, д. 6, 
                                 ст. метро «Озерки»
-                            </p>
+                            </address>
 
-                            <p class="full__screen__card-caption">
+                            <p class="full-screen__card-caption">
                                 телефон: 
                                 <a href="tel:8812-599-80-14">(812) 599-80-14</a>
                             </p>
 
-                            <div class="full__screen__card-info">
-                                <div class="full__screen__card-group">
+                            <div class="full-screen__card-info">
+                                <div class="full-screen__card-group">
                                     <p>Заведующая общежитием: </p>
                                     <p>Григорьева Марина Дмитриевна.</p>
                                 </div>
 
-                                <p class="full__screen__card-text">
+                                <p class="full-screen__card-text">
                                     Как добраться: ст. метро «Озерки», общественный транспорт: автобус №272, трамвай №9, №20, №55.
                                 </p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="full__screen__card">
-                            <h3 class="full__screen__card-title">
+                        <article class="full-screen__card">
+                            <h3 class="full-screen__card-title">
                                 Общежитие № 2
                             </h3>
 
-                            <p class="full__screen__card-subtitle">
+                            <adress class="full-screen__card-subtitle">
                                 ул. Руднева, д. 6, 
                                 ст. метро «Озерки»
-                            </p>
+                            </adress>
 
-                            <p class="full__screen__card-caption">
+                            <p class="full-screen__card-caption">
                                 телефон: 
                                 <a href="tel:8812-599-80-14">(812) 599-80-14</a>
                             </p>
 
-                            <div class="full__screen__card-info">
-                                <div class="full__screen__card-group">
+                            <div class="full-screen__card-info">
+                                <div class="full-screen__card-group">
                                     <p>Заведующая общежитием: </p>
                                     <p>Григорьева Марина Дмитриевна.</p>
                                 </div>
 
-                                <p class="full__screen__card-text">
+                                <p class="full-screen__card-text">
                                     Как добраться: ст. метро «Озерки», общественный транспорт: автобус №272, трамвай №9, №20, №55.
                                 </p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="full__screen__card">
-                            <h3 class="full__screen__card-title">
+                        <article class="full-screen__card">
+                            <h3 class="full-screen__card-title">
                                 Общежитие № 3
                             </h3>
 
-                            <p class="full__screen__card-subtitle">
+                            <address class="full-screen__card-subtitle">
                                 ул. Руднева, д. 6, 
                                 ст. метро «Озерки»
-                            </p>
+                            </address>
 
-                            <p class="full__screen__card-caption">
+                            <p class="full-screen__card-caption">
                                 телефон: 
                                 <a href="tel:8812-599-80-14">(812) 599-80-14</a>
                             </p>
 
-                            <div class="full__screen__card-info">
-                                <div class="full__screen__card-group">
+                            <div class="full-screen__card-info">
+                                <div class="full-screen__card-group">
                                     <p>Заведующая общежитием: </p>
                                     <p>Григорьева Марина Дмитриевна.</p>
                                 </div>
 
-                                <p class="full__screen__card-text">
+                                <p class="full-screen__card-text">
                                     Как добраться: ст. метро «Озерки», общественный транспорт: автобус №272, трамвай №9, №20, №55.
                                 </p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="full__screen__card">
-                            <h3 class="full__screen__card-title">
+                        <article class="full-screen__card">
+                            <h3 class="full-screen__card-title">
                                 Общежитие № 4
                             </h3>
 
-                            <p class="full__screen__card-subtitle">
+                            <address class="full-screen__card-subtitle">
                                 ул. Руднева, д. 6, 
                                 ст. метро «Озерки»
-                            </p>
+                            </address>
 
-                            <p class="full__screen__card-caption">
+                            <p class="full-screen__card-caption">
                                 телефон: 
                                 <a href="tel:8812-599-80-14">(812) 599-80-14</a>
                             </p>
 
-                            <div class="full__screen__card-info">
-                                <div class="full__screen__card-group">
+                            <div class="full-screen__card-info">
+                                <div class="full-screen__card-group">
                                     <p>Заведующая общежитием: </p>
                                     <p>Григорьева Марина Дмитриевна.</p>
                                 </div>
 
-                                <p class="full__screen__card-text">
+                                <p class="full-screen__card-text">
                                     Как добраться: ст. метро «Озерки», общественный транспорт: автобус №272, трамвай №9, №20, №55.
                                 </p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="full__screen__card">
-                            <h3 class="full__screen__card-title">
+                        <article class="full-screen__card">
+                            <h3 class="full-screen__card-title">
                                 Общежитие № 5
                             </h3>
 
-                            <p class="full__screen__card-subtitle">
+                            <address class="full-screen__card-subtitle">
                                 ул. Руднева, д. 6, 
                                 ст. метро «Озерки»
-                            </p>
+                            </address>
 
-                            <p class="full__screen__card-caption">
+                            <p class="full-screen__card-caption">
                                 телефон: 
                                 <a href="tel:8812-599-80-14">(812) 599-80-14</a>
                             </p>
 
-                            <div class="full__screen__card-info">
-                                <div class="full__screen__card-group">
+                            <div class="full-screen__card-info">
+                                <div class="full-screen__card-group">
                                     <p>Заведующая общежитием: </p>
                                     <p>Григорьева Марина Дмитриевна.</p>
                                 </div>
 
-                                <p class="full__screen__card-text">
+                                <p class="full-screen__card-text">
                                     Как добраться: ст. метро «Озерки», общественный транспорт: автобус №272, трамвай №9, №20, №55.
                                 </p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="full__screen__card">
-                            <h3 class="full__screen__card-title">
+                        <article class="full-screen__card">
+                            <h3 class="full-screen__card-title">
                                 Общежитие № 6
                             </h3>
 
-                            <p class="full__screen__card-subtitle">
+                            <address class="full-screen__card-subtitle">
                                 ул. Руднева, д. 6, 
                                 ст. метро «Озерки»
-                            </p>
+                            </address>
 
-                            <p class="full__screen__card-caption">
+                            <p class="full-screen__card-caption">
                                 телефон: 
                                 <a href="tel:8812-599-80-14">(812) 599-80-14</a>
                             </p>
 
-                            <div class="full__screen__card-info">
-                                <div class="full__screen__card-group">
+                            <div class="full-screen__card-info">
+                                <div class="full-screen__card-group">
                                     <p>Заведующая общежитием: </p>
                                     <p>Григорьева Марина Дмитриевна.</p>
                                 </div>
 
-                                <p class="full__screen__card-text">
+                                <p class="full-screen__card-text">
                                     Как добраться: ст. метро «Озерки», общественный транспорт: автобус №272, трамвай №9, №20, №55.
                                 </p>
                             </div>
-                        </div>
+                        </article>
                     </div>
-                </div>
+                </section>
 
-                <div class="divide" id="grants">
+                <section class="divide" id="grants">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Стипендия и соц поддержка</span>
                         <span class="section-title--mobile"></span>
@@ -304,9 +310,9 @@
                     <div class="divide_grid">
 
                     </div>
-                </div>
+                </section>
 
-                <div class="divide" id="rectorate">
+                <section class="divide" id="rectorate">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Директорат</span>
                         <span class="section-title--mobile"></span>
@@ -315,9 +321,9 @@
                     <div class="divide_grid">
 
                     </div>
-                </div>
+                </section>
 
-                <div class="divide" id="militaryRegistratin">
+                <section class="divide" id="militaryRegistration">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Военкомат</span>
                         <span class="section-title--mobile"></span>
@@ -426,9 +432,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="divide" id="foreignStudents">
+                <section class="divide" id="foreignStudents">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Иностранные студенты</span>
                         <span class="section-title--mobile"></span>
@@ -479,9 +485,9 @@
                         </div>
                         
                     </div>
-                </div>
+                </section>
 
-                <div class="divide" id="accessibleEnvironment">
+                <section class="divide" id="accessibleEnvironment">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Доступная среда</span>
                         <span class="section-title--mobile"></span>
@@ -544,7 +550,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
 
 
@@ -556,38 +562,38 @@
         <div class="container">
             <div class="footer__wrapper">
                 <a href="./index.html" class="footer-logo">
-                    <img class="footer-log" src="./img/logo-footer.svg" alt="logo digital additive technologies">
+                    <img class="footer-logo__img" src="./img/logo-footer.svg" alt="logo digital additive technologies">
                 </a>
 
                 <div class="footer__menu">
                     <nav class="footer__nav">
                         <ul class="footer__nav-links">
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./events.html" class="footer__nav-link">
                                     <span>События</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./applicant.html" class="footer__nav-link">
                                     <span>Абитуриенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./student.html" class="footer__nav-link">
                                     <span>Студенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./useful.html" class="footer__nav-link">
                                     <span>Полезное</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./department.html" class="footer__nav-link">
                                     <span>Наша Кафедра</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./contacts.html" class="footer__nav-link">
                                     <span>Контакты</span>
                                 </a>
@@ -603,12 +609,12 @@
                         </nav>
 
                         <div class="footer__info-group">
-                            <a href="mailTo:soshnikovanton@yandex.ru" class="footer__info-mail">
+                            <a href="mailto:soshnikovanton@yandex.ru" class="footer__info-mail">
                                 soshnikovanton@yandex.ru
                             </a>
-                            <p class="footer__info-adress">
+                            <adress class="footer__info-adress">
                                 190068, Санкт-Петербург, Вознесенский пр., д. 46, 4 этаж
-                            </p>
+                            </adress>
                         </div>
                     </div>
                 </div>
@@ -618,7 +624,6 @@
         </div>
     </footer>
     <!-- ./footer -->
-
 </body>
 
 <script src="./js/jquery.min.js"></script>

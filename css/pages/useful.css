@@ -1,0 +1,19 @@
+.divide__group{
+    grid-column: span 8;
+}
+
+.devide__group__text{
+    grid-column: span 6;
+    max-width: 675px;
+}
+
+.devide__group__text .devide__group-p{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* иностранные студенты */
+

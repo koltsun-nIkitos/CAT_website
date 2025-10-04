@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Абитуриенту</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Абитуриенту - Кафедра цифровых технологий</title>
+    <meta name="description" content="Информация для абитуриентов: бакалавриат, магистратура, колледж. Программы обучения, вступительные испытания, часто задаваемые вопросы.">
+    <meta name="keywords" content="поступление в СПбГУПТД, абитуриенту, вступительные экзамены, направления подготовки, бюджетные места">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-
     <!-- header -->
     <header class="header">
         <div class="container header__inner">
             <a href="./index.html" class="header__logo">
-                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+                <img src="./img/logo.svg" alt="Логотип кафедры цифровых технологий" class="header__logo-img">
             </a>
 
             <nav class="header__menu" id="main-menu" aria-label="Главное меню">
@@ -25,19 +26,19 @@
 
                 <ul class="nav-menu">
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                        <a class="nav-menu__link" href="./events.html"><span>События</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
+                        <a class="nav-menu__link" href="./applicant.html"><span>Абитуриенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./student.html"><span>Студенту</span></a>
+                        <a class="nav-menu__link" href="./student.html"><span>Студенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
+                        <a class="nav-menu__link" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                        <a class="nav-menu__link" href="./contacts.html"><span>Контакты</span></a>
                     </li>
                 </ul>
             </nav>
@@ -46,11 +47,16 @@
     <!-- /.header -->
 
     <main class="main-content">
-        <section class="applicant-promo">
+        <section class="page-header">
             <div class="container">
                 <h1 class="page-title applicant__page-title">
                     Абитуриенту
                 </h1>
+            </div>
+        </section>
+
+        <section class="applicant-promo">
+            <div class="container">
 
                 <div class="navigation-promo__group">
                     <div class="navigation__big-links">
@@ -59,34 +65,34 @@
                                 Сайт приемной 
                                 комиссии
                             </p>
-                            <img src="./img/icons/arrow-top-right-light.svg" alt="arrow right top icon" class="navigation__main-link-img">
+                            <img src="./img/icons/arrow-top-right-light.svg" alt="Перейти на сайт приемной комиссии" class="navigation__main-link-img">
                         </a>
                     </div>
                     
                     <div class="navigation__links">
                         <a href="#bachelor" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigationt__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Бакалавриат">
                             <p class="navigation__link-text">
                                 Бакалавриат
                             </p>
                         </a>
                         
                         <a href="#master" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Магистратура">
                             <p class="navigation__link-text">
                                 Магистратура
                             </p>
                         </a>
 
                         <a href="#college" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Колледж">
                             <p class="navigation__link-text">
                                 Колледж
                             </p>
                         </a>
 
                         <a href="#FAQ" class="navigation__link">
-                            <img src="./img/icons/applicant-icon.svg" alt="navigation__link-img">
+                            <img src="./img/icons/applicant-icon.svg" alt="Часто задаваемые вопросы">
                             <p class="navigation__link-text">
                                 Часто задаваемые вопросы
                             </p>
@@ -96,22 +102,22 @@
             </div>
         </section>
 
-        <section class="aplicant-slider">
+        <section class="aplicant-slider" aria-label="Галерея изображений">
             <div class="container">
                 <div class="swiper-applicant" id="applicantSlider">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 1">
+                            <img src="./img/slider/slide1.jpg" class="applicant-slider__img" alt="Учебный процесс на кафедре цифровых технологий">
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 2">
+                            <img src="./img/slider/slide1.jpg" class="applicant-slider__img" alt="Лаборатории и оборудование кафедры">
                         </div>
 
                         <div class="swiper-slide">
-                            <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 3">
+                            <img src="./img/slider/slide1.jpg" class="applicant-slider__img" alt="Студенческие проекты и достижения">
                         </div>
                     </div>
                     
@@ -121,9 +127,9 @@
             </div>
         </section>
 
-        <section class="applicant-info">
+        <div class="applicant-info">
             <div class="container"> 
-                <div class="divide" id="bachelor">
+                <section class="divide" id="bachelor">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Бакалавриат <br>09.03.03</span>
                         <span class="section-title--mobile"></span>
@@ -136,11 +142,11 @@
                                     Прикладная информатика в&nbsp;дизайне
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Подробнее о программе Прикладная информатика в дизайне">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -166,11 +172,11 @@
                                     Прикладной искусственный интеллект
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Подробнее о программе Прикладной искусственный интеллект">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -193,11 +199,11 @@
                                     ИТ-технологии создания цифрового контента
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Подробнее о программе ИТ-технологии создания цифрового контента">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -220,11 +226,11 @@
                                     Цифровые технологии в финансах
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Подробнее о программе Цифровые технологии в финансах">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -241,9 +247,9 @@
                         </a>
 
                     </div>
-                </div>
+                </section>
                 
-                <div class="divide" id="master">
+                <section class="divide" id="master">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Магистратура <br>09.04.03</span>
                         <span class="section-title--mobile"></span>
@@ -256,11 +262,11 @@
                                     Прикладная информатика в&nbsp;дизайне
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Подробнее о программе Прикладная информатика в дизайне">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -286,7 +292,7 @@
                                     Fashion Tech
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Подробнее о программе Fashion Tech">
                                 </div>
                             </div>
 
@@ -314,11 +320,11 @@
                                     Цифровой дизайн промышленных объектов
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Подробнее о программе Цифровой дизайн промышленных объектов">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -341,11 +347,11 @@
                                     Цифровые технологии в финансах
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Подробнее о программе Цифровые технологии в финансах">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -364,9 +370,9 @@
                             </p>
                         </a>
                     </div>
-                </div>
+                </section>
 
-                <div class="divide" id="college">
+                <section class="divide" id="college">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Колледж</span>
                         <span class="section-title--mobile"></span>
@@ -379,11 +385,11 @@
                                     Название программы
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Подробнее о программе колледжа">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -398,126 +404,157 @@
                         </a>
 
                     </div>
-                </div>
+                </section>
 
-                <div class="divide" id="FAQ">
+                <section class="divide" id="FAQ">
                     <h2 class="section-title">
                         <span class="section-title--desctop">Часто задаваемые вопросы</span>
                         <span class="section-title--mobile"></span>
                     </h2>
 
-                    <ul id="accordion" class="applicant-accordion">
-                        <li class="accordion__item">
-                            <div class="accordion__header accordion__header accordion__header--no-padding">
-                                <h3>Связи с работодателями. Трудоустройство</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                    <div class="applicant-accordion-wrapper">
+                        <ul id="accordion" class="applicant-accordion">
+                            <li class="accordion__item">
+                                <div 
+                                    class="accordion__header accordion__header accordion__header--no-padding"
+                                    aria-expanded="false" 
+                                    aria-controls="faq-1"
+                                >
+                                    <h3 class="accordion__title">Связи с работодателями. Трудоустройство</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="Открыть ответ" class="accordion__header--img">
+                                </div>
+                                <div id="faq-1" aria-hidden="true" class="accordion__body">
+                                    <p class="accordion__text">
+                                        Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Варианты оплаты, Возможности скидок </h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                            <li class="accordion__item">
+                                <div class="accordion__header"  
+                                    aria-expanded="false" 
+                                    aria-controls="faq-2"
+                                >
+                                    <h3>Варианты оплаты, Возможности скидок </h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div id="faq-2" aria-hidden="true" class="accordion__body">
+                                    <p class="accordion__text">
+                                        Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Льготы при поступлении</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                            <li class="accordion__item">
+                                <div class="accordion__header"
+                                    aria-expanded="false" 
+                                    aria-controls="faq-3"
+                                >
+                                    <h3>Льготы при поступлении</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div id="faq-3" aria-hidden="true" class="accordion__body">
+                                    <p class="accordion__text">
+                                        Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Условия перевода</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                            <li class="accordion__item">
+                                <div class="accordion__header"
+                                    aria-expanded="false" 
+                                    aria-controls="faq-4"
+                                >
+                                    <h3>Условия перевода</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div id="faq-4" aria-hidden="true" class="accordion__body">
+                                    <p class="accordion__text">
+                                        Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Расположение учебного корпуса</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                            <li class="accordion__item">
+                                <div class="accordion__header"
+                                    aria-expanded="false" 
+                                    aria-controls="faq-5"
+                                >
+                                    <h3>Расположение учебного корпуса</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div id="faq-5" aria-hidden="true" class="accordion__body">
+                                    <p class="accordion__text">
+                                        Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Техническое оснащение</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                            <li class="accordion__item">
+                                <div class="accordion__header"
+                                    aria-expanded="false" 
+                                    aria-controls="faq-6"
+                                >
+                                    <h3>Техническое оснащение</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div id="faq-6" aria-hidden="true" class="accordion__body">
+                                    <p class="accordion__text">
+                                        Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Практики, Стажировки </h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                            <li class="accordion__item">
+                                <div class="accordion__header"
+                                    aria-expanded="false" 
+                                    aria-controls="faq-7"
+                                >
+                                    <h3>Практики, Стажировки </h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div id="faq-7" aria-hidden="true" class="accordion__body">
+                                    <p class="accordion__text">
+                                        Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Наличие общежития и условия</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
+                            <li class="accordion__item">
+                                <div class="accordion__header"
+                                    aria-expanded="false" 
+                                    aria-controls="faq-8"
+                                >
+                                    <h3>Наличие общежития и условия</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div id="faq-8" aria-hidden="true" class="accordion__body">
+                                    <p class="accordion__text">
+                                        Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                                    </p>
+                                </div>
+                            </li>
 
-                        <li class="accordion__item">
-                            <div class="accordion__header">
-                                <h3>Вступительные испытания</h3>
-                                <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
-                            </div>
-                            <div class="accordion__body">
-                                <p class="accordion__text">
-                                    Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                            <li class="accordion__item">
+                                <div class="accordion__header"
+                                    aria-expanded="false" 
+                                    aria-controls="faq-9"
+                                >
+                                    <h3>Вступительные испытания</h3>
+                                    <img src="./img/icons/accordion-icon-open.svg" alt="accordion icon open close" class="accordion__header--img">
+                                </div>
+                                <div id="faq-9" aria-hidden="true" class="accordion__body">
+                                    <p class="accordion__text">
+                                        Curabitur tempus elementum tortor vitae sollicitudin. Aliquam nec nunc eleifend, sagittis mi in, consectetur eros. Donec imperdiet commodo fermentum. Curabitur venenatis, lacus porttitor ullamcorper efficitur, lorem est gravida sapien, quis viverra quam nibh ut risus. Mauris tincidunt elit ipsum, facilisis tristique libero porta aliquet. 
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </section>
             </div>
-        </section>
+        </div>
     </main>
 
     
@@ -526,38 +563,38 @@
         <div class="container">
             <div class="footer__wrapper">
                 <a href="./index.html" class="footer-logo">
-                    <img class="footer-log" src="./img/logo-footer.svg" alt="logo digital additive technologies">
+                    <img class="footer-logo__img" src="./img/logo-footer.svg" alt="logo digital additive technologies">
                 </a>
 
                 <div class="footer__menu">
                     <nav class="footer__nav">
                         <ul class="footer__nav-links">
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./events.html" class="footer__nav-link">
                                     <span>События</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./applicant.html" class="footer__nav-link">
                                     <span>Абитуриенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./student.html" class="footer__nav-link">
                                     <span>Студенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./useful.html" class="footer__nav-link">
                                     <span>Полезное</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./department.html" class="footer__nav-link">
                                     <span>Наша Кафедра</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./contacts.html" class="footer__nav-link">
                                     <span>Контакты</span>
                                 </a>
@@ -573,12 +610,12 @@
                         </nav>
 
                         <div class="footer__info-group">
-                            <a href="mailTo:soshnikovanton@yandex.ru" class="footer__info-mail">
+                            <a href="mailto:soshnikovanton@yandex.ru" class="footer__info-mail">
                                 soshnikovanton@yandex.ru
                             </a>
-                            <p class="footer__info-adress">
+                            <adress class="footer__info-adress">
                                 190068, Санкт-Петербург, Вознесенский пр., д. 46, 4 этаж
-                            </p>
+                            </adress>
                         </div>
                     </div>
                 </div>

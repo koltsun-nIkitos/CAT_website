@@ -1,0 +1,115 @@
+/* GENERAL */
+    @import url('./base/base.css');
+    @import url('./base/fonts.css');
+    @import url('./base/swiper.min.css');
+    @import url('./base/accordion.css');
+    
+
+    /* header */
+    @import url('./components/header.css');
+    /* footer */
+    @import url('./components/footer.css');
+
+
+    /* ЗАГОЛОВКИ */
+    @import url('./components/titles/page-title.css');
+    @import url('./components/titles/promo-title.css');
+    @import url('./components/titles/page-subtitle.css');
+    @import url('./components/titles/section-title.css');
+    @import url('./components/titles/info-title.css');
+    @import url('./components/titles/info-important-title.css');
+    /* ./ЗАГОЛОВКИ */
+
+     /* СЕТКИ и контейнеры */
+    @import url('./layouts/container.css');
+    @import url('./layouts/news.css');
+    @import url('./layouts/field-stud.css');
+    @import url('./layouts/important.css');
+    @import url('./layouts/divide.css');
+    /* ./СЕТКИ */
+
+
+    /* КАРТОЧКИ (все страницы) */
+    @import url('./components/cards/news-cards.css');
+    @import url('./components/cards/field-card.css');
+    @import url('./components/cards/partners-card.css');
+    @import url('./components/cards/attention_cards.css');
+    @import url('./components/cards/events_cards.css');
+    @import url('./components/cards/curator_card.css');
+    @import url('./components/cards/full-screen-card.css');
+    @import url('./components/cards/big-card-info1.css');
+    @import url('./components/cards/small-card-info.css');
+    @import url('./components/cards/big-card-info2.css');
+    @import url('./components/cards/employers-card.css');
+    @import url('./components/cards/area-study-cards.css');
+
+    /* ./КАРТОЧКИ  */
+
+    /* SlIDERS */
+    @import url('./components/sliders/slider-main.css');
+    @import url('./components/sliders/slider-mobile.css');
+    @import url('./components/sliders/slider-preview.css');
+    /* ./SlIDERS */
+
+    /* ACCORDIONS */
+    @import url('./components/accordions/accordion-main.css');
+    @import url('./components/accordions/accordion-templates.css');
+    /* ./ACCORDIONS */
+
+    /* FILTERS */
+    @import url('./components/filters/filter-tags.css');
+    @import url('./components/filters/filter-search.css');
+    /* ./FILTERS */
+
+    @import url('./components/breadcrumbs.css');
+    @import url('./components/table.css');
+    @import url('./components/article.css');
+    @import url('./components/gallery.css');
+    @import url('./components/video.css');
+    @import url('./components/navigation-promo.css');
+    @import url('./components/staff.css');
+    @import url('./components/timeline.css');
+    @import url('./components/infographics.css');
+    @import url('./components/banner.css');
+
+
+
+/* GENERAL */
+
+/* index */
+@import url('./components/hero.css');
+@import url('./components/partners.css');
+/* ./index */
+
+/* events, event, new*/
+@import url('./pages/events.css');
+@import url('./pages/event.css');
+@import url('./pages/new.css');
+/* events */
+
+/* applicant */
+@import url('./pages/applicant.css');
+/* ./applicant */
+
+/* staf */
+@import url('./pages/staff.css');
+/* ./staf */
+
+/* student */
+@import url('./pages/student.css');
+/* student */
+
+/* useful */
+@import url('./pages/useful.css');
+/* useful */
+
+/* department */
+@import url('./pages/department.css');
+/* department */
+
+/* contacts */
+@import url('./pages/contacts.css');
+/* ./contacts */
+
+
+

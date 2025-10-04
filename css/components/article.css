@@ -1,0 +1,27 @@
+/* События и новости */
+.activity__content{
+    display: flex;
+    align-items: flex-start;
+    gap: 119px;
+}
+
+.activity__img{
+    max-width: 561px;
+    max-height: 561px;
+    object-fit: cover;
+}
+
+.activity__tags{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.activity__tags .activity__tag{
+    background: var(--dark-color);
+    border-radius: 8px;
+    padding: 6px 20px;
+    font-size: 14px;
+    color: var(--new-bg-color);
+}

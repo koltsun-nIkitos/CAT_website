@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контактная информация кафедры цифровых технологий: адрес, телефоны, email. Свяжитесь с нами по вопросам поступления и обучения.">
+    <meta name="keywords" content="контакты кафедры, адрес СПбГУПТД, телефоны, email, схема проезда, обратная связь">
     <title>Контакты</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -14,7 +16,7 @@
     <header class="header">
         <div class="container header__inner">
             <a href="./index.html" class="header__logo">
-                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+                <img src="./img/logo.svg" alt="Логотип кафедры цифровых технологий" class="header__logo-img">
             </a>
 
             <nav class="header__menu" id="main-menu" aria-label="Главное меню">
@@ -25,19 +27,19 @@
 
                 <ul class="nav-menu">
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                        <a class="nav-menu__link" href="./events.html"><span>События</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
+                        <a class="nav-menu__link" href="./applicant.html"><span>Абитуриенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./student.html"><span>Студенту</span></a>
+                        <a class="nav-menu__link" href="./student.html"><span>Студенту</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
+                        <a class="nav-menu__link" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                        <a class="nav-menu__link" href="./contacts.html"><span>Контакты</span></a>
                     </li>
                 </ul>
             </nav>
@@ -46,16 +48,20 @@
     <!-- /.header -->
 
     <main class="main-content">
-        <section class="contacts">
+        <section class="page-header">
             <div class="container">
                 <h1 class="page-title contacts__page-title">
                     Контакты
                 </h1>
-
+            </div>
+        </section>
+        
+        <section class="contacts">
+            <div class="container">
                 <div class="contacts__info">
-                    <p class="contacts__info-adress">
+                    <address class="contacts__info-adress">
                         Вознесенский пр., д. 46, каб. 452-463
-                    </p>
+                    </address>
 
                     <div class="contacts__info-tel">
                         <p>
@@ -95,38 +101,38 @@
         <div class="container">
             <div class="footer__wrapper">
                 <a href="./index.html" class="footer-logo">
-                    <img class="footer-log" src="./img/logo-footer.svg" alt="logo digital additive technologies">
+                    <img class="footer-logo__img" src="./img/logo-footer.svg" alt="logo digital additive technologies">
                 </a>
 
                 <div class="footer__menu">
                     <nav class="footer__nav">
                         <ul class="footer__nav-links">
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./events.html" class="footer__nav-link">
                                     <span>События</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./applicant.html" class="footer__nav-link">
                                     <span>Абитуриенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./student.html" class="footer__nav-link">
                                     <span>Студенту</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./useful.html" class="footer__nav-link">
                                     <span>Полезное</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./department.html" class="footer__nav-link">
                                     <span>Наша Кафедра</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./contacts.html" class="footer__nav-link">
                                     <span>Контакты</span>
                                 </a>
@@ -142,12 +148,12 @@
                         </nav>
 
                         <div class="footer__info-group">
-                            <a href="mailTo:soshnikovanton@yandex.ru" class="footer__info-mail">
+                            <a href="mailto:soshnikovanton@yandex.ru" class="footer__info-mail">
                                 soshnikovanton@yandex.ru
                             </a>
-                            <p class="footer__info-adress">
+                            <adress class="footer__info-adress">
                                 190068, Санкт-Петербург, Вознесенский пр., д. 46, 4 этаж
-                            </p>
+                            </adress>
                         </div>
                     </div>
                 </div>

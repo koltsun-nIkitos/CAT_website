@@ -1,0 +1,35 @@
+.news{
+    margin-bottom: 235px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.news-article{
+    grid-column: span 4;
+}
+
+.news-article:first-child{
+    grid-column: 5 / span 8;
+}
+
+
+/* Обычная карточка (4 колонки) */
+.news-card:not(.large-card):not(.news-card--all-events) {
+    grid-column: span 4;
+}
+
+.large-card {
+    grid-column: span 8;
+}
+
+.news-card--all-events {
+    grid-column: span 4;
+}
+
+
+
+

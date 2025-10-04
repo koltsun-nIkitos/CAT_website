@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная страница</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Главная страница - Кафедра цифровых технологий</title>
+    <meta name="description" content="Кафедра цифровых технологий - прикладная информатика, искусственный интеллект, IT-технологии создания цифового контента">
+    <meta name="keywords" content="цифровые технологии, аддитивные технологии, СПбГУПТД, высшее образование, IT образование, дизайн, программирование">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -14,7 +16,7 @@
     <header class="header">
         <div class="container header__inner">
             <a href="./index.html" class="header__logo">
-                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+                <img src="./img/logo.svg" alt="Логотип кафедры цифровых технологий" class="header__logo-img">
             </a>
 
             <nav class="header__menu" id="main-menu" aria-label="Главное меню">
@@ -25,25 +27,26 @@
 
                 <ul class="nav-menu">
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                        <a class="nav-menu__link" href="./events.html">События</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
+                        <a class="nav-menu__link" href="./applicant.html">Абитуриенту</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./student.html"><span>Студенту</span></a>
+                        <a class="nav-menu__link" href="./student.html">Студенту</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
+                        <a class="nav-menu__link" href="./department.html">Наша&nbsp;кафедра</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                        <a class="nav-menu__link" href="./contacts.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <!-- /.header -->
+
 
     <main class="main-content">
             <!-- Герой-блок -->
@@ -53,7 +56,7 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 1">
+                        <img src="./img/slider/slide1.jpg" class="hero-img" alt="Студенты кафедры на занятии по программированию">
 
                         <p class="hero__content">
                             Тут скоро будет текст
@@ -61,7 +64,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 2">
+                        <img src="./img/slider/slide1.jpg" class="hero-img" alt="Лаборатория кафедры цифровых технологий">
 
 
                         <p class="hero__content">
@@ -70,7 +73,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <img src="./img/slider/slide1.jpg" class="hero-img" alt="слайд 3">
+                        <img src="./img/slider/slide1.jpg" class="hero-img" alt="Выпускники кафедры на защите дипломов">
 
                         <p class="hero__content">
                             Тут скоро будет текст
@@ -93,17 +96,18 @@
                 <div class="news-grid">
 
                     <!-- Первая строка: одна большая карточка на 6 колонок, выровненная справа -->
-                    <div class="news-grid__first-row">
+                    <article class="news-article">
                         <a href="./new.html" class="news-card large-card">
-                            <img src="./img/news/new1.png" alt="карточка новости" class="news-card__img">
-                            
+                        
+                            <img src="./img/news/new1.png" alt="Участники хакатона на кафедре цифровых технологий" class="news-card__img">
+                        
                             <div class="news-card__content">
                                 <div class="news-card__header">
-                                    <p class="news-card__date">день месяц год</p>
+                                    <time class="news-card__date">день месяц год</time>
                                     <div class="news-card__tags">
-                                        <p href="#" class="news-card__tag tag-navy">
+                                        <span href="#" class="news-card__tag news-card__tag--navy">
                                             хакатон
-                                        </p>
+                                        </span>
                                     </div>
                                 </div>
 
@@ -113,7 +117,34 @@
                                 </h3>
 
                                 <p class="news-card__text">
-                                    <span>НАЖАТЬ ДЛЯ ПЕРЕХОДА НА НОВОСТЬ</span>
+                                    Praesent dignissim mauris metus, nec 
+                                    elementum felis dapibus quis. Phasellus eu 
+                                    nisi orci. Nullam suscipit a elit ut congue. 
+                                    Proin a ipsum vel risus posuere imperdiet eu 
+                                    ac nisl.
+                                </p>
+                            </div>
+                        
+                        
+                        </a>
+                    </article>
+
+                    <article class="news-article">
+                        <a href="#" class="news-card news-card--event">
+                            <div class="news-card__content">
+                                <div class="news-card__header">
+                                    <time class="news-card__date">1 июня 2025</time>
+                                    <div class="news-card__tags">
+                                        <!-- Пусто -->
+                                    </div>
+                                </div>
+
+                                <h3 class="news-card__title">
+                                    Расписание прохождения 
+                                    нормоконтроля
+                                </h3>
+
+                                <p class="news-card__text">
                                     Praesent dignissim mauris metus, nec 
                                     elementum felis dapibus quis. Phasellus eu 
                                     nisi orci. Nullam suscipit a elit ut congue. 
@@ -122,126 +153,106 @@
                                 </p>
                             </div>
                         </a>
-                    </div>
+                    </article>
                     
 
-                    <a href="#" class="news-card event">
-                        <div class="news-card__content">
-                            <div class="news-card__header">
-                                <p class="news-card__date">1 июня 2025</p>
-                                <div class="news-card__tags">
-                                    <!-- Пусто -->
+                    <article class="news-article">
+                        <a href="#" class="news-card">
+                            <img src="./img/news/new1.png" alt="Новость кафедры цифровых технологий" class="news-card__img non-preview">
+
+                            <div class="news-card__content">
+                                <div class="news-card__header">
+                                    <time class="news-card__date">день месяц год</time>
+                                    <div class="news-card__tags">
+                                        <span href="#" class="news-card__tag news-card__tag--navy">
+                                            хакатон
+                                        </span>
+                                    </div>
                                 </div>
+
+                                <h3 class="news-card__title">
+                                    Название новости 
+                                    из двух строк
+                                </h3>
+
+                                <p class="news-card__text">
+                                    Praesent dignissim mauris metus, nec 
+                                    elementum felis dapibus quis. Phasellus eu 
+                                    nisi orci. Nullam suscipit a elit ut congue. 
+                                    Proin a ipsum vel risus posuere imperdiet eu 
+                                    ac nisl.
+                                </p>
                             </div>
+                        </a>
+                    </article>
 
-                            <h3 class="news-card__title">
-                                Расписание прохождения 
-                                нормоконтроля
-                            </h3>
+                    <article class="news-article">
+                        <a href="#" class="news-card">
+                            <img src="./img/news/new1.png" alt="Новость кафедры цифровых технологий" class="news-card__img non-preview">
 
-                            <p class="news-card__text">
-                                Praesent dignissim mauris metus, nec 
-                                elementum felis dapibus quis. Phasellus eu 
-                                nisi orci. Nullam suscipit a elit ut congue. 
-                                Proin a ipsum vel risus posuere imperdiet eu 
-                                ac nisl.
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="#" class="news-card">
-                        <img src="./img/news/new1.png" alt="карточка новости" class="news-card__img non-preview">
-
-
-                        <div class="news-card__content">
-                            <div class="news-card__header">
-                                <p class="news-card__date">день месяц год</p>
-                                <div class="news-card__tags">
-                                    <p href="#" class="news-card__tag tag-navy">
-                                        хакатон
-                                    </p>
+                            <div class="news-card__content">
+                                <div class="news-card__header">
+                                    <time class="news-card__date">день месяц год</time>
+                                    <div class="news-card__tags">
+                                        <span href="#" class="news-card__tag news-card__tag--violet">
+                                            хакатон
+                                        </span>
+                                    </div>
                                 </div>
+
+                                <h3 class="news-card__title">
+                                    Название новости 
+                                    из двух строк
+                                </h3>
+
+                                <p class="news-card__text">
+                                    Praesent dignissim mauris metus, nec 
+                                    elementum felis dapibus quis. Phasellus eu 
+                                    nisi orci. Nullam suscipit a elit ut congue. 
+                                    Proin a ipsum vel risus posuere imperdiet eu 
+                                    ac nisl.
+                                </p>
                             </div>
-
-                            <h3 class="news-card__title">
-                                Название новости 
-                                из двух строк
-                            </h3>
-
-                            <p class="news-card__text">
-                                Praesent dignissim mauris metus, nec 
-                                elementum felis dapibus quis. Phasellus eu 
-                                nisi orci. Nullam suscipit a elit ut congue. 
-                                Proin a ipsum vel risus posuere imperdiet eu 
-                                ac nisl.
-                            </p>
-                        </div>
-                    </a>
-
-
-                    <a href="#" class="news-card">
-                        <img src="./img/news/new1.png" alt="карточка новости" class="news-card__img non-preview">
-
-                        <div class="news-card__content">
-                            <div class="news-card__header">
-                                <p class="news-card__date">день месяц год</p>
-                                <div class="news-card__tags">
-                                    <p href="#" class="news-card__tag tag-vieolet">
-                                        хакатон
-                                    </p>
-                                </div>
-                            </div>
-
-                            <h3 class="news-card__title">
-                                Название новости 
-                                из двух строк
-                            </h3>
-
-                            <p class="news-card__text">
-                                Praesent dignissim mauris metus, nec 
-                                elementum felis dapibus quis. Phasellus eu 
-                                nisi orci. Nullam suscipit a elit ut congue. 
-                                Proin a ipsum vel risus posuere imperdiet eu 
-                                ac nisl.
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="#" class="news-card large-card">
-                        <img src="./img/news/new1.png" alt="карточка новости" class="news-card__img">
+                        </a>
+                    </article>
+                    
+                    <article class="news-article large-card">
+                        <a href="#" class="news-card">
+                            <img src="./img/news/new1.png" alt="Новость кафедры цифровых технологий" class="news-card__img">
                         
-                        <div class="news-card__content">
-                            <div class="news-card__header">
-                                <p class="news-card__date">день месяц год</p>
-                                <div class="news-card__tags">
-                                    <p href="#" class="news-card__tag tag-navy">
-                                        тег
-                                    </p>
-                                    <p href="#" class="news-card__tag tag-red">
-                                        тег
-                                    </p>
+                            <div class="news-card__content">
+                                <div class="news-card__header">
+                                    <time class="news-card__date">день месяц год</time>
+                                    <div class="news-card__tags">
+                                        <span href="#" class="news-card__tag news-card__tag--navy">
+                                            тег
+                                        </span>
+
+                                        <span href="#" class="news-card__tag tag-red">
+                                            тег
+                                        </span>
+                                    </div>
                                 </div>
+
+                                <h3 class="news-card__title">
+                                    Название новости 
+                                    из двух строк
+                                </h3>
+
+                                <p class="news-card__text">
+                                    Praesent dignissim mauris metus, nec 
+                                    elementum felis dapibus quis. Phasellus eu 
+                                    nisi orci. Nullam suscipit a elit ut congue. 
+                                    Proin a ipsum vel risus posuere imperdiet eu 
+                                    ac nisl.
+                                </p>
                             </div>
+                        </a>
+                    </article>
+                    
 
-                            <h3 class="news-card__title">
-                                Название новости 
-                                из двух строк
-                            </h3>
-
-                            <p class="news-card__text">
-                                Praesent dignissim mauris metus, nec 
-                                elementum felis dapibus quis. Phasellus eu 
-                                nisi orci. Nullam suscipit a elit ut congue. 
-                                Proin a ipsum vel risus posuere imperdiet eu 
-                                ac nisl.
-                            </p>
-                        </div>
-                    </a>
-
-                    <a href="./events.html" class="news-card all-events-card">
-                        <h3 class="news-card__title">ВСЕ СОБЫТИЯ
-                            <span>НАЖАТЬ ДЛЯ ПЕРЕХОДА НА ВСЕ СОБЫТИЯ</span>
-                        </h3>
+                    <a href="./events.html" class="news-card news-card--all-events">
+                        <h3 class="news-card__title">ВСЕ СОБЫТИЯ</h3>
                     </a>
                 </div>
             
@@ -251,20 +262,20 @@
         <!-- События -->
         <section class="field-stud">
             <div class="container">
-                <div class="fiel-stud-grid">
-                    <h2 class="promo-title">
+
+                <div class="promo-wrapper">
+                    <h2 class="promo-wrapper__title">
                         Написать короткий текст про то, что наши направления классные и востребованные
                     </h2>
                 </div>
                 
-
                 <h2 class="section-title">
                     <span class="section-title--desctop">Популярные направления</span>
-                    <span class="section-title--mobile">Мы учим</span>
+                    <span class="section-title--mobile"></span>
                 </h2>
 
 
-                <div class="field-stud-grid">
+                <div class="divide">
                     <div class="field-stud-row field-stud-row--right">
                         <a href="#" class="field-stud-card">
                             <div class="field-stud-card__header">
@@ -272,11 +283,11 @@
                                     Прикладная информатика в&nbsp;дизайне
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Перейти к направлению Прикладная информатика в дизайне">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -304,11 +315,11 @@
                                     Прикладной искусственный интеллект
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Перейти к направлению Прикладной искусственный интеллект">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -331,11 +342,11 @@
                                     ИТ-технологии создания цифрового контента
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Перейти к направлению IT-технологии создания цифрового контента">
                                 </div>
                             </div>
 
-                            <p class="field-stud-card__subtitle field-stud-card__subtitle--none">
+                            <p class="field-stud-card__subtitle field-stud-card__subtitle--hidden">
                                 Цифровые технологии 
                                 в высокотехнологичной индустрии моды
                             </p>
@@ -360,7 +371,7 @@
                                     Fashion Tech
                                 </h3>
                                 <div class="field-stud-card__arrow">
-                                    <img src="./img/icons/arrow-top-right.svg" alt="card arrow top to right icon">
+                                    <img src="./img/icons/arrow-top-right.svg" alt="Перейти к направлению Fashion Tech">
                                 </div>
                             </div>
 
@@ -385,7 +396,6 @@
                         <a href="./applicant.html" class="field-stud-card field-stud-card--all">
                             <h3 class="field-stud-card__title">
                                 Абитуриенту
-                                <span>НАЖАТЬ ДЛЯ ПЕРЕХОДА</span>
                             </h3>
                         </a>
                     </div>
@@ -401,29 +411,29 @@
                 </h2>
 
                 <div class="partners__cards">
-                    <a href="#" class="partner__card">
-                        <img src="img/partners/partner1.svg" alt="Partner 1">
+                    <a href="#" class="partners__card">
+                        <img src="img/partners/partner1.svg" alt="Логотип компании Партнер 1">
                     </a>
-                    <a href="#" class="partner__card">
-                        <img src="img/partners/partner2.svg" alt="Partner 2">
+                    <a href="#" class="partners__card">
+                        <img src="img/partners/partner2.svg" alt="Логотип компании Партнер 2">
                     </a>
-                    <a href="#" class="partner__card">
-                        <img src="img/partners/partner3.svg" alt="Partner 3">
+                    <a href="#" class="partners__card">
+                        <img src="img/partners/partner3.svg" alt="Логотип компании Партнер 3">
                     </a>
-                    <a href="#" class="partner__card">
-                        <img src="img/partners/partner4.svg" alt="Partner 4">
+                    <a href="#" class="partners__card">
+                        <img src="img/partners/partner4.svg" alt="Логотип компании Партнер 4">
                     </a>
-                    <a href="#" class="partner__card">
-                        <img src="img/partners/partner5.svg" alt="Partner 5">
+                    <a href="#" class="partners__card">
+                        <img src="img/partners/partner5.svg" alt="Логотип компании Партнер 5">
                     </a>
-                    <a href="#" class="partner__card">
-                        <img src="img/partners/partner6.svg" alt="Partner 6">
+                    <a href="#" class="partners__card">
+                        <img src="img/partners/partner6.svg" alt="Логотип компании Партнер 6">
                     </a>
-                    <a href="#" class="partner__card">
-                        <img src="img/partners/partner7.svg" alt="Partner 7">
+                    <a href="#" class="partners__card">
+                        <img src="img/partners/partner7.svg" alt="Логотип компании Партнер 7">
                     </a>
-                    <a href="#" class="partner__card">
-                        <img src="img/partners/partner8.svg" alt="Partner 8">
+                    <a href="#" class="partners__card">
+                        <img src="img/partners/partner8.svg" alt="Логотип компании Партнер 8">
                     </a>
                 </div>
             </div>
@@ -436,59 +446,59 @@
         <div class="container">
             <div class="footer__wrapper">
                 <a href="./index.html" class="footer-logo">
-                    <img class="footer-log" src="./img/logo-footer.svg" alt="logo digital additive technologies">
+                    <img class="footer-logo__img" src="./img/logo-footer.svg" alt="Логотип кафедры цифровых аддитивных технологий">
                 </a>
 
                 <div class="footer__menu">
-                    <nav class="footer__nav">
+                    <nav class="footer__nav" aria-label="Нижнее меню">
                         <ul class="footer__nav-links">
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./events.html" class="footer__nav-link">
-                                    <span>События</span>
+                                    События
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./applicant.html" class="footer__nav-link">
-                                    <span>Абитуриенту</span>
+                                    Абитуриенту
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./student.html" class="footer__nav-link">
-                                    <span>Студенту</span>
+                                    Студенту
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./useful.html" class="footer__nav-link">
-                                    <span>Полезное</span>
+                                    Полезное
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./department.html" class="footer__nav-link">
-                                    <span>Наша Кафедра</span>
+                                    Наша Кафедра
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./contacts.html" class="footer__nav-link">
-                                    <span>Контакты</span>
+                                    Контакты
                                 </a>
                             </li>
                         </ul>
                     </nav>
 
                     <div class="footer__info">
-                        <nav class="footer__socials">
+                        <nav class="footer__socials" aria-label="Социальные сети">
                             <a href="#" class="footer__social">
-                                <img src="./img/social/tg.png" alt="social telegram" class="footer__social-img">
+                                <img src="./img/social/tg.png" alt="Телеграм" class="footer__social-img">
                             </a>
                         </nav>
 
                         <div class="footer__info-group">
-                            <a href="mailTo:soshnikovanton@yandex.ru" class="footer__info-mail">
+                            <a href="mailto:soshnikovanton@yandex.ru" class="footer__info-mail">
                                 soshnikovanton@yandex.ru
                             </a>
-                            <p class="footer__info-adress">
+                            <address class="footer__info-adress">
                                 190068, Санкт-Петербург, Вознесенский пр., д. 46, 4 этаж
-                            </p>
+                            </address>
                         </div>
                     </div>
                 </div>
@@ -509,3 +519,5 @@
 <script defer src="./main.js"></script>
 
 </html>
+
+<!-- БЭМ И СЕМАНТИКА ПОВЕРЕНЫ -->

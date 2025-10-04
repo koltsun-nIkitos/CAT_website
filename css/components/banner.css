@@ -1,0 +1,9 @@
+.info__banner{
+    margin-bottom: 100px;
+}
+
+.info__banner img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 786px;
+}

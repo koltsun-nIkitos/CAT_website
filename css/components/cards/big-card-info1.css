@@ -1,0 +1,47 @@
+/* Военкомат */
+
+.devide__group__big-card{
+    background-color: #fff;
+    padding: 49px 56px 74px 30px;
+    margin-bottom: 69px;
+}
+
+.big-card__title{
+    font-size: var(--big-card-size);
+    line-height: var(--lineright-110);
+    margin-bottom: 5px;
+}
+
+.big-card__caption{
+    font-size: 11px;
+    line-height: 1.4;
+    max-width: 640px;
+    margin-bottom: 83px;
+}
+
+.big-card__work-hours{
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--dark-color);
+    line-height: var(--lineright-110);
+    margin-bottom: 53px;
+}
+
+.big-card__info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-card__info-text:first-child{
+    font-size: 20px;
+    color: var(--dark-color);
+    max-width: 410px;
+}
+
+.big-card__info-text:last-child{
+    max-width: 360px;
+}
+
+.big-card__info-text .important{
+    color: var(--violet-color)
+}

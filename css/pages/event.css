@@ -1,0 +1,28 @@
+.event{
+    padding-bottom: 200px;
+}
+
+.event__description{
+    padding-top: 95px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.event__description{
+    line-height: 1.4;
+    color: #000;
+    max-width: 562px;
+    font-size: 20px !important;
+}
+
+.event__description-list li{
+    margin-left: 30px;
+}
+
+.event__description-link, .event__contacts-link{
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+

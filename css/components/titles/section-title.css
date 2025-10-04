@@ -1,0 +1,9 @@
+.section-title{
+    font-size: var(--title-2-size);
+    line-height: var(--lineright-110);
+    font-weight: 500;
+}
+
+.divide .section-title{
+    grid-column: span 4;
+}

@@ -1,0 +1,15 @@
+.promo-wrapper{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    min-height: 150px;
+    margin-bottom: 80px;
+    gap: 10px;
+}
+
+.promo-wrapper__title{
+    font-weight: 500;
+    font-size: 50px;
+    grid-column: span 8;
+    line-height: 1;
+    max-width: 1015px;
+}

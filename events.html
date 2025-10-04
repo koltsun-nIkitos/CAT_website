@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Все события</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Все события - Кафедра цифровых технологий</title>
+    <meta name="description" content="События и мероприятия кафедры цифровых технологий: выставки, мастер-классы, хакатоны">
+    <meta name="keywords" content="мероприятия кафедры, события СПбГУПТД, конференции, семинары, мастер-классы, студенческие проекты">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -14,7 +16,7 @@
     <header class="header">
         <div class="container header__inner">
             <a href="./index.html" class="header__logo">
-                <img src="./img/logo.svg" alt="Логотип кафедры" class="header__logo-img">
+                <img src="./img/logo.svg" alt="Логотип кафедры цифровых технологий" class="header__logo-img">
             </a>
 
             <nav class="header__menu" id="main-menu" aria-label="Главное меню">
@@ -25,19 +27,19 @@
 
                 <ul class="nav-menu">
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./events.html"><span>События</span></a>
+                        <a class="nav-menu__link" href="./events.html">События</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./applicant.html"><span>Абитуриенту</span></a>
+                        <a class="nav-menu__link" href="./applicant.html">Абитуриенту</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./student.html"><span>Студенту</span></a>
+                        <a class="nav-menu__link" href="./student.html">Студенту</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./department.html"><span>Наша&nbsp;кафедра</span></a>
+                        <a class="nav-menu__link" href="./department.html">Наша&nbsp;кафедра</a>
                     </li>
                     <li class="nav-menu__item">
-                        <a class="nav-menu__item" href="./contacts.html"><span>Контакты</span></a>
+                        <a class="nav-menu__link" href="./contacts.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -46,141 +48,160 @@
     <!-- /.header -->
 
     <main class="main-content">
-        <div class="container">
-            <h1 class="page-title events-page-title">
-                События
-            </h1>
-        </div>
-
-        <div class="container">
-            <div class="swiper-events">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="./img/slider/slide1.jpg" class="events-swiper__img" alt="слайд 1">
-
-                        <div class="swiper-events__content">
-                            <p class="swiper-events__date">
-                                10.04–01.09
-                            </p>
-
-                            <div class="swiper-events__title">
-                                Название мероприятия 
-                            </div>
-
-                            <div class="swiper-events__group">
-                                <p class="swiper-events__adress">
-                                    Место проведения
-                                </p>
-
-                                <p class="swiper-events__time">
-                                    12:00
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./img/slider/slide1.jpg" class="events-swiper__img" alt="слайд 1">
-
-                        <div class="swiper-events__content">
-                            <p class="swiper-events__date">
-                                10.04–01.09
-                            </p>
-
-                            <div class="swiper-events__title">
-                                Название мероприятия 
-                            </div>
-
-                            <div class="swiper-events__group">
-                                <p class="swiper-events__adress">
-                                    Место проведения
-                                </p>
-
-                                <p class="swiper-events__time">
-                                    12:00
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <img src="./img/slider/slide1.jpg" class="events-swiper__img" alt="слайд 1">
-
-                        <div class="swiper-events__content">
-                            <p class="swiper-events__date">
-                                10.04–01.09
-                            </p>
-
-                            <div class="swiper-events__title">
-                                Название мероприятия 
-                            </div>
-
-                            <div class="swiper-events__group">
-                                <p class="swiper-events__adress">
-                                    Место проведения
-                                </p>
-
-                                <p class="swiper-events__time">
-                                    12:00
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- If we need pagination -->
-                <div class="swiper-scrollbar"></div>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title events-page-title">
+                    События
+                </h1>
             </div>
-        </div>
+        </section>
         
 
-        <section class="events__attention-cards">
+        <section class="events-slider">
+            <div class="container">
+                <div class="swiper-events">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <article class="events-slider__card">
+                                <a href="#" class="events-slider__link">
+                                    <img src="./img/slider/slide1.jpg" class="events-swiper__img" alt="Участники мероприятия на кафедре цифровых технологий">
+
+                                    <div class="swiper-events__content">
+                                        <time class="swiper-events__date">
+                                            10.04–01.09
+                                        </time>
+
+                                        <h2 class="swiper-events__title">
+                                            Название мероприятия 
+                                        </h2>
+
+                                        <div class="events-slider__info">
+                                            <adress class="swiper-events__adress">
+                                                Место проведения
+                                            </adress>
+
+                                            <time class="swiper-events__time">
+                                                12:00
+                                            </time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="events-slider__card">
+                                <a href="#" class="events-slider__link">
+                                    <img src="./img/slider/slide1.jpg" class="events-swiper__img" alt="Выставка студенческих проектов">
+
+                                    <div class="swiper-events__content">
+                                        <time class="swiper-events__date">
+                                            10.04–01.09
+                                        </time>
+
+                                        <h2 class="swiper-events__title">
+                                            Название мероприятия 
+                                        </h2>
+
+                                        <div class="events-slider__info">
+                                            <adress class="swiper-events__adress">
+                                                Место проведения
+                                            </adress>
+
+                                            <time class="swiper-events__time">
+                                                12:00
+                                            </time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <article class="events-slider__card">
+                                <a href="#" class="events-slider__link">
+                                    <img src="./img/slider/slide1.jpg" class="events-swiper__img" alt="Мастер-класс по программированию">
+
+                                    <div class="swiper-events__content">
+                                        <time class="swiper-events__date">
+                                            10.04–01.09
+                                        </time>
+
+                                        <h2 class="swiper-events__title">
+                                            Название мероприятия 
+                                        </h2>
+
+                                        <div class="events-slider__info">
+                                            <adress class="swiper-events__adress">
+                                                Место проведения
+                                            </adress>
+
+                                            <time class="swiper-events__time">
+                                                12:00
+                                            </time>
+                                        </div>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    
+                    <!-- If we need pagination -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-important">
             <div class="container">
                 <h2 class="section-subtitle">
                     Важное
                 </h2>
 
-                <div class="events__attention-grid">
-                    <a href="#" class="events__attention-card">
-                        <div class="events__attention-card-header">
-                            <p class="events__atention-date">
+                <div class="events-important__grid">
+                    <article class="events-important__card">
+                        <a href="#" class="events-important__link">
+                            <header class="events-important__header">
+                                <time class="events-important__date">
+                                    день месяц год
+                                </time>
+
+                                <p class="events-important__tag">
+                                    ВКР
+                                </p>
+                            </header>
+                            
+
+                            <h3 class="events-important__title">
+                                Важное сообщение!
+                            </h3>
+
+                            <p class="events-important__text">
+                                Praesent dignissim mauris metus, nec elementum felis 
+                                dapibus quis. Phasellus eu nisi orci. Nullam suscipit 
+                                a elit ut congue. Proin a ipsum vel risus posuere imperdiet 
+                                eu ac nisl.
+                            </p>
+                        </a>
+                    </article>
+
+                    <a href="#" class="events-important__card">
+                        <div class="events-important__header">
+                            <p class="events-important__date">
                                 день месяц год
                             </p>
-                            <p class="events__atention-tag">
-                                ВКР
-                            </p>
-                        </div>
-                        
-
-                        <h3 class="events__attention-title">
-                            Важное сообщение!
-                        </h3>
-
-                        <p class="events__attention-text">
-                            Praesent dignissim mauris metus, nec elementum felis 
-                            dapibus quis. Phasellus eu nisi orci. Nullam suscipit 
-                            a elit ut congue. Proin a ipsum vel risus posuere imperdiet 
-                            eu ac nisl.
-                        </p>
-                    </a>
-
-                    <a href="#" class="events__attention-card">
-                        <div class="events__attention-card-header">
-                            <p class="events__atention-date">
-                                день месяц год
-                            </p>
-                            <p class="events__atention-tag">
+                            <p class="events-important__tag">
                                 праздники
                             </p>
                         </div>
 
-                        <h3 class="events__attention-title">
+                        <h3 class="events-important__title">
                             Важное сообщение!
                         </h3>
 
-                        <p class="events__attention-text">
+                        <p class="events-important__text">
                             Praesent dignissim mauris metus, nec elementum felis 
                             dapibus quis. Phasellus eu nisi orci. Nullam suscipit 
                             a elit ut congue. Proin a ipsum vel risus posuere imperdiet 
@@ -188,21 +209,21 @@
                         </p>
                     </a>
 
-                    <a href="#" class="events__attention-card">
-                        <div class="events__attention-card-header">
-                            <p class="events__atention-date">
+                    <a href="#" class="events-important__card">
+                        <div class="events-important__header">
+                            <p class="events-important__date">
                                 день месяц год
                             </p>
-                            <p class="events__atention-tag">
+                            <p class="events-important__tag">
                                 ВКР
                             </p>
                         </div>
 
-                        <h3 class="events__attention-title">
+                        <h3 class="events-important__title">
                             Важное сообщение!
                         </h3>
 
-                        <p class="events__attention-text">
+                        <p class="events-important__text">
                             Praesent dignissim mauris metus, nec elementum felis 
                             dapibus quis. Phasellus eu nisi orci. Nullam suscipit 
                             a elit ut congue. Proin a ipsum vel risus posuere imperdiet 
@@ -213,347 +234,359 @@
             </div>
         </section>
 
-        <section class="events__all">
+        <section class="events-all">
             <div class="container">
                 <h2 class="section-subtitle">
                     Все события
                 </h2>
 
-                <div class="events__all-header">
-                    <div class="events__all-filters">
-                        <button class="events__all-filter events__all-filter--active">выставки</button>
-                        <button class="events__all-filter">мастер-классы</button>
-                        <button class="events__all-filter">фильтр</button>
-                        <button class="events__all-filter">фильтр</button>
-                        <button class="events__all-filter">фильтр</button>
-                        <button class="events__all-filter">фильтр</button>
-                        <button class="events__all-filter">фильтр</button>
+                <div class="events-all__header">
+                    <div class="events-all__filters">
+                        <button class="events-all__filter events-all__filter--active">выставки</button>
+                        <button class="events-all__filter">мастер-классы</button>
+                        <button class="events-all__filter">фильтр</button>
+                        <button class="events-all__filter">фильтр</button>
+                        <button class="events-all__filter">фильтр</button>
+                        <button class="events-all__filter">фильтр</button>
+                        <button class="events-all__filter">фильтр</button>
                     </div>
 
-                    <nav class="events__pagination">
-                        <div class="events__pagination-years">
-                            <a href="#" class="events__pagination-year">2024</a>
-                            <a href="#" class="events__pagination-year events__pagination-year--active">2025</a>
+                    <nav class="events-all__pagination" aria-label="Навигация по событиям">
+                        <div class="events-all__years">
+                            <a href="#" class="events-all__year">2024</a>
+                            <a href="#" class="events-all__year events-all__year--active">2025</a>
                         </div>
                         
-                        <div class="events__pagination-mounths">
-                            <a href="#" class="events__pagination-button events__pagination-prev">
-                                <img src="./img/icons/arrow-left.svg" alt="events preview mounth button">
-                            </a>
+                        <div class="events-all__month">
+                            <button href="#" class="events-all__button events-all__button--prev">
+                                <img src="./img/icons/arrow-left.svg" alt="Стрелка влево" aria-label="Предыдущий месяц">
+                            </button>
 
-                            <p class="events__pagination-mounth">
+                            <p class="events-all__month">
                                 сентябрь
                             </p>
 
-                            <a href="#" class="events__pagination-button events__pagination-next">
-                                <img src="./img/icons/arrow-right.svg" alt="events next mounth button">
-                            </a>
+                            <button href="#" class="events-all__button events-all__button--next" aria-label="Следующий месяц">
+                                <img src="./img/icons/arrow-right.svg" alt="Стрелка вправо">
+                            </button>
                         </div>
                     </nav>
                 </div>
 
-                <div class="events__all-cards">
-                    <a  href="./event.html" class="events__all-card">
-                        <img src="./img/events/event1.png" alt="events preview" class="events__all__card-img">
-                        
-                        <p class="events__all-tag events__all-tag--main">
-                            хакатон
-                        </p>
-
-                        <div class="events__all-content">
-                            <h3 class="events__all-title">
-                                Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
-                                <span>НАЖАТЬ ДЛЯ ПЕРЕХОДА НА СОБЫТИЕ</span>
-                            </h3>
-
-                            <p class="events__all-date">
-                                10.04–01.09
-                            </p>
-
-                            <div class="events_all-tags">
-                                <p class="events__all-tag">
-                                    приоритет
-                                </p>
-
-                                <p class="events__all-tag">
-                                    выставка
-                                </p>
-
-                                <p class="events__all-tag">
-                                    выставка
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a  href="#" class="events__all-card">
-                        <img src="./img/events/event1.png" alt="events preview" class="events__all__card-img">
-                        
-                        <p class="events__all-tag events__all-tag--main">
-                            хакатон
-                        </p>
-
-                        <div class="events__all-content">
-                            <h3 class="events__all-title">
-                                Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
-                            </h3>
-
-                            <p class="events__all-date">
-                                10.04–01.09
-                            </p>
-
-                            <div class="events_all-tags">
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
-
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
-
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a  href="#" class="events__all-card events__all-card--left">
-                        <img src="./img/events/event1.png" alt="events preview" class="events__all__card-img">
-                        
-                        <p class="events__all-tag events__all-tag--main">
-                            хакатон
-                        </p>
-
-                        <div class="events__all-content">
-                            <h3 class="events__all-title">
-                                Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
-                            </h3>
-
-                            <p class="events__all-date">
-                                10.04–01.09
-                            </p>
-
-                            <div class="events_all-tags">
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
-
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
-
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-
-                    <div class="events__all-card text-only">
-                        <a href="#" class="events__all-card events__all-card-text">
-                            <p class="events__all-tag events__all-tag--main">
+                <div class="events-all__grid">
+                    <article class="events-all__card">
+                        <a  href="./event.html" class="events-all-link">
+                            <img src="./img/events/event1.png" alt="Участники хакатона на кафедре" class="events-all__img">
+                            
+                            <span class="events-all__main-tag">
                                 хакатон
-                            </p>
+                            </span>
 
-                            <div class="events__all-content">
-                                <h3 class="events__all-title">
+                            <div class="events-all__content">
+                                <h3 class="events-all__title">
                                     Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
                                 </h3>
 
-                                <p class="events__all-date">
+                                <time class="events-all__date">
                                     10.04–01.09
-                                </p>
+                                </time>
 
-                                <div class="events_all-tags">
-                                    <p class="events__all-tag">
-                                        хакатон
+                                <div class="events-all__tags">
+                                    <p class="events-all__tag">
+                                        приоритет
                                     </p>
 
-                                    <p class="events__all-tag">
-                                        хакатон
+                                    <p class="events-all__tag">
+                                        выставка
                                     </p>
 
-                                    <p class="events__all-tag">
-                                        хакатон
+                                    <p class="events-all__tag">
+                                        выставка
                                     </p>
                                 </div>
                             </div>
                         </a>
+                    </article>
 
-                        <a href="#" class="events__all-card events__all-card-text">
-                            <p class="events__all-tag events__all-tag--main">
+                    <article class="events-all__card">
+                        <a  href="./event.html" class="events-all-link">
+                            <img src="./img/events/event1.png" alt="Участники хакатона на кафедре" class="events-all__img">
+                            
+                            <span class="events-all__main-tag">
                                 хакатон
-                            </p>
+                            </span>
 
-                            <div class="events__all-content">
-                                <h3 class="events__all-title">
+                            <div class="events-all__content">
+                                <h3 class="events-all__title">
                                     Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
                                 </h3>
-                                
-                                <p class="events__all-date">
+
+                                <time class="events-all__date">
                                     10.04–01.09
-                                </p>
+                                </time>
 
-                                <div class="events_all-tags">
-                                    <p class="events__all-tag">
-                                        хакатон
+                                <div class="events-all__tags">
+                                    <p class="events-all__tag">
+                                        приоритет
                                     </p>
 
-                                    <p class="events__all-tag">
-                                        хакатон
+                                    <p class="events-all__tag">
+                                        выставка
                                     </p>
 
-                                    <p class="events__all-tag">
-                                        хакатон
+                                    <p class="events-all__tag">
+                                        выставка
                                     </p>
                                 </div>
                             </div>
                         </a>
+                    </article>
+
+                    <article class="events-all__card">
+                        <a  href="./event.html" class="events-all-link">
+                            <img src="./img/events/event1.png" alt="Участники хакатона на кафедре" class="events-all__img">
+                            
+                            <span class="events-all__main-tag">
+                                хакатон
+                            </span>
+
+                            <div class="events-all__content">
+                                <h3 class="events-all__title">
+                                    Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
+                                </h3>
+
+                                <time class="events-all__date">
+                                    10.04–01.09
+                                </time>
+
+                                <div class="events-all__tags">
+                                    <p class="events-all__tag">
+                                        приоритет
+                                    </p>
+
+                                    <p class="events-all__tag">
+                                        выставка
+                                    </p>
+
+                                    <p class="events-all__tag">
+                                        выставка
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <div class="events-all__text-cards">
+                        <article class="events-all__card events-all__text-card">
+                            <a href="#" class="events-all__text-link">
+                                <p class="events-all__main-tag">
+                                    хакатон
+                                </p>
+
+                                <div class="events-all__content">
+                                    <h3 class="events-all__title">
+                                        Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
+                                    </h3>
+
+                                    <time  class="events-all__date">
+                                        10.04–01.09
+                                    </time>
+
+                                    <div class="events-all__tags">
+                                        <p class="events-all__tag">
+                                            хакатон
+                                        </p>
+
+                                        <p class="events-all__tag">
+                                            хакатон
+                                        </p>
+
+                                        <p class="events-all__tag">
+                                            хакатон
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+
+                        <article class="events-all__card events-all__text-card">
+                            <a href="#" class="events-all__text-link">
+                                <p class="events-all__main-tag">
+                                    хакатон
+                                </p>
+
+                                <div class="events-all__content">
+                                    <h3 class="events-all__title">
+                                        Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
+                                    </h3>
+
+                                    <time  class="events-all__date">
+                                        10.04–01.09
+                                    </time>
+
+                                    <div class="events-all__tags">
+                                        <p class="events-all__tag">
+                                            хакатон
+                                        </p>
+
+                                        <p class="events-all__tag">
+                                            хакатон
+                                        </p>
+
+                                        <p class="events-all__tag">
+                                            хакатон
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
                     </div>
 
-                    <a  href="#" class="events__all-card">
-                        <img src="./img/events/event1.png" alt="events preview" class="events__all__card-img">
-                        
-                        <p class="events__all-tag events__all-tag--main">
-                            хакатон
-                        </p>
+                    <article class="events-all__card">
+                        <a  href="./event.html" class="events-all-link">
+                            <img src="./img/events/event1.png" alt="Участники хакатона на кафедре" class="events-all__img">
+                            
+                            <span class="events-all__main-tag">
+                                хакатон
+                            </span>
 
-                        <div class="events__all-content">
-                            <h3 class="events__all-title">
-                                Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
-                            </h3>
+                            <div class="events-all__content">
+                                <h3 class="events-all__title">
+                                    Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
+                                </h3>
 
-                            <p class="events__all-date">
-                                10.04–01.09
-                            </p>
+                                <time class="events-all__date">
+                                    10.04–01.09
+                                </time>
 
-                            <div class="events_all-tags">
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
+                                <div class="events-all__tags">
+                                    <p class="events-all__tag">
+                                        приоритет
+                                    </p>
 
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
+                                    <p class="events-all__tag">
+                                        выставка
+                                    </p>
 
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
+                                    <p class="events-all__tag">
+                                        выставка
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </article>
 
-                    <a  href="#" class="events__all-card">
-                        <img src="./img/events/event1.png" alt="events preview" class="events__all__card-img">
-                        
-                        <p class="events__all-tag events__all-tag--main">
-                            хакатон
-                        </p>
-                        
-                        <div class="events__all-content">
-                            <h3 class="events__all-title">
-                                Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
-                            </h3>
+                    <article class="events-all__card">
+                        <a  href="./event.html" class="events-all-link">
+                            <img src="./img/events/event1.png" alt="Участники хакатона на кафедре" class="events-all__img">
+                            
+                            <span class="events-all__main-tag">
+                                хакатон
+                            </span>
 
-                            <p class="events__all-date">
-                                10.04–01.09
-                            </p>
+                            <div class="events-all__content">
+                                <h3 class="events-all__title">
+                                    Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
+                                </h3>
 
-                            <div class="events_all-tags">
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
+                                <time class="events-all__date">
+                                    10.04–01.09
+                                </time>
 
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
+                                <div class="events-all__tags">
+                                    <p class="events-all__tag">
+                                        приоритет
+                                    </p>
 
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
+                                    <p class="events-all__tag">
+                                        выставка
+                                    </p>
+
+                                    <p class="events-all__tag">
+                                        выставка
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </article>
 
-                    <a  href="#" class="events__all-card">
-                        <img src="./img/events/event1.png" alt="events preview" class="events__all__card-img">
-                        
-                        <p class="events__all-tag events__all-tag--main">
-                            хакатон
-                        </p>
-                        
-                        <div class="events__all-content">
-                            <h3 class="events__all-title">
-                                Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
-                            </h3>
+                    <article class="events-all__card">
+                        <a  href="./event.html" class="events-all-link">
+                            <img src="./img/events/event1.png" alt="Участники хакатона на кафедре" class="events-all__img">
+                            
+                            <span class="events-all__main-tag">
+                                хакатон
+                            </span>
 
-                            <p class="events__all-date">
-                                10.04–01.09
-                            </p>
+                            <div class="events-all__content">
+                                <h3 class="events-all__title">
+                                    Магистр СПбГУПТД разработал методологию создания фотореалистичных визуализаций
+                                </h3>
 
-                            <div class="events_all-tags">
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
+                                <time class="events-all__date">
+                                    10.04–01.09
+                                </time>
 
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
+                                <div class="events-all__tags">
+                                    <p class="events-all__tag">
+                                        приоритет
+                                    </p>
 
-                                <p class="events__all-tag">
-                                    хакатон
-                                </p>
+                                    <p class="events-all__tag">
+                                        выставка
+                                    </p>
+
+                                    <p class="events-all__tag">
+                                        выставка
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-
-    
-
 
     <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <a href="./index.html" class="footer-logo">
-                    <img class="footer-log" src="./img/logo-footer.svg" alt="logo digital additive technologies">
+                    <img class="footer-logo__img" src="./img/logo-footer.svg" alt="logo digital additive technologies">
                 </a>
 
                 <div class="footer__menu">
                     <nav class="footer__nav">
                         <ul class="footer__nav-links">
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./events.html" class="footer__nav-link">
-                                    <span>События</span>
+                                    События
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./applicant.html" class="footer__nav-link">
-                                    <span>Абитуриенту</span>
+                                    Абитуриенту
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./student.html" class="footer__nav-link">
-                                    <span>Студенту</span>
+                                    Студенту
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./useful.html" class="footer__nav-link">
-                                    <span>Полезное</span>
+                                    Полезное
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./department.html" class="footer__nav-link">
-                                    <span>Наша Кафедра</span>
+                                    Наша Кафедра
                                 </a>
                             </li>
-                            <li>
+                            <li class="footer__nav-item">
                                 <a href="./contacts.html" class="footer__nav-link">
-                                    <span>Контакты</span>
+                                    Контакты
                                 </a>
                             </li>
                         </ul>
@@ -567,12 +600,12 @@
                         </nav>
 
                         <div class="footer__info-group">
-                            <a href="mailTo:soshnikovanton@yandex.ru" class="footer__info-mail">
+                            <a href="mailto:soshnikovanton@yandex.ru" class="footer__info-mail">
                                 soshnikovanton@yandex.ru
                             </a>
-                            <p class="footer__info-adress">
+                            <adress class="footer__info-adress">
                                 190068, Санкт-Петербург, Вознесенский пр., д. 46, 4 этаж
-                            </p>
+                            </adress>
                         </div>
                     </div>
                 </div>

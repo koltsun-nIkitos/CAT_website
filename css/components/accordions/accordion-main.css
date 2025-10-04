@@ -1,0 +1,48 @@
+
+/* accordion applicant */
+.applicant-accordion-wrapper, .templates-accordion-wrapper{
+    grid-column: span 8;
+    list-style: none;
+}
+
+.accordion__item{
+    border-bottom: 0.5px solid #9e9e9e;
+}
+
+.accordion__header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+    line-height: 1;
+    font-size: var(--medium-card-size);
+}
+
+.accordion__header--img{
+    transition: transform 0.4s ease;
+}
+
+.acc_active .accordion__header--img:first-child{
+    transform: rotate(180deg);
+}
+
+
+.accordion__body{
+    padding-bottom: 74px;
+}
+
+
+.accordion__text{
+    font-size: var(--body-size);
+    line-height: 1.4;
+    max-width: 675px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.acc_active .accordion__text {
+    opacity: 1;
+    transform: translateY(0);
+}

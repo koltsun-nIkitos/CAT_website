@@ -1,0 +1,61 @@
+.infographics{
+    margin-bottom: 104px;
+}
+
+.infographics__cards{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.infographics__card{
+    grid-column: span 4;
+    background-color: #fff;
+    padding: 30px; 
+}
+
+.infographics__card-title{
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 11px;
+}
+
+.infographics__card-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.infographics__card-group-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.infographics__card-subtitle{
+    font-weight: 500;
+    font-size: var(--medium-card-size);
+    line-height: 1;
+    color: #000;
+    max-width: 202px;
+}
+
+.infographics__card-group-header--notext .infographics__card-subtitle{
+    margin-bottom: 0;
+}
+
+.infographics__card-icon{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.infographics__card-text{
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000;
+    max-width: 256px;
+}
