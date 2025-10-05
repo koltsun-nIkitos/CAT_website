@@ -1,6 +1,15 @@
+/* Цитата фиолетовая */
 .info__title--important{
     font-size: 30px !important;
     line-height: var(--lineright-110) !important;
     color: var(--violet-color) !important;
     max-width: 672px !important;
+    font-weight: 500;
+}
+
+/* Мобильные */
+@media (max-width:550px) {
+    .info__title--important{
+        font-size: var(--section-mob-size) !important;
+    }
 }

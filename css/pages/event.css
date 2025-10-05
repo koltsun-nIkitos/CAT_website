@@ -1,9 +1,5 @@
-.event{
-    padding-bottom: 200px;
-}
 
 .event__description{
-    padding-top: 95px;
     display: flex;
     flex-direction: column;
     gap: 30px;

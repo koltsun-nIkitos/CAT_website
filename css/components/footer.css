@@ -138,6 +138,7 @@
     }
 }
 
+/* Мобильные */
 @media (max-width: 550px) {
     .footer__wrapper{
         gap: 50px;

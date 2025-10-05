@@ -22,8 +22,6 @@
 
      /* СЕТКИ и контейнеры */
     @import url('./layouts/container.css');
-    @import url('./layouts/news.css');
-    @import url('./layouts/field-stud.css');
     @import url('./layouts/important.css');
     @import url('./layouts/divide.css');
     /* ./СЕТКИ */
@@ -32,6 +30,7 @@
     /* КАРТОЧКИ (все страницы) */
     @import url('./components/cards/news-cards.css');
     @import url('./components/cards/field-card.css');
+    @import url('./components/cards/direction-cards.css');
     @import url('./components/cards/partners-card.css');
     @import url('./components/cards/attention_cards.css');
     @import url('./components/cards/events_cards.css');
@@ -82,22 +81,9 @@
 /* ./index */
 
 /* events, event, new*/
-@import url('./pages/events.css');
 @import url('./pages/event.css');
 @import url('./pages/new.css');
 /* events */
-
-/* applicant */
-@import url('./pages/applicant.css');
-/* ./applicant */
-
-/* staf */
-@import url('./pages/staff.css');
-/* ./staf */
-
-/* student */
-@import url('./pages/student.css');
-/* student */
 
 /* useful */
 @import url('./pages/useful.css');

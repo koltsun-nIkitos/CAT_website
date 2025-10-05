@@ -1,5 +1,4 @@
 .partners{
-    margin-bottom: 200px;
     background-color: #fff;
     padding-bottom: 37px;
     padding-top: 66px;
@@ -13,4 +12,21 @@
     text-transform: uppercase;
     color: #000;
     margin-bottom: 67px;
+}
+
+/* Ноуты */
+@media (max-width:1200px) {
+    .partners__title{
+        font-size: 30px;
+    }
+}
+
+
+/* Мобильные */
+@media (max-width:544px) {
+    .partners__title{
+        font-size: var(--section-mob-size);
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
 }

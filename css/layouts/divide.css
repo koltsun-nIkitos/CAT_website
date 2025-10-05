@@ -15,8 +15,6 @@
     background-color: var(--violet-color);
 }
 
-
-
 .divide{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -24,7 +22,6 @@
     position: relative;
     padding-bottom: 90px;
 }
-
 
 .divide::before{
     content: '';
@@ -38,3 +35,18 @@
     top: -30px;
 }
 
+/* Планшеты */
+@media (max-width: 1050px) {
+    .divide{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
+    .divide{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,3 +1,4 @@
+/* Сотрудники, Полезное */
 .section-title--big{
     font-size: 80px;
     line-height: 0.9;
@@ -5,4 +6,11 @@
     color: #000;
     font-weight: 400;
     margin-bottom: 120px;
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
+    .section-title--big{
+        font-size: var(--title-1-mob-size);
+    }
 }

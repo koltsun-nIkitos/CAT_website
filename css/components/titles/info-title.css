@@ -1,8 +1,15 @@
-
+/* Подзаголовки в полезное в разделах */
 .devide__group-title{
     font-size: 30px;
     line-height: 130%;
     font-weight: 400;
     margin-bottom: 53px;
     max-width: 840px;
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
+    .devide__group-title{
+        font-size: 20px;
+    }
 }

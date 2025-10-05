@@ -1,3 +1,4 @@
+/* Промо, привлекающие внимания приятные ключевые фразы */
 .promo-wrapper{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -9,7 +10,29 @@
 .promo-wrapper__title{
     font-weight: 500;
     font-size: 50px;
+    line-height: var(--lineright-100);
+    color: var(--dark-color);
     grid-column: span 8;
-    line-height: 1;
     max-width: 1015px;
+}
+
+/* Планшеты */
+@media (max-width: 650px) {
+    .promo-wrapper__title {
+        font-size: 38px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
+    .promo-wrapper{
+        grid-template-columns: repeat(4, 1fr);
+        min-height: auto;
+    }
+
+    .promo-wrapper__title{
+        grid-column: span 4;
+        max-width: none;
+        font-size: var(--title-2-mob-size);
+    }
 }

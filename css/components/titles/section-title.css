@@ -1,3 +1,4 @@
+/* Названия разделов на страницах */
 .section-title{
     font-size: var(--title-2-size);
     line-height: var(--lineright-110);
@@ -6,4 +7,17 @@
 
 .divide .section-title{
     grid-column: span 4;
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
+    .section-title{
+        font-weight: 600;
+        font-size: var(--section-mob-size);
+    }
+    
+    /* Занимает всю ширину */
+    .divide .section-title{
+        grid-column: span 4;
+    }
 }

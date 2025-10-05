@@ -65,3 +65,12 @@
 .staff-section__group{
     grid-column: span 7;
 }
+
+
+
+/* Мобильные */
+@media (max-width: 544px) {
+    .staff-position{
+        font-size: var(--section-mob-size);
+    }
+}

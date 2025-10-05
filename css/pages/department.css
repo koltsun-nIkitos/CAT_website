@@ -1,8 +1,6 @@
 
-
 .department-text{
     max-width: 561px;
-    font-size: 15px;
     line-height: 1.4;
     color: var(--dark-color);
     margin-bottom: 30px;
@@ -18,14 +16,13 @@
 }
 
 
-
-
 .column-divide{
     display: flex;
     flex-direction: column;
 }
 
 .quote{
+    font-style: normal;
     font-size: 40px;
     color: var(--dark-color);
     line-height: 1;
@@ -52,6 +49,7 @@
 }
 
 .headDepartment-title{
+    font-weight: 500;
     font-size: 30px;
     line-height: 1;
     color: var(--dark-color);
@@ -63,3 +61,15 @@
 }
 
 
+@media (max-width: 550px) {
+    .headDepartment-title{
+        font-size: var(--link-size);
+    }
+    .headDepartment-text{
+        font-size: 10px;
+    }
+    .quote{
+        font-size: var(--section-mob-size);
+        max-width: none;
+    }
+}

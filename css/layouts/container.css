@@ -9,18 +9,64 @@
     margin: 0 auto;
 }
 
-.useful-promo, .new, .event{
-    padding-top: 90px;
-}
-
 .field-stud{
     margin-bottom: 200px;
 }
 
+.useful-promo, .new, .event{
+    padding-top: 90px;
+}
 
-@media (max-width: 940px) {
+.events-all{
+    margin-bottom: 90px;
+}
+
+.events-all .section-subtitle{
+    margin-bottom: 20px;
+}
+
+.event{
+    padding-bottom: 200px;
+}
+
+.event__description{
+    padding-top: 95px;
+}
+
+.applicant-info{
+    margin-bottom: 200px;
+}
+
+.contacts__page-title{
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+.news{
+    margin-bottom: 235px;
+}
+
+.partners{
+    margin-bottom: 200px;
+}
+
+/* Ноуты */
+@media (max-width:1200px) {
+    .news{
+        margin-bottom: 120px;
+    }
+    .field-stud{
+        margin-bottom: 100px;
+    }
+    .partners {
+        margin-bottom: 100px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
     .container {
         width: 100%;
-        max-width: calc(100% - 40px); 
+        max-width: calc(100% - 40px); /* 20px margin с каждой стороны */
     }
 }

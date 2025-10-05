@@ -1,3 +1,33 @@
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.news-article{
+    grid-column: span 4;
+}
+
+.news-article:first-child{
+    grid-column: 5 / span 8;
+}
+
+
+/* Обычная карточка (4 колонки) */
+.news-card:not(.large-card):not(.news-card--all-events) {
+    grid-column: span 4;
+}
+
+.large-card {
+    grid-column: span 8;
+}
+
+.news-card--all-events {
+    grid-column: span 4;
+}
+
+
+
 /* стандартная карточка */
 .news-card {
     background: white;
@@ -129,4 +159,186 @@
 
 .news-card--event .news-card__date{
     color: #fff;
+}
+
+/* Ноуты */
+@media (max-width:1400px) {
+    .news-card:not(.news-card--all-events) .news-card__title{
+        min-height: 90px;
+    }
+}
+
+@media (max-width:1300px) {
+    .news-card__title {
+        margin-bottom: 34px;
+    }
+}
+
+/* Планшеты */
+@media (max-width: 1050px) {
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .news-article:first-child {
+        grid-column: 4 / span 6;
+    }
+    .news-article{
+        grid-column: span 3;
+    }
+    
+    .large-card {
+        grid-column: span 6;
+    }
+    .news-card--all-events{
+        grid-column: span 3;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .news .section-title{
+        margin-bottom: 30px;
+    }
+
+    .news-grid {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .news-article:first-child {
+        grid-column: span 8;
+    }
+    .news-article{
+        grid-column: span 4;
+    }
+    .large-card {
+        grid-column: span 8;
+    }
+    .large-card{
+        order: 999;
+    }
+    .news-card--all-events{
+        grid-column: span 4;
+    }
+}
+
+@media (max-width: 650px) {
+    .news-article {
+        grid-column: span 8;
+    }
+    .large-card {
+        order: 1;
+    }
+    .news-card__img{
+        max-width: 50%;
+        margin-right: 17px;
+    }
+
+    .news-article.large-card .news-card__content{
+        padding-left: 0;
+    }
+    .news-card--all-events{
+        grid-column: span 8;
+        order: 5;
+        background-color: var(--violet-color);
+        color: #fff;
+        gap: 10px;
+        align-items: center;
+        display: flex;
+        height: 80px;
+    }
+    .news-card--all-events .news-card__title{
+        font-size: 25px;
+    }
+
+    .news-card--all-events::after{
+        content: ">";
+    }
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
+    .news-card__img{
+        max-width: 146px;
+        max-height: 146px;
+        width: 100%;
+        height: 100%;
+        margin-right: 8px;
+    }
+
+    .news-card__content{
+        position: relative;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .news-card__tags{
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .news-card:not(.news-card--all-events) .news-card__title {
+        min-height: 0px;
+        margin-bottom: 30px;
+    }
+
+    .news-card:not(.news-card--all-events) .news-card__title {
+        font-size: 16px;
+    }
+
+    .news-card.large-card .news-card__text, .news-article.large-card .news-card__text{
+        display: none;
+    }
+
+    .news-card:not(.large-card) .news-card__tags, .news-article:not(.large-card) .news-card__tags{
+        display: none;
+    }
+
+    .news-card.large-card .news-card__tags, .news-article.large-card .news-card__tags{
+        display: flex;
+    }
+
+
+    .news-card__text{
+        padding-bottom: 30px;
+        padding-right: 30px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        line-height: 1.5;
+        height: calc(3 * 1.4em);
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .news-card.news-card--event{
+        background-color: var(--important-color);
+        color: #000;
+    }
+
+    .news-card.news-card--event .news-card__date{
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 10px;
+    }
+
+    .news-card--all-events {
+        grid-column: span 8;
+        order: 5;
+        background-color: var(--violet-color);
+        color: #fff;
+        gap: 10px;
+        align-items: center;
+        display: flex;
+        height: 57px;
+    }
+
+    .news-card--all-events .news-card__title{
+        font-size: 16px;
+    }
+    
 }

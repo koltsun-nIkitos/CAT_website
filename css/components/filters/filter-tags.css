@@ -1,3 +1,9 @@
+.events-all__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+}
 
 .events-all__filters{
     display: flex;

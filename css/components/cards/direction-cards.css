@@ -1,0 +1,47 @@
+.direction-cards .divide{
+    padding-top: 30px;
+}
+
+.direction-cards .field-stud-card:first-child{
+    grid-column: 5 /  span 4;
+}
+
+.direction-cards .field-stud-card--second{
+    grid-column: 1 / span 4;
+}
+
+.direction-cards .field-stud-card--third{
+    grid-column: 5 /  span 4;
+}
+
+/* Планшеты */
+@media (max-width: 1050px) {
+    .direction-cards .field-stud-card--third {
+        grid-column: 1 / span 4;
+    }
+}
+
+@media (max-width: 800px) {
+    .direction-cards{
+        padding-top: 30px;
+        gap: 20px;
+    }
+
+    .direction-cards .field-stud-card:first-child{
+        grid-column: 2 / span 6; 
+    }
+
+    .direction-cards .field-stud-card{
+        grid-column: 2 / span 6; 
+    }
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
+    .direction-cards .field-stud-card:first-child {
+        grid-column:  span 8;
+    }
+    .direction-cards .field-stud-card{
+        grid-column: span 8; 
+    }
+}
