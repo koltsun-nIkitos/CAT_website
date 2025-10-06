@@ -10,7 +10,52 @@
     line-height: 1.4;
 }
 
+.contacts__info-adress{
+    font-style: normal;
+}
+
 .contacts__info-email .contacts__info-link{
     text-decoration: underline;
     text-decoration-skip-ink: none;
+}
+
+/* Ноуты */
+@media (max-width: 1200px) {
+    .contacts__info {
+        padding-bottom: 150px;
+    }
+    .contacts__page-title {
+        margin-bottom: 65px;
+        font-size: 70px;
+    }
+    .contacts__info{
+        font-size: 22px;
+    }
+}
+
+/* Планшеты */
+@media (max-width: 1050px) {
+    .contacts__page-title {
+        margin-bottom: 60px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
+    .contacts__page-title {
+        font-size: var(--title-1-mob-size);
+    }
+    .contacts__info{
+        font-size: 20px;
+    }
+    .contacts__info-adress{
+        margin-bottom: 20px;
+    }
+    .contacts__info-tel{
+        margin-bottom: 20px;
+    }
+    .contacts__info-tel p{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

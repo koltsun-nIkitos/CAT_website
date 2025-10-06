@@ -37,3 +37,57 @@
 .staff__info .divide__group__subjects{
     grid-column: 7 / span 6;
 }
+
+/* Планшеты */
+@media (max-width: 1050px) {
+    .staff__info .devide_summary {
+        grid-column: span 8;
+    }
+    .staff__info .divide__group__subjects {
+        grid-column: span 8;
+    }
+}
+
+@media (max-width: 750px) {
+    .timeline__text{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .timeline__year {
+        grid-column: span 2;
+        margin-bottom: 15px;
+    }
+    .timeline__text{
+        font-size: 18px;
+    }
+}
+
+/* Мобильные */
+@media (max-width: 550px) {
+    .timeline__year {
+        grid-column: span 2;
+        margin-bottom: 15px;
+    }
+    .timeline__text{
+        font-size: 16px;
+        grid-column: 3 / span 5;
+    }
+    .devide_summary p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .devide_summary p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 350px) {
+    .devide_summary p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

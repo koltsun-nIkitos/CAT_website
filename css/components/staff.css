@@ -37,6 +37,9 @@
 .staff__hero__contacts-adress{
     font-size: 16px;
 }
+.staff__hero__contacts-address address{
+    font-style: normal;
+}
 
 .staff__hero__contacts-email{
     display: flex;
@@ -55,6 +58,8 @@
 
 .staff__hero-picture img{
     object-fit: cover;
+    max-width: 332px;
+    width: 100%;
 }
 
 /* Информация о сотруднике */
@@ -67,10 +72,55 @@
 }
 
 
+/* Планшеты */
+@media (max-width: 1050px) {
+    .staff__info .section-title {
+        grid-column: span 8;
+        margin-bottom: 40px;
+    }
+    .staff-section__group {
+        grid-column: span 8;
+    }
+}
+
+@media (max-width: 900px) {
+    .staff__hero .container {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .staff__hero-picture{
+        grid-column: span 8;
+    }
+    .staff__hero-group{
+        display: flex;
+        grid-column: span 8;
+        width: 100%;
+    }
+    .staff__hero__contacts{
+        flex-basis: 50%;
+        margin-top: 50px;
+    }
+    .staff-position{
+        margin-bottom: 55px;
+    }
+}
+
+@media (max-width: 650px) {
+    .staff__hero-group {
+        flex-direction: column;
+    }
+    .staff-position {
+        margin-bottom: 0;
+    }
+    .staff__hero__contacts{
+        margin-bottom: 40px;
+    }
+}
+
 
 /* Мобильные */
-@media (max-width: 544px) {
+@media (max-width: 550px) {
     .staff-position{
         font-size: var(--section-mob-size);
     }
+    
 }
