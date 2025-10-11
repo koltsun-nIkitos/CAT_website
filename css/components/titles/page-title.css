@@ -7,6 +7,13 @@
     margin-top: 130px;
 }
 
+
+@media (max-width: 1050px) {
+    .page-title{
+        font-size: 80px;
+    }
+}
+
 /* Мобильные */
 @media (max-width: 550px) {
     .page-title{

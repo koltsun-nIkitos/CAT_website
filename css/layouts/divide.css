@@ -41,6 +41,26 @@
         display: grid;
         grid-template-columns: repeat(8, 1fr);
     }
+    /* карточки в абит и студенту */
+    .divide_grid{
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .divide_grid .field-stud-card{
+        grid-column: span 4;
+    }
+}
+
+@media (max-width: 800px) {
+    .divide_grid .field-stud-card{
+        grid-column: span 6;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 660px) {
+    .divide_grid .field-stud-card{
+        grid-column: span 7;
+    }
 }
 
 /* Мобильные */
@@ -48,5 +68,13 @@
     .divide{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+    .divide_grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .divide_grid .field-stud-card{
+        grid-column: span 4;
+        min-height: 0;
     }
 }

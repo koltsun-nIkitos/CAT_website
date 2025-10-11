@@ -144,4 +144,12 @@
         font-weight: 500;
         font-size: 16px;
     }
+    .field-stud-card__subtitle {
+        font-size: 21px;
+    }
+    .field-stud-tags {
+        flex-wrap: wrap;
+    }
+
+
 }

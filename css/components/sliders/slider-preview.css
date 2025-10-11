@@ -54,4 +54,15 @@
     z-index: 2;
 }
 
+/* Мобильные */
+@media (max-width: 550px) {
+    .swiper-applicant {
+        min-height: 250px;
+        height: 386px;
+    }
+    .swiper-applicant .swiper-slide img {
+        max-height: none;
+    }
+}
+
 /* slider */
