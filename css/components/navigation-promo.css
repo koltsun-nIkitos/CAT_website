@@ -144,9 +144,18 @@
         flex-direction: row;
     }
     .navigation__main-link{
-        flex-basis: 45%;
+        /* flex-basis: 45%; */
     }
     
+}
+
+@media (max-width: 750px) {
+    .navigation__big-links{
+        flex-wrap: wrap;
+    }
+    .student-promo .navigation__main-link{
+        height: auto !important;
+    }
 }
 
 @media (max-width: 660px) {

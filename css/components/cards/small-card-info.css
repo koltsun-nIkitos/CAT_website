@@ -18,3 +18,12 @@
     line-height: 120%;
     margin-bottom: 28px;
 }
+
+@media (max-width: 550px) {
+    .middle-card__title{
+        font-size: var(--title-2-mob-size);
+    }
+    .middle-card-subtitle{
+        font-size: var(--title-3-mob-size);  
+    }
+}

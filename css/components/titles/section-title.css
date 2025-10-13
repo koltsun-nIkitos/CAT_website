@@ -9,6 +9,18 @@
     grid-column: span 4;
 }
 
+@media (max-width: 1050px) {
+    .section-title{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .divide .section-title{
+        grid-column: span 5;
+    }
+}
+
 /* Мобильные */
 @media (max-width: 550px) {
     .section-title{
@@ -18,6 +30,6 @@
     
     /* Занимает всю ширину */
     .divide .section-title{
-        grid-column: span 4;
+        grid-column: span 5;
     }
 }

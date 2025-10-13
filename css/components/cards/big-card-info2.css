@@ -42,3 +42,25 @@
     font-size: 20px;
     color: var(--temnyy);
 }
+
+@media (max-width: 750px) {
+    .devide__group__big-card--second-template .big-card__info-text,
+    .devide__group__big-card--second-template .big-card__work-hours{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .devide__group__big-card--second-template .big-card__title {
+        font-size: var(--title-2-mob-size);
+    }
+    .devide__group__big-card--second-template .big-card-info-name{
+        font-size: 20px;
+    }
+    .big-card-support, .big-card__work-hours, .big-card__work-hours-adress{
+        font-size: var(--title-3-mob-size);
+    }
+    .devide__group__big-card--second-template .big-card__work-hours-adress{
+        font-size: 16px;
+    }
+}

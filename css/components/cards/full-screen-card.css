@@ -41,3 +41,48 @@
 .full-screen__card-group{
     margin-bottom: 30px;
 }
+
+
+@media (max-width: 1250px) {
+    .full-screen__card-title{
+        font-size: 35px;
+    }
+    .full-screen__card-subtitle{
+        font-size: 25px;
+    }
+}
+
+/* планшеты */
+@media (max-width: 1090px) {
+    .full-screen-cards {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .full-screen__card{
+        grid-column: span 6;
+    }
+    .full-screen__card-title {
+        margin-bottom: 15px;
+    }
+
+    .full-screen__card-caption {
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 550px) {
+    .full-screen-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .full-screen__card {
+        grid-column: span 4;
+    }
+    .full-screen__card-title{
+        font-size: var(--title-2-mob-size);
+    }
+    .full-screen__card-subtitle{
+        font-size: 20px;
+    }
+}

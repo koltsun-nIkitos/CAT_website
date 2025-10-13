@@ -65,3 +65,9 @@
 .curator-card__tags__row{
     flex-basis: 100%;
 }
+
+@media (max-width: 800px) {
+    .curator-card{
+        grid-column: span 6;
+    }
+}

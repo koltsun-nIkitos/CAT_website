@@ -45,3 +45,24 @@
 .big-card__info-text .important{
     color: var(--violet-color)
 }
+
+@media (max-width: 750px) {
+    .big-card__info{
+        flex-direction: column;
+    }
+    .big-card__caption {
+        margin-bottom: 44px;
+    }
+    .big-card__info-text{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .big-card__title {
+        font-size: var(--title-2-mob-size);
+    }
+    .big-card__work-hours{
+        font-size: var(--title-3-mob-size);
+    }
+}
