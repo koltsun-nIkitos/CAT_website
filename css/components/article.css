@@ -25,3 +25,21 @@
     font-size: 14px;
     color: var(--new-bg-color);
 }
+
+@media (max-width: 1300px) {
+    .activity__content {
+        gap: 65px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .activity__content{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    .activity__img{
+        width: 100%;
+    }
+}

@@ -8,9 +8,29 @@
     margin-bottom: 120px;
 }
 
+@media (max-width: 1200px) {
+    .section-title--big {
+        margin-bottom: 60px;
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .section-title--big{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-title--big{
+        font-size: 35px;
+    }
+}
+
+
 /* Мобильные */
 @media (max-width: 550px) {
     .section-title--big{
-        font-size: var(--title-1-mob-size);
+        font-size: 35px;
     }
 }

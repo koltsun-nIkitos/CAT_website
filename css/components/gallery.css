@@ -14,3 +14,25 @@
     width: 100%;
     padding-bottom: 72px;
 }
+
+@media (max-width: 768px) {
+    .gallery-img{
+        grid-column: span 4;
+        padding-bottom: 0;
+    }
+    .gallery-img:last-child{
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 650px) {
+    .gallery-img{
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 550px) {
+    .gallery-img{
+        grid-column: span 12;
+    }
+}

@@ -49,3 +49,19 @@
     line-height: 1.4;
     color: #000;
 }
+
+@media (max-width: 1300px) {
+    .event__registration{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    .event__table tr {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}

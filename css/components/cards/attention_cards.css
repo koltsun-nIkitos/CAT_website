@@ -63,3 +63,21 @@
     max-width: 322px;
 }
 /* ./ВАЖНОЕ */
+
+@media (max-width: 1000px) {
+    .events-important__card{
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 600px) {
+    .events-important__card{
+        grid-column: span 10;
+    }
+}
+
+@media (max-width: 550px) {
+    .events-important__card{
+        grid-column: span 12;
+    }
+}

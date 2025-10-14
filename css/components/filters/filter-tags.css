@@ -83,3 +83,17 @@
     background: var(--violet-color);
 }
 
+@media (max-width: 1150px) {
+    .events-all__header{
+        flex-wrap: wrap;
+    }
+    .events-all__filters{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .events-all__filters{
+        flex-wrap: wrap;
+    }
+}
