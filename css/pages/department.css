@@ -62,6 +62,13 @@
 
 
 @media (max-width: 550px) {
+    .headDepartment-group{
+        flex-wrap: wrap;
+    }
+    .headDepartment__textGroup {
+        justify-content: flex-start;
+        gap: 15px;
+    }
     .headDepartment-title{
         font-size: var(--link-size);
     }

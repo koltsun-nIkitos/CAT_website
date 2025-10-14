@@ -120,6 +120,15 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .department_promo_img{
+        grid-column: span 12;
+    }
+    .department_promo__navigation-promo__group{
+        grid-column: span 12;
+    }
+}
+
 @media (max-width: 1140px) {
     .navigation__big-links {
         grid-column: span 6;

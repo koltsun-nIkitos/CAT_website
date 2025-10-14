@@ -33,3 +33,27 @@
     line-height: var(--lineright-110);
     color: #000;
 }
+
+@media (max-width: 1300px) {
+    .employess_card{
+        grid-column: span 3;
+    }
+}
+
+@media (max-width: 900px) {
+    .employess_card{
+        grid-column: span 4;
+    }
+}
+
+@media (max-width: 750px) {
+    .employess_card {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 500px) {
+    .employess_card {
+        grid-column: span 12;
+    }
+}

@@ -76,3 +76,34 @@
 .employess_form__params-button{
     visibility: hidden;
 }
+
+@media (max-width: 1000px) {
+    .employess-header {
+        flex-wrap: wrap
+    }
+    .employess_form{
+        gap: 60px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 800px) {
+    .employess_form{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) {
+    .employess_card-img{
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .employess_form-search {
+        width: 100%;
+    }
+    .employess_form-categories{
+        flex-wrap: wrap;
+    }
+}

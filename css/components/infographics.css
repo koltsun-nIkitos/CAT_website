@@ -59,3 +59,54 @@
     color: #000;
     max-width: 256px;
 }
+
+
+@media (max-width: 1000px) {
+    .infographics__card-icon {
+        display: none;
+    }
+    .infographics__card-subtitle{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .infographics__card{
+        grid-column: span 6;
+    }
+    .infographics__card-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .infographics__card-title, .infographics__card-subtitle{
+        text-align: center;
+    }
+    .infographics__card-subtitle{
+        margin-bottom: 0;
+    }
+    .infographics__card-group{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .infographics__card-icon{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .infographics__card-title {
+        font-weight: 500;
+        font-size: 60px;
+    }
+    .infographics__card-subtitle {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .infographics__card{
+        grid-column: span 12;
+    }
+}
